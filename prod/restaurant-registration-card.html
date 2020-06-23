@@ -1,0 +1,2601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W.A.R.P</title> 
+  <link media="all" rel="stylesheet" href="./css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="./css/styles.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+
+
+<body>
+  <div class="darker-wrapper"></div>
+  <div class="container restaurant-management">
+
+    <form action="" class="wrapper restaurant-card-form-main">
+      <aside class="menu closed">
+
+        <div class="user-data">
+          <button type="button" class="settings-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.6276 20H9.37238C8.35719 20 7.53121 19.1741 7.53121 18.1589V17.7342C7.09961 17.5963 6.68027 17.4223 6.27742 17.2138L5.97648 17.5147C5.24762 18.2445 4.08008 18.2231 3.37238 17.5145L2.48523 16.6273C1.77629 15.9192 1.7559 14.752 2.48547 14.0232L2.78617 13.7225C2.5777 13.3197 2.40367 12.9004 2.26574 12.4688H1.84113C0.825976 12.4688 0 11.6428 0 10.6276V9.37238C0 8.35719 0.825976 7.53125 1.84117 7.53125H2.26578C2.40371 7.09961 2.57773 6.68031 2.78621 6.27746L2.48527 5.97656C1.75613 5.2482 1.77625 4.08094 2.48551 3.37246L3.37273 2.48527C4.08207 1.77496 5.24934 1.75723 5.9768 2.48551L6.27746 2.78617C6.68031 2.57773 7.09965 2.40367 7.53125 2.26574V1.84113C7.53125 0.825937 8.35719 0 9.37242 0H10.6276C11.6428 0 12.4688 0.825937 12.4688 1.84113V2.26578C12.9004 2.40367 13.3197 2.57773 13.7225 2.78621L14.0235 2.48527C14.7523 1.75551 15.9199 1.77691 16.6276 2.48555L17.5147 3.37266C18.2237 4.08082 18.2441 5.24797 17.5145 5.97676L17.2138 6.27746C17.4223 6.68031 17.5963 7.09957 17.7342 7.53125H18.1588C19.174 7.53125 20 8.35719 20 9.37238V10.6276C20 11.6428 19.174 12.4688 18.1588 12.4688H17.7342C17.5963 12.9004 17.4223 13.3197 17.2138 13.7225L17.5147 14.0235C18.2439 14.7518 18.2237 15.9191 17.5145 16.6276L16.6273 17.5148C15.9179 18.2251 14.7507 18.2428 14.0232 17.5145L13.7225 17.2139C13.3197 17.4223 12.9004 17.5964 12.4688 17.7343V18.1589C12.4688 19.1741 11.6428 20 10.6276 20ZM6.47332 15.9832C7.03297 16.3142 7.63531 16.5642 8.26359 16.7264C8.52234 16.7931 8.70312 17.0265 8.70312 17.2937V18.1589C8.70312 18.5279 9.0034 18.8281 9.37242 18.8281H10.6276C10.9966 18.8281 11.2969 18.5279 11.2969 18.1589V17.2937C11.2969 17.0265 11.4777 16.7931 11.7364 16.7264C12.3647 16.5642 12.9671 16.3142 13.5267 15.9832C13.757 15.847 14.0502 15.8841 14.2393 16.0732L14.8521 16.6861C15.1164 16.9506 15.5407 16.9445 15.7984 16.6864L16.6862 15.7986C16.9433 15.5418 16.9519 15.1175 16.6864 14.8523L16.0733 14.2393C15.8842 14.0501 15.8471 13.7569 15.9833 13.5267C16.3143 12.9671 16.5643 12.3647 16.7264 11.7364C16.7932 11.4777 17.0266 11.2969 17.2938 11.2969H18.1589C18.5279 11.2969 18.8282 10.9967 18.8282 10.6277V9.37242C18.8282 9.0034 18.5279 8.70316 18.1589 8.70316H17.2938C17.0265 8.70316 16.7932 8.52238 16.7264 8.26367C16.5643 7.63535 16.3142 7.03301 15.9833 6.4734C15.8471 6.24316 15.8842 5.94996 16.0733 5.76082L16.6862 5.14797C16.9511 4.88336 16.9442 4.45914 16.6864 4.20168L15.7987 3.31398C15.5414 3.05633 15.117 3.04879 14.8524 3.31375L14.2394 3.92684C14.0502 4.11602 13.757 4.15305 13.5268 4.01687C12.9671 3.6859 12.3648 3.43586 11.7365 3.27371C11.4777 3.20695 11.297 2.97359 11.297 2.70637V1.84113C11.297 1.47211 10.9967 1.17188 10.6277 1.17188H9.37246C9.00344 1.17188 8.70316 1.47211 8.70316 1.84113V2.70629C8.70316 2.97352 8.52238 3.20688 8.26363 3.27363C7.63535 3.43578 7.03301 3.68582 6.47336 4.0168C6.24305 4.15293 5.94988 4.1159 5.76074 3.92676L5.14793 3.31391C4.88371 3.04937 4.45938 3.05551 4.20168 3.31363L3.31391 4.20137C3.0568 4.45816 3.0482 4.8825 3.31367 5.14766L3.92676 5.76074C4.1159 5.94988 4.15293 6.24309 4.0168 6.47332C3.68582 7.03293 3.43582 7.63527 3.27367 8.26359C3.20687 8.52234 2.97352 8.70308 2.70633 8.70308H1.84117C1.47215 8.70312 1.17188 9.00336 1.17188 9.37238V10.6276C1.17188 10.9966 1.47215 11.2969 1.84117 11.2969H2.70629C2.97352 11.2969 3.20684 11.4777 3.27363 11.7364C3.43578 12.3647 3.68582 12.967 4.01676 13.5266C4.15289 13.7569 4.11586 14.0501 3.92672 14.2392L3.31387 14.8521C3.04895 15.1167 3.05586 15.5409 3.31363 15.7984L4.20133 16.6861C4.45863 16.9437 4.88301 16.9513 5.14762 16.6863L5.76066 16.0732C5.90004 15.9339 6.19 15.8156 6.47332 15.9832Z" />
+              <path
+                d="M10 15C7.24295 15 5 12.757 5 10C5 7.243 7.24295 5 10 5C12.757 5 15 7.243 15 10C15 12.757 12.757 15 10 15ZM10 6.3465C7.98541 6.3465 6.3465 7.98546 6.3465 10C6.3465 12.0145 7.98546 13.6535 10 13.6535C12.0145 13.6535 13.6535 12.0145 13.6535 10C13.6535 7.98546 12.0146 6.3465 10 6.3465Z" />
+            </svg>
+
+          </button>
+          <div class="user-name-wrapper">
+            <div class="user-badge"><span>IG</span></div>
+            <p class="user-name">Immanuel
+              Gonzalez</p>
+          </div>
+          <p class="user-email">privet_privet@gmail.com</p>
+        </div>
+        <nav>
+          <ul class="menu-list reset-list-styles">
+            <li class="list-item">
+              <a href="dashboard.html">
+                <i><svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M24 12.1976C24 14.8303 23.1621 17.3293 21.577 19.425C21.2642 19.8386 20.6761 19.9188 20.2637 19.607C19.8508 19.2946 19.7693 18.7067 20.0815 18.2938C21.4184 16.5266 22.125 14.4185 22.125 12.1976C22.125 6.60156 17.593 2.07813 12 2.07813C6.4032 2.07813 1.875 6.60504 1.875 12.1976C1.875 14.4185 2.5816 16.5266 3.91827 18.2938C4.23065 18.7067 4.14917 19.2946 3.73627 19.607C3.32318 19.9194 2.73541 19.8379 2.42285 19.425C0.837891 17.3293 0 14.8303 0 12.1976C0 5.56482 5.37085 0.203125 12 0.203125C18.6328 0.203125 24 5.56848 24 12.1976ZM17.9401 6.55158C18.3062 6.9176 18.3062 7.51123 17.9401 7.87726L14.8843 10.9331C15.1359 11.3969 15.2791 11.9279 15.2791 12.4915C15.2791 14.2997 13.808 15.7706 12 15.7706C10.1918 15.7706 8.72095 14.2997 8.72095 12.4915C8.72095 10.6835 10.1918 9.21247 12 9.21247C12.5638 9.21247 13.0946 9.35565 13.5584 9.60724L16.6143 6.55139C16.9805 6.18536 17.5739 6.18536 17.9401 6.55158ZM13.4041 12.4917C13.4041 11.7175 12.7742 11.0876 12 11.0876C11.2258 11.0876 10.5959 11.7175 10.5959 12.4917C10.5959 13.2659 11.2258 13.8958 12 13.8958C12.7742 13.8958 13.4041 13.2659 13.4041 12.4917Z" />
+                  </svg>
+                </i>
+                <span class="nav-link-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="restaurant-management.html">
+                <i>
+                  <svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.75" y="0.75" width="7.5" height="7.5" rx="1.25" stroke-width="1.5" />
+                    <rect x="10.75" y="0.75" width="7.5" height="7.5" rx="1.25" stroke-width="1.5" />
+                    <rect x="0.75" y="10.75" width="7.5" height="7.5" rx="1.25" stroke-width="1.5" />
+                    <rect x="14" y="10" width="1" height="9" rx="0.5" />
+                    <rect x="10" y="15" width="1" height="9" rx="0.5" transform="rotate(-90 10 15)" />
+                  </svg>
+
+                </i>
+                <span class="nav-link-text">Restaurant management</span>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="menu-management.html">
+                <i>
+                  <svg width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.24942 20.6668H18.7413C19.0726 20.6668 19.3904 20.5328 19.6247 20.2942C19.859 20.0556 19.9907 19.7321 19.9907 19.3947C19.9907 19.0573 19.859 18.7338 19.6247 18.4952C19.3904 18.2566 19.0726 18.1226 18.7413 18.1226H1.24942C0.918051 18.1226 0.600256 18.2566 0.365944 18.4952C0.131633 18.7338 0 19.0573 0 19.3947C0 19.7321 0.131633 20.0556 0.365944 20.2942C0.600256 20.5328 0.918051 20.6668 1.24942 20.6668Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.2448 2.94647V1.58533C11.2448 1.24795 11.1131 0.924385 10.8788 0.685821C10.6445 0.447256 10.3267 0.313232 9.99534 0.313232C9.66397 0.313232 9.34618 0.447256 9.11187 0.685821C8.87756 0.924385 8.74592 1.24795 8.74592 1.58533V2.94647C6.33202 3.25612 4.11192 4.45155 2.50183 6.30867C0.891736 8.16578 0.00220621 10.5571 0 13.0342V14.3063C0 14.6437 0.131633 14.9673 0.365944 15.2058C0.600256 15.4444 0.918051 15.5784 1.24942 15.5784H18.7413C20.0806 15.5784 20.0191 14.1102 19.9889 13.3881C19.9819 13.2211 19.9766 13.094 19.9907 13.0342C19.9885 10.5571 19.0989 8.16578 17.4888 6.30867C15.8788 4.45155 13.6587 3.25612 11.2448 2.94647ZM4.69451 7.63715C3.28864 9.06854 2.49883 11.0099 2.49883 13.0342H17.4918C17.4918 11.0099 16.702 9.06854 15.2962 7.63715C13.8903 6.20577 11.9835 5.40162 9.99534 5.40162C8.00714 5.40162 6.10038 6.20577 4.69451 7.63715Z" />
+                  </svg>
+
+                </i>
+                <span class="nav-link-text">Menu management</span>
+              </a>
+            </li>
+            <li class="list-item submenu-list-item">
+              <a>
+                <i>
+                  <svg width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="1" width="4" height="19" rx="2" stroke-width="2" />
+                    <rect x="1" y="6.00049" width="4" height="14" rx="2" stroke-width="2" />
+                    <rect x="15" y="10.0005" width="4" height="10" rx="2" stroke-width="2" />
+                  </svg>
+
+                </i>
+                <span class="nav-link-text">Statistics</span>
+              </a>
+              <ul class="submenu reset-list-styles">
+                <li><a href="restaurant-statistics.html">Restaurant statistics</a></li>
+                <li><a href="user-statistics.html">User statistics</a></li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <a href="orders.html">
+                <i>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M24 8.99999H19.9246L15.6431 1.86401C15.4307 1.50954 14.97 1.3938 14.6141 1.60694C14.2588 1.82008 14.1438 2.28075 14.357 2.63598L18.1754 8.99999H5.82467L9.64306 2.63593C9.8562 2.2807 9.74122 1.82003 9.38599 1.60689C9.02929 1.39375 8.57009 1.50949 8.35695 1.86396L4.07541 8.99994H0V10.4999H1.62781L3.5332 20.6638C3.7324 21.728 4.66257 22.5 5.74514 22.5H18.2549C19.3374 22.5 20.2676 21.728 20.4661 20.6645L22.3721 10.4999H24C24 10.4999 24 8.99999 24 8.99999ZM18.9917 20.3884C18.9258 20.7429 18.616 21 18.2549 21H5.74514C5.38405 21 5.07426 20.7429 5.00761 20.3877L3.15347 10.4999H20.8466L18.9917 20.3884Z"
+                      stroke-width="1.07723" />
+                  </svg>
+
+                </i>
+                <span class="nav-link-text new-order-notification new-order-notification-activated">Orders
+                  <div class="new-order-notification-inner">3</div>
+                </span>
+          
+              </a>
+            </li>
+            <li class="list-item settings">
+              <a href="#">
+                <i><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.1571 29.5382H14.3032C12.8039 29.5382 11.584 28.3184 11.584 26.819V26.1918C10.9465 25.9882 10.3272 25.7311 9.73221 25.4232L9.28775 25.8677C8.21127 26.9455 6.4869 26.9139 5.44169 25.8673L4.13144 24.5571C3.08438 23.5112 3.05426 21.7874 4.13178 20.711L4.5759 20.2669C4.268 19.6719 4.01098 19.0527 3.80726 18.4151H3.18015C1.68084 18.4151 0.460938 17.1953 0.460938 15.6959V13.842C0.460938 12.3427 1.68084 11.1228 3.18021 11.1228H3.80732C4.01103 10.4853 4.26805 9.86606 4.57596 9.27108L4.1315 8.82668C3.05461 7.75095 3.08432 6.02699 4.13184 4.98062L5.44221 3.67031C6.48984 2.62124 8.2138 2.59504 9.28821 3.67066L9.73226 4.11472C10.3272 3.80687 10.9466 3.54979 11.584 3.34608V2.71897C11.584 1.2196 12.8039 -0.000244141 14.3033 -0.000244141H16.1571C17.6565 -0.000244141 18.8763 1.2196 18.8763 2.71897V3.34614C19.5138 3.54979 20.1331 3.80687 20.7281 4.11478L21.1725 3.67031C22.249 2.59251 23.9734 2.62412 25.0186 3.67072L26.3288 4.98091C27.3759 6.02681 27.406 7.7506 26.3285 8.82697L25.8844 9.27108C26.1923 9.86606 26.4493 10.4853 26.653 11.1228H27.2801C28.7795 11.1228 29.9994 12.3427 29.9994 13.842V15.6959C29.9994 17.1953 28.7795 18.4151 27.2801 18.4151H26.653C26.4493 19.0526 26.1923 19.6719 25.8844 20.2669L26.3288 20.7114C27.4057 21.7871 27.376 23.511 26.3285 24.5574L25.0181 25.8677C23.9705 26.9168 22.2465 26.943 21.1721 25.8674L20.7281 25.4233C20.1331 25.7312 19.5138 25.9882 18.8763 26.1919V26.8191C18.8763 28.3184 17.6565 29.5382 16.1571 29.5382ZM10.0215 23.6057C10.8481 24.0945 11.7377 24.4638 12.6656 24.7033C13.0478 24.8019 13.3148 25.1466 13.3148 25.5412V26.819C13.3148 27.364 13.7583 27.8074 14.3033 27.8074H16.1571C16.7021 27.8074 17.1456 27.364 17.1456 26.819V25.5412C17.1456 25.1466 17.4126 24.8019 17.7948 24.7033C18.7227 24.4638 19.6123 24.0945 20.4389 23.6057C20.779 23.4046 21.2119 23.4593 21.4913 23.7387L22.3964 24.6438C22.7866 25.0345 23.4133 25.0255 23.794 24.6442L25.1051 23.3331C25.4849 22.9539 25.4976 22.3271 25.1055 21.9355L24.2 21.03C23.9206 20.7507 23.866 20.3177 24.067 19.9776C24.5558 19.1511 24.9251 18.2615 25.1646 17.3335C25.2632 16.9514 25.6079 16.6844 26.0025 16.6844H27.2802C27.8252 16.6844 28.2687 16.241 28.2687 15.696V13.8421C28.2687 13.2971 27.8252 12.8537 27.2802 12.8537H26.0025C25.6078 12.8537 25.2632 12.5867 25.1646 12.2046C24.9251 11.2766 24.5558 10.387 24.067 9.56047C23.866 9.22043 23.9206 8.78739 24.2 8.50805L25.1051 7.60291C25.4964 7.2121 25.4862 6.58556 25.1055 6.20531L23.7944 4.89426C23.4144 4.51372 22.7876 4.50258 22.3968 4.89391L21.4914 5.79939C21.2121 6.07879 20.7789 6.13349 20.4389 5.93237C19.6124 5.44354 18.7227 5.07426 17.7948 4.83477C17.4127 4.73618 17.1457 4.39153 17.1457 3.99685V2.71897C17.1457 2.17395 16.7022 1.73053 16.1572 1.73053H14.3033C13.7583 1.73053 13.3148 2.17395 13.3148 2.71897V3.99674C13.3148 4.39141 13.0478 4.73606 12.6657 4.83466C11.7378 5.07414 10.8481 5.44343 10.0216 5.93226C9.68144 6.13331 9.24846 6.07862 8.96911 5.79928L8.06403 4.89414C7.6738 4.50345 7.04709 4.51251 6.6665 4.89374L5.35532 6.20485C4.97559 6.58412 4.9629 7.21083 5.35498 7.60245L6.26046 8.50793C6.5398 8.78728 6.5945 9.22031 6.39344 9.56035C5.90461 10.3869 5.53538 11.2765 5.2959 12.2044C5.19725 12.5866 4.85259 12.8535 4.45798 12.8535H3.18021C2.63519 12.8536 2.19171 13.297 2.19171 13.842V15.6959C2.19171 16.2409 2.63519 16.6844 3.18021 16.6844H4.45792C4.85259 16.6844 5.19719 16.9514 5.29584 17.3335C5.53532 18.2614 5.90461 19.1511 6.39338 19.9776C6.59444 20.3176 6.53975 20.7506 6.2604 21.03L5.35526 21.9351C4.964 22.3259 4.97421 22.9525 5.35492 23.3327L6.66598 24.6438C7.046 25.0243 7.67277 25.0354 8.06357 24.6441L8.969 23.7386C9.17484 23.5329 9.60309 23.3582 10.0215 23.6057Z" />
+                    <path
+                      d="M15.2303 22.1535C11.1584 22.1535 7.8457 18.8408 7.8457 14.7689C7.8457 10.697 11.1584 7.38428 15.2303 7.38428C19.3023 7.38428 22.6149 10.697 22.6149 14.7689C22.6149 18.8408 19.3023 22.1535 15.2303 22.1535ZM15.2303 9.37295C12.2549 9.37295 9.83438 11.7936 9.83438 14.7689C9.83438 17.7442 12.255 20.1648 15.2303 20.1648C18.2056 20.1648 20.6263 17.7442 20.6263 14.7689C20.6263 11.7936 18.2057 9.37295 15.2303 9.37295Z" />
+                  </svg>
+                </i>
+                <span class="nav-link-text">Settings</span>
+              </a>
+            </li>
+            <li class="list-item log-out">
+              <a href="index.html">
+                <i>
+                  <svg width="26" height="30" viewBox="0 0 26 30" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.7267 7.63375C21.4299 7.63375 22 7.12659 22 6.50094V3.56633C22 2.02418 20.5741 0.769531 18.8216 0.769531H3.58075C1.82821 0.769531 0.402344 2.02418 0.402344 3.56633V26.9727C0.402344 28.5149 1.82821 29.7695 3.58075 29.7695H18.8216C20.5741 29.7695 22 28.5149 22 26.9727V24.0381C22 23.4125 21.4299 22.9054 20.7267 22.9054C20.0234 22.9054 19.4534 23.4125 19.4534 24.0382V26.9728C19.4534 27.2657 19.17 27.504 18.8216 27.504H3.58075C3.23237 27.504 2.94899 27.2657 2.94899 26.9728V3.56633C2.94899 3.27344 3.23237 3.03516 3.58075 3.03516H18.8216C19.17 3.03516 19.4534 3.27344 19.4534 3.56633V6.50094C19.4534 7.12659 20.0234 7.63375 20.7267 7.63375Z" />
+                    <path
+                      d="M9.52264 16.0805L15.7595 21.9599C16.2228 22.3968 16.9648 22.3878 17.4166 21.9398C17.8684 21.4919 17.8591 20.7747 17.3958 20.3379L13.221 16.4024L24.4258 16.4024C25.073 16.4024 25.5977 15.8952 25.5977 15.2696C25.5977 14.6439 25.073 14.1367 24.4258 14.1367L13.221 14.1367L17.3958 10.2012C17.8591 9.76448 17.8684 9.04724 17.4166 8.59938C16.9649 8.15152 16.2228 8.14229 15.7595 8.57927L9.52264 14.4586C9.04814 14.905 9.05389 15.6395 9.52264 16.0805Z" />
+                  </svg>
+
+                </i>
+                <span class="nav-link-text">Log out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <header class="title-section mobile-fixed-header light-card mobile-menu-header">
+        <svg width="19" class="desktop-only" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.75" y="0.75" width="7.5" height="7.5" rx="1.25" stroke="#E3B100" stroke-width="1.5" />
+          <rect x="10.75" y="0.75" width="7.5" height="7.5" rx="1.25" stroke="#E3B100" stroke-width="1.5" />
+          <rect x="0.75" y="10.75" width="7.5" height="7.5" rx="1.25" stroke="#E3B100" stroke-width="1.5" />
+          <rect x="14" y="10" width="1" height="9" rx="0.5" fill="#E3B100" />
+          <rect x="10" y="15" width="1" height="9" rx="0.5" transform="rotate(-90 10 15)" fill="#E3B100" />
+        </svg>
+        <button type="button" class="mobile-menu-opening-btn">
+          <div class="mobile-menu-opening-btn-item mobile-menu-opening-btn-item-first"></div>
+          <div class="mobile-menu-opening-btn-item mobile-menu-opening-btn-item-second"></div>
+          </button>
+        <h1 class="pages-h1"> Restaurant management </h1>
+        <a href="orders.html" class="mobile-only"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23 7.87499H19.2642L15.3395 1.33368C15.1448 1.00874 14.7225 0.902652 14.3962 1.09803C14.0706 1.29341 13.9652 1.71569 14.1606 2.04132L17.6608 7.87499H6.33928L9.83947 2.04127C10.0349 1.71564 9.92945 1.29336 9.60382 1.09798C9.27685 0.902606 8.85592 1.0087 8.66054 1.33363L4.7358 7.87494H1V9.24995H2.49216L4.23876 18.5668C4.42137 19.5423 5.27402 20.25 6.26638 20.25H17.7337C18.726 20.25 19.5786 19.5423 19.7606 18.5675L21.5078 9.24995H23C23 9.24995 23 7.87499 23 7.87499ZM18.409 18.3144C18.3486 18.6393 18.0646 18.875 17.7336 18.875H6.26638C5.93538 18.875 5.6514 18.6394 5.5903 18.3137L3.89068 9.24995H20.1094L18.409 18.3144Z" fill="#E3B100" stroke="#E3B100" stroke-width="1.07723"/>
+          </svg>
+          </a>
+        <div class="mobile-footer-btn">
+          <button type="submit" class="btn btn-base submit-btn restaurant-submit-btn">
+            <span class="btn-base-text">Save</span>
+            <i class="icon">
+              <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6.03226L7.61225 13L19 1" stroke="#2DA82D" stroke-width="2" />
+              </svg>
+            </i>
+          </button>
+        </div>
+
+      </header>
+      <main class="restaurant-management-content">
+        <div class="restaurant-card-form">
+          <div class="restaurant-card-form-wrapper">
+            <div class="light-card restaurant-card-first no-shadow">
+              <div class="restaurant-card-header">
+
+                <div class="restaurant-registration-lang-menu dropdown-menu-wrapper">
+                  <button type="button" class="add-btn dropdown-opener">
+                        
+                    <div class="tooltip-bottom-arrow">Change language</div>
+                    <span class="add-btn-img">+</span>
+                  </button>
+                  <ul class="dropdown-menu reset-list-styles">
+                    <li class="dropdown-menu-item">English</li>
+                    <li class="dropdown-menu-item">Arabian</li>
+                    <li class="dropdown-menu-item">Spanish</li>
+                    <li class="dropdown-menu-item">Italian</li>
+                    <li class="dropdown-menu-item">Chinese</li>
+                    <li class="dropdown-menu-item">Russian</li>
+                    <li class="dropdown-menu-item">German</li>
+                    <li class="dropdown-menu-item">French</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="js-tabs">
+
+                <ul class="js-tabs__header">
+                  <li><a href="#" class="js-tabs__title">English</a></li>
+                  <li><a href="#" class="js-tabs__title">Arabian</a></li>
+                </ul>
+
+                <div class="js-tabs__content">
+                  <div class="restaurant-card-first-main">
+                    <div class="img-load accordion-tablet restaurant-logo">
+                      <a class="light-card-h3 bolder before-el accordion-tablet-btn">Restaurant logo</a>
+                      <div class="accordion-tablet-content">
+                        <label for="restaurantImg">
+                          <button type="button" class="add-btn">
+                            <div class="tooltip-left-arrow">
+                              Format: .jpeg .png<br>Resolution: 72dpi <br>Min. size: 500*500</div>
+                            <span class="add-btn-img">+</span>
+                          </button>
+                          <input type="file" id="restaurantImg" class="d-none">
+                          <button class="img-delete-btn d-none">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                fill="#E3B100" />
+                            </svg>
+
+                          </button>
+                        </label>
+                      </div>
+
+                    </div>
+                    <fieldset class="restaurant-card-first-details accordion-tablet">
+                      <a class="light-card-h3 bolder before-el accordion-tablet-btn">Details</a>
+
+                      <div class="accordion-tablet-content">
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Country</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="0"
+                                value="1" name="country" checked="checked" />
+                              <p class="select-box__input-text">Ukraine</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1"
+                                value="2" name="country" checked="checked" />
+                              <p class="select-box__input-text">Italy</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="2"
+                                value="3" name="country" checked="checked" />
+                              <p class="select-box__input-text">China</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">Ukraine</label></li>
+                            <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">Italy</label></li>
+                            <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">China</label></li>
+                          </ul>
+                        </div>
+
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Town</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="town0"
+                                value="1" name="town" checked="checked" />
+                              <p class="select-box__input-text">Kyiv</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="town1"
+                                value="2" name="town" checked="checked" />
+                              <p class="select-box__input-text">Zaporozhye</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="town2"
+                                value="3" name="town" checked="checked" />
+                              <p class="select-box__input-text">Harkiv</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="town0" aria-hidden="aria-hidden">Kyiv</label>
+                            </li>
+                            <li><label class="select-box__option" for="town1"
+                                aria-hidden="aria-hidden">Zaporozhye</label>
+                            </li>
+                            <li><label class="select-box__option" for="town2" aria-hidden="aria-hidden">Harkiv</label>
+                            </li>
+                          </ul>
+                        </div>
+
+
+
+                        <div class="form-group input-animation">
+                          <input type="text" id="address" class="gray-color">
+                          <label for="address" class="gray-color">Address</label>
+                        </div>
+
+                        <div class="form-group extra-icon input-animation">
+                          <input type="text" class="gray-color" id="addressMore">
+                          <label class="gray-color" for="addressMore">GPS Location <span>
+                              (DD format ex.00.00000,
+                              00.00000)
+                            </span></label>
+                          <svg width="22" height="28" viewBox="0 0 22 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.9806 0C5.32211 0 0.71875 4.60336 0.71875 10.2618C0.71875 12.8612 2.3566 16.5338 5.58701 21.1777C7.94818 24.5724 10.2705 27.1993 10.3683 27.3096L10.9806 28L11.593 27.3096C11.6906 27.1993 14.0129 24.5724 16.3743 21.1777C19.6045 16.5338 21.2426 12.8612 21.2426 10.2618C21.2426 4.60336 16.639 0 10.9806 0ZM15.0394 20.2297C13.4434 22.5257 11.8304 24.5017 10.9806 25.5098C10.1329 24.5045 8.52582 22.5359 6.93091 20.2429C3.93784 15.9401 2.35574 12.4886 2.35574 10.2618C2.35574 5.50613 6.22488 1.63699 10.9806 1.63699C15.7365 1.63699 19.6054 5.50613 19.6054 10.2618C19.6054 12.4863 18.0265 15.9331 15.0394 20.2297Z"
+                              fill="#E3B100" />
+                            <path
+                              d="M10.9803 3.79248C7.64069 3.79248 4.92383 6.50934 4.92383 9.84891C4.92383 13.1885 7.64069 15.9056 10.9803 15.9056C14.32 15.9056 17.0369 13.1885 17.0369 9.84891C17.0369 6.50934 14.32 3.79248 10.9803 3.79248ZM10.9803 14.2686C8.54346 14.2686 6.56082 12.2859 6.56082 9.84891C6.56082 7.41211 8.54346 5.42947 10.9803 5.42947C13.4173 5.42947 15.3999 7.41211 15.3999 9.84891C15.3999 12.2859 13.4173 14.2686 10.9803 14.2686Z"
+                              fill="#E3B100" />
+                          </svg>
+
+
+                        </div>
+
+                        <div class="form-group input-animation">
+                          <input class="gray-color" type="tel" id="tel">
+                          <label class="gray-color" for="tel">Restaurant Phone</label>
+                        </div>
+
+                        <div class="form-group input-animation">
+                          <input class="gray-color" type="text" id="website">
+                          <label class="gray-color" for="website">Restaurant website</label>
+                        </div>
+
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Type of Cuisine</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="restauranttype0" value="1" name="restauranttype" checked="checked" />
+                              <p class="select-box__input-text">Home cuisine</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="restauranttype1" value="2" name="restauranttype" checked="checked" />
+                              <p class="select-box__input-text">Haute cuisine</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="restauranttype2" value="3" name="restauranttype" checked="checked" />
+                              <p class="select-box__input-text">Chinese cuisine</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="restauranttype0" aria-hidden="aria-hidden">Home
+                                cuisine</label></li>
+                            <li><label class="select-box__option" for="restauranttype1"
+                                aria-hidden="aria-hidden">Ukrainian
+                                cuisine</label></li>
+                            <li><label class="select-box__option" for="restauranttype2" aria-hidden="aria-hidden">Haute
+                                cuisine</label></li>
+                          </ul>
+                        </div>
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Type of Restaurant</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen0"
+                                value="1" name="kitchen" checked="checked" />
+                              <p class="select-box__input-text">Home</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen1"
+                                value="2" name="kitchen" checked="checked" />
+                              <p class="select-box__input-text">Ukrainian</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen2"
+                                value="3" name="kitchen" checked="checked" />
+                              <p class="select-box__input-text">European</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="kitchen0" aria-hidden="aria-hidden">Home</label>
+                            </li>
+                            <li><label class="select-box__option" for="kitchen1" aria-hidden="aria-hidden">Ukrainian
+                              </label>
+                            </li>
+                            <li><label class="select-box__option" for="kitchen2"
+                                aria-hidden="aria-hidden">European</label>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="select-box currency-box">
+                          <p class="select-box-label gray-color">Currency</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="currency0"
+                                value="1" name="currency" checked="checked" />
+                              <p class="select-box__input-text">EUR</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="currency1"
+                                value="2" name="currency" checked="checked" />
+                              <p class="select-box__input-text">UAH</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="currency2"
+                                value="3" name="currency" checked="checked" />
+                              <p class="select-box__input-text">USD</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="currency0" aria-hidden="aria-hidden">EUR</label>
+                            </li>
+                            <li><label class="select-box__option" for="currency1" aria-hidden="aria-hidden">UAH </label>
+                            </li>
+                            <li><label class="select-box__option" for="currency2" aria-hidden="aria-hidden">USD</label>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                          <div class="custom-checkbox-wrapper">
+                            <input class="styled-checkbox" id="styled-checkbox-0" type="checkbox" value="value0">
+                            <label for="styled-checkbox-0">Mandatory tip</label>
+                          </div>
+
+                        </div>
+
+                        <div class="form-group input-animation tips-box">
+                          <input type="text" class="gray-color" id="tips">
+
+                          <label class="gray-color" for="tips">Tips</label>
+                          <span>%</span>
+                        </div>
+                      </div>
+
+                    </fieldset>
+
+                    <fieldset class="restaurant-opening-hours accordion-tablet">
+                      <a class="light-card-h3 bolder accordion-tablet-btn before-el">Restaurant opening hours:</a>
+
+                      <div class="accordion-tablet-content">
+                        <ul class="reset-list-styles restaurant-opening-hours-heading">
+                          <li class="work-days">Work days</li>
+
+                          <li class="opening-hours">Opening hours</li>
+                        </ul>
+
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="mon" checked>
+                              <label for="styled-checkbox-1">Mon</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]"  value="00.00">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]"  value="00.00">
+                          </li>
+                        </ul>
+
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" checked
+                                value="tues">
+                              <label for="styled-checkbox-2">Tue</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]"  value="00.00">
+                            <input type="text" class="time-masked-input" v pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="00.00">
+                          </li>
+                        </ul>
+
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" checked value="wen">
+                              <label for="styled-checkbox-3">Wen</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="00.00">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="00.00">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" checked value="th">
+                              <label for="styled-checkbox-4">Thu</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" checked value="fr">
+                              <label for="styled-checkbox-5">Fri</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item disabled">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox opening-hours-checkbox" id="styled-checkbox-6" type="checkbox" value="sat">
+                              <label for="styled-checkbox-6">Sat</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]"  value="">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" checked value="mon">
+                              <label for="styled-checkbox-7">Sun</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                      </div>
+                    </fieldset>
+
+                    <div class="restaurant-card-first-footer">
+                      Update date: 00. 00. 20
+                    </div>
+                  </div>
+                </div>
+
+                <div class="js-tabs__content">
+                  <div class="restaurant-card-first-main">
+                    <div class="img-load accordion-tablet restaurant-logo">
+                      <a class="light-card-h3 bolder before-el accordion-tablet-btn">Restaurant logo</a>
+                      <div class="accordion-tablet-content">
+                        <label for="1restaurantImg">
+                          <button type="button" class="add-btn">
+                            <div class="tooltip-left-arrow">
+                              Format: .jpeg .png<br>Resolution: 72dpi <br>Min. size: 500*500</div>
+                            <span class="add-btn-img">+</span>
+                          </button>
+                          <input type="file" id="1restaurantImg" class="d-none">
+                          <button class="img-delete-btn d-none">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                fill="#E3B100" />
+                            </svg>
+
+                          </button>
+                        </label>
+                      </div>
+
+                    </div>
+                    <fieldset class="restaurant-card-first-details accordion-tablet">
+                      <a
+                       class="light-card-h3 bolder accordion-tablet-btn
+                      before-el">Details</a>
+                      <div class="accordion-tablet-content">
+
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Country</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="110"
+                                value="1" name="11country" checked="checked" />
+                              <p class="select-box__input-text">Ukraine</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="111"
+                                value="2" name="11country" checked="checked" />
+                              <p class="select-box__input-text">Italy</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="112"
+                                value="3" name="11country" checked="checked" />
+                              <p class="select-box__input-text">China</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="110" aria-hidden="aria-hidden">Ukraine</label>
+                            </li>
+                            <li><label class="select-box__option" for="111" aria-hidden="aria-hidden">Italy</label></li>
+                            <li><label class="select-box__option" for="112" aria-hidden="aria-hidden">China</label></li>
+                          </ul>
+                        </div>
+
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Town</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1town0"
+                                value="1" name="1town" checked="checked" />
+                              <p class="select-box__input-text">Kyiv</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1town1"
+                                value="2" name="1town" checked="checked" />
+                              <p class="select-box__input-text">Zaporozhye</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1town2"
+                                value="3" name="1town" checked="checked" />
+                              <p class="select-box__input-text">Harkiv</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="1town0" aria-hidden="aria-hidden">Kyiv</label>
+                            </li>
+                            <li><label class="select-box__option" for="1town1"
+                                aria-hidden="aria-hidden">Zaporozhye</label>
+                            </li>
+                            <li><label class="select-box__option" for="1town2" aria-hidden="aria-hidden">Harkiv</label>
+                            </li>
+                          </ul>
+                        </div>
+
+
+
+                        <div class="form-group input-animation">
+                          <input type="text" id="1address" class="gray-color">
+                          <label for="1address" class="gray-color">Address</label>
+                        </div>
+
+                        <div class="form-group input-animation extra-icon">
+                          <input type="text" class="gray-color" id="1addressMore">
+                          <label class="gray-color" for="1addressMore">GPS Location <span>
+                              (DD format ex.00.00000,
+                              00.00000)
+                            </span></label>
+                          <svg width="22" height="28" viewBox="0 0 22 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.9806 0C5.32211 0 0.71875 4.60336 0.71875 10.2618C0.71875 12.8612 2.3566 16.5338 5.58701 21.1777C7.94818 24.5724 10.2705 27.1993 10.3683 27.3096L10.9806 28L11.593 27.3096C11.6906 27.1993 14.0129 24.5724 16.3743 21.1777C19.6045 16.5338 21.2426 12.8612 21.2426 10.2618C21.2426 4.60336 16.639 0 10.9806 0ZM15.0394 20.2297C13.4434 22.5257 11.8304 24.5017 10.9806 25.5098C10.1329 24.5045 8.52582 22.5359 6.93091 20.2429C3.93784 15.9401 2.35574 12.4886 2.35574 10.2618C2.35574 5.50613 6.22488 1.63699 10.9806 1.63699C15.7365 1.63699 19.6054 5.50613 19.6054 10.2618C19.6054 12.4863 18.0265 15.9331 15.0394 20.2297Z"
+                              fill="#E3B100" />
+                            <path
+                              d="M10.9803 3.79248C7.64069 3.79248 4.92383 6.50934 4.92383 9.84891C4.92383 13.1885 7.64069 15.9056 10.9803 15.9056C14.32 15.9056 17.0369 13.1885 17.0369 9.84891C17.0369 6.50934 14.32 3.79248 10.9803 3.79248ZM10.9803 14.2686C8.54346 14.2686 6.56082 12.2859 6.56082 9.84891C6.56082 7.41211 8.54346 5.42947 10.9803 5.42947C13.4173 5.42947 15.3999 7.41211 15.3999 9.84891C15.3999 12.2859 13.4173 14.2686 10.9803 14.2686Z"
+                              fill="#E3B100" />
+                          </svg>
+
+                        </div>
+
+                        <div class="form-group input-animation">
+                          <input class="gray-color" type="tel" id="1tel">
+                          <label class="gray-color" for="1tel">Restaurant Phone</label>
+                        </div>
+
+                        <div class="form-group input-animation">
+                          <input class="gray-color" type="text" id="1website">
+                          <label class="gray-color" for="1website">Restaurant website</label>
+                        </div>
+
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Type of Cuisine</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="1restauranttype0" value="1" name="1restauranttype" checked="checked" />
+                              <p class="select-box__input-text">Home cuisine</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="1restauranttype1" value="2" name="1restauranttype" checked="checked" />
+                              <p class="select-box__input-text">Haute cuisine</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="1restauranttype2" value="3" name="1restauranttype" checked="checked" />
+                              <p class="select-box__input-text">Chinese cuisine</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="1restauranttype0" aria-hidden="aria-hidden">Home
+                                cuisine</label></li>
+                            <li><label class="select-box__option" for="1restauranttype1"
+                                aria-hidden="aria-hidden">Ukrainian
+                                cuisine</label></li>
+                            <li><label class="select-box__option" for="1restauranttype2" aria-hidden="aria-hidden">Haute
+                                cuisine</label></li>
+                          </ul>
+                        </div>
+                        <div class="select-box">
+                          <p class="select-box-label gray-color">Type of Restaurant</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1kitchen0"
+                                value="1" name="1kitchen" checked="checked" />
+                              <p class="select-box__input-text">Home</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1kitchen1"
+                                value="2" name="1kitchen" checked="checked" />
+                              <p class="select-box__input-text">Ukrainian</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1kitchen2"
+                                value="3" name="1kitchen" checked="checked" />
+                              <p class="select-box__input-text">European</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="1kitchen0" aria-hidden="aria-hidden">Home</label>
+                            </li>
+                            <li><label class="select-box__option" for="1kitchen1" aria-hidden="aria-hidden">Ukrainian
+                              </label>
+                            </li>
+                            <li><label class="select-box__option" for="kitchen2"
+                                aria-hidden="aria-hidden">European</label>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="select-box currency-box">
+                          <p class="select-box-label gray-color">Currency</p>
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1currency0"
+                                value="1" name="currency1" checked="checked" />
+                              <p class="select-box__input-text">EUR</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1currency1"
+                                value="2" name="currency1" checked="checked" />
+                              <p class="select-box__input-text">UAH</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="1currency2"
+                                value="3" name="currency1" checked="checked" />
+                              <p class="select-box__input-text">USD</p>
+                            </div>
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="1currency0" aria-hidden="aria-hidden">EUR</label>
+                            </li>
+                            <li><label class="select-box__option" for="1currency1" aria-hidden="aria-hidden">UAH
+                              </label>
+                            </li>
+                            <li><label class="select-box__option" for="1currency2" aria-hidden="aria-hidden">USD</label>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                          <div class="custom-checkbox-wrapper">
+                            <input class="styled-checkbox" id="styled-checkbox-00" type="checkbox" value="value0">
+                            <label for="styled-checkbox-00">Mandatory tip</label>
+                          </div>
+
+                        </div>
+
+                        <div class="form-group input-animation tips-box">
+                          <input type="text" class="gray-color" id="tips1">
+
+                          <label class="gray-color" for="tips1">Tips</label>
+                          <span>%</span>
+                        </div>
+                      </div>
+
+                    </fieldset>
+
+                    <fieldset class="restaurant-opening-hours accordion-tablet">
+                      <a
+                       class="light-card-h3 bolder before-el accordion-tablet-btn">Restaurant opening hours:</a>
+
+                      <div class="accordion-tablet-content">
+                        <ul class="reset-list-styles restaurant-opening-hours-heading">
+                          <li class="work-days">Work days</li>
+
+                          <li class="opening-hours">Opening hours</li>
+                        </ul>
+
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="mon"
+                                checked>
+                              <label for="styled-checkbox-11">Mon</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="00.00">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="00.00">
+                          </li>
+                        </ul>
+
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-12" type="checkbox" checked
+                                value="tues">
+                              <label for="styled-checkbox-12">Tu</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="00.00">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="00.00">
+                          </li>
+                        </ul>
+
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-13" type="checkbox" checked
+                                value="wen">
+                              <label for="styled-checkbox-13">Wen</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-14" type="checkbox" checked value="th">
+                              <label for="styled-checkbox-14">Th</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-15" type="checkbox" checked value="fr">
+                              <label for="styled-checkbox-15">Fr</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item disabled">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-16" type="checkbox" value="sat">
+                              <label for="styled-checkbox-16">Sat</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                        <ul class="reset-list-styles restaurant-opening-hours-item">
+                          <li class="work-days">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-17" type="checkbox" checked
+                                value="mon">
+                              <label for="styled-checkbox-17">Sun</label>
+                            </div>
+                          </li>
+
+                          <li class="opening-hours">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                            <input type="text" class="time-masked-input" pattern="([01]?[0-9]|2[0-3]).[0-5][0-9]" value="">
+                          </li>
+                        </ul>
+                      </div>
+                    </fieldset>
+
+                    <div class="restaurant-card-first-footer">
+                      Update date: 00. 00. 20
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+            <!-- /.restaurant-card-first-main -->
+            <div class="restaurant-card-second">
+              <div class="js-wrapper-tabs">
+
+                <ul class="js-wrapper-tabs__header reset-list-styles">
+                  <li><a href="#" class="js-wrapper-tabs__title">Basic information</a></li>
+                  <li><a href="#" class="js-wrapper-tabs__title">Delivery</a></li>
+                </ul>
+
+                <div class="js-wrapper-tabs__content">
+                  <div class="light-card no-shadow">
+                    <div class="restaurant-card-header">
+                      <div class="light-card-h3 before-el">Description</div>
+
+                      <div class="restaurant-registration-lang-menu dropdown-menu-wrapper">
+                        <button type="button" class="add-btn dropdown-opener">
+                          <div class="tooltip-bottom-arrow">Change language</div>
+                          <span class="add-btn-img">+</span>
+                        </button>
+                        <ul class="dropdown-menu reset-list-styles">
+                          <li class="dropdown-menu-item">English</li>
+                          <li class="dropdown-menu-item">Arabian</li>
+                          <li class="dropdown-menu-item">Spanish</li>
+                          <li class="dropdown-menu-item">Italian</li>
+                          <li class="dropdown-menu-item">Chinese</li>
+                          <li class="dropdown-menu-item">Russian</li>
+                        </ul>
+                      </div>
+                      <div class="js-tabs">
+
+                        <ul class="js-tabs__header">
+                          <li><a href="#" class="js-tabs__title">English</a></li>
+                          <li><a href="#" class="js-tabs__title">Arabian</a></li>
+                        </ul>
+                        <div class="js-tabs__content">
+                          <div class="restaurant-description-name">
+                            <label for="restaurant-name" class="light-card-h3">Dish Name</label>
+                            <input type="text" class="restaurant-description-name-input" id="restaurant-name"
+                              value="Name" name="restaurant-name">
+                          </div>
+                          <div class="restaurant-description-text">
+                            <label class="light-card-h3" for="restaurant-description">Description</label>
+                            <div class="base-textarea-wrapper">
+
+
+                              <textarea id="restaurant-description" maxlength="440"
+                                class="base-textarea">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, Многие думают,</textarea>
+                              <div class="symbols">
+                                <span class="symbols-now">0 \</span>
+                                <span class="symbols-max"> 440</span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                        <div class="js-tabs__content">
+                          <div class="restaurant-description-name">
+                            <label for="restaurant-name" class="light-card-h3">Dish Name</label>
+                            <input type="text" class="restaurant-description-name-input" id="restaurant-name-arabian"
+                              value="Name" name="restaurant-name-arabian">
+                          </div>
+                          <div class="restaurant-description-text">
+                            <label class="light-card-h3" for="restaurant-description-arabian">Description</label>
+                            <div class="base-textarea-wrapper">
+
+
+                              <textarea id="restaurant-description-arabian" maxlength="440"
+                                class="base-textarea">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, Многие думают,</textarea>
+                              <div class="symbols">
+                                <span class="symbols-now">0 \</span>
+                                <span class="symbols-max"> 440</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="restaurant-gallery light-card no-shadow">
+                    <div class="light-card-h3 border-bt-light">Add Gallery</div>
+                    <ul class="reset-list-styles restaurant-gallery-list">
+                      <li class="restaurant-gallery-item">
+                        <div class="img-load restaurant-logo">
+                          <label for="restaurantImg1">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="restaurantImg1" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+                          </label>
+
+                        </div>
+                      </li>
+                      <li class="restaurant-gallery-item">
+                        <div class="img-load restaurant-logo">
+                          <label for="restaurantImg2">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="restaurantImg2" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+                          </label>
+
+                        </div>
+                      </li>
+                      <li class="restaurant-gallery-item">
+                        <div class="img-load restaurant-logo">
+                          <label for="restaurantImg3">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="restaurantImg3" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+                          </label>
+
+                        </div>
+                      </li>
+                      <li class="restaurant-gallery-item">
+                        <div class="img-load restaurant-logo">
+                          <label for="restaurantImg4">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="restaurantImg4" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+                          </label>
+
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="light-card-gradient no-shadow 
+                  restaurant-tables">
+                    <div class="restaurant-tables-title-section">
+                      <div class="light-card-h3">
+                        Create table numbering
+                      </div>
+                      <button type="button" class="add-btn add-table-btn">
+
+                        <span class="add-btn-img">+</span>
+                      </button>
+                    </div>
+                    <ul class="reset-list-styles restaurant-tables-heading">
+                      <li class="checkbox"></li>
+                      <li class="zone">Zone</li>
+                      <li class="table-number">Table Number</li>
+                      <li class="qr-code">QR Code</li>
+                    </ul>
+                    <div class="restaurant-tables-items-wrapper restaurant-tables-item-wrapper-desk">
+                      <ul class="reset-list-styles restaurant-tables-item">
+                        <li class="checkbox">
+                          <div class="checkbox-wrapper">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-restaurant-tables1" type="checkbox"
+                                value="value0">
+                              <label for="styled-checkbox-restaurant-tables1"></label>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li class="zone">
+                          <label class="zone-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+
+                            <input type="text" name="zone" value="-">
+
+
+                          </label>
+                        </li>
+                        <li class="table-number">
+                          <label class="table-number-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+                            <input type="text" value="455" name="table-number">
+                          </label>
+                        </li>
+                        <li class="qr-code">
+                          <div class="img-load restaurant-logo">
+                            <label for="qrCode1">
+                              <button type="button" class="add-btn">
+
+                                <span class="add-btn-img">+</span>
+                              </button>
+                              <input type="file" id="qrCode1" class="d-none">
+                              <button class="img-delete-btn d-none">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                    fill="#E3B100" />
+                                </svg>
+
+                              </button>
+
+                            </label>
+                            <div class="qr-hover">
+                              <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                  fill="#2DA82D" />
+                                <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                              </svg>
+
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="reset-list-styles restaurant-tables-item">
+                        <li class="checkbox">
+                          <div class="checkbox-wrapper">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-restaurant-tables2" type="checkbox"
+                                value="value0">
+                              <label for="styled-checkbox-restaurant-tables2"></label>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li class="zone">
+                          <label class="zone-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+
+                            <input type="text" name="zone" value="-">
+
+
+                          </label>
+                        </li>
+                        <li class="table-number">
+                          <label class="table-number-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+                            <input type="text" value="455" name="table-number">
+                          </label>
+                        </li>
+                        <li class="qr-code">
+                          <div class="img-load restaurant-logo">
+                            <label for="qrCode2">
+                              <button type="button" class="add-btn">
+
+                                <span class="add-btn-img">+</span>
+                              </button>
+                              <input type="file" id="qrCode2" class="d-none">
+                              <button class="img-delete-btn d-none">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                    fill="#E3B100" />
+                                </svg>
+
+                              </button>
+
+                            </label>
+                            <div class="qr-hover">
+                              <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                  fill="#2DA82D" />
+                                <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                              </svg>
+
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="reset-list-styles restaurant-tables-item">
+                        <li class="checkbox">
+                          <div class="checkbox-wrapper">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-restaurant-tables3" type="checkbox"
+                                value="value0">
+                              <label for="styled-checkbox-restaurant-tables3"></label>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li class="zone">
+                          <label class="zone-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+
+                            <input type="text" name="zone" value="-">
+
+
+                          </label>
+                        </li>
+                        <li class="table-number">
+                          <label class="table-number-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+                            <input type="text" value="455" name="table-number">
+                          </label>
+                        </li>
+                        <li class="qr-code">
+                          <div class="img-load restaurant-logo">
+                            <label for="qrCode3">
+                              <button type="button" class="add-btn">
+
+                                <span class="add-btn-img">+</span>
+                              </button>
+                              <input type="file" id="qrCode3" class="d-none">
+                              <button class="img-delete-btn d-none">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                    fill="#E3B100" />
+                                </svg>
+
+                              </button>
+
+                            </label>
+                            <div class="qr-hover">
+                              <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                  fill="#2DA82D" />
+                                <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                              </svg>
+
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="reset-list-styles restaurant-tables-item">
+                        <li class="checkbox">
+                          <div class="checkbox-wrapper">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox-restaurant-tables4" type="checkbox"
+                                value="value0">
+                              <label for="styled-checkbox-restaurant-tables4"></label>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li class="zone">
+                          <label class="zone-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+
+                            <input type="text" name="zone" value="-">
+
+
+                          </label>
+                        </li>
+                        <li class="table-number">
+                          <label class="table-number-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+                            <input type="text" value="455" name="table-number">
+                          </label>
+                        </li>
+                        <li class="qr-code">
+                          <div class="img-load restaurant-logo">
+                            <label for="qrCode4">
+                              <button type="button" class="add-btn">
+
+                                <span class="add-btn-img">+</span>
+                              </button>
+                              <input type="file" id="qrCode4" class="d-none">
+                              <button class="img-delete-btn d-none">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                    fill="#E3B100" />
+                                </svg>
+
+                              </button>
+
+                            </label>
+                            <div class="qr-hover">
+                              <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                  fill="#2DA82D" />
+                                <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                              </svg>
+
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="reset-list-styles restaurant-tables-item">
+                        <li class="checkbox">
+                          <div class="checkbox-wrapper">
+                            <div class="custom-checkbox-wrapper">
+                              <input class="styled-checkbox" id="styled-checkbox--restaurant-tables5" type="checkbox"
+                                value="value0">
+                              <label for="styled-checkbox-restaurant-tables5"></label>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li class="zone">
+                          <label class="zone-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+
+                            <input type="text" name="zone" value="-">
+
+
+                          </label>
+                        </li>
+                        <li class="table-number">
+                          <label class="table-number-label">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                                fill="#7C7E92" />
+                            </svg>
+                            <input type="text" value="455" name="table-number">
+                          </label>
+                        </li>
+                        <li class="qr-code">
+                          <div class="img-load restaurant-logo">
+                            <label for="qrCode5">
+                              <button type="button" class="add-btn">
+
+                                <span class="add-btn-img">+</span>
+                              </button>
+                              <input type="file" id="qrCode5" class="d-none">
+                              <button class="img-delete-btn d-none">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                    fill="#E3B100" />
+                                  <path
+                                    d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                    fill="#E3B100" />
+                                </svg>
+
+                              </button>
+
+                            </label>
+                            <div class="qr-hover">
+                              <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                  fill="#2DA82D" />
+                                <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                              </svg>
+
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="js-wrapper-tabs__content">
+                  <div class="restaurant-delivery">
+                    <div class="restaurant-delivery-block">
+                      <p class="restaurant-delivery-text">
+                        Do you have delivery?
+                      </p>
+                      <div class="restaurant-delivery-form-field">
+                        <div class="md-radio md-radio-inline">
+                          <input id="delivery-true" type="radio" name="delivery" checked>
+                          <label for="delivery-true">
+                            <span class="label-text">Yes</span>
+                          </label>
+                        </div>
+                        <div class="md-radio md-radio-inline">
+                          <input id="delivery-false" type="radio" name="delivery">
+                          <label for="delivery-false">
+                            <span class="label-text second">No</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="restaurant-delivery-block">
+                      <p class="restaurant-delivery-text">
+                        Is pickup possible:
+                      </p>
+                      <div class="restaurant-delivery-form-field">
+                        <div class="md-radio md-radio-inline">
+                          <input id="pickup-true" type="radio" name="pickup" checked>
+                          <label for="pickup-true">
+                            <span class="label-text">Yes</span>
+                          </label>
+                        </div>
+                        <div class="md-radio md-radio-inline">
+                          <input id="pickup-false" type="radio" name="pickup">
+                          <label for="pickup-false">
+                            <span class="label-text second">No</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="restaurant-delivery-block align-top">
+                      <p class="restaurant-delivery-text">What areas or cities do you deliver to:</p>
+                      <div class="restaurant-delivery-form-field areas-select">
+                        <div class="select-box sort-select">
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="area0"
+                                value="Kyiv" name="area" checked="checked" />
+                              <p class="select-box__input-text">Kyiv</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="area1"
+                                value="Kharkiv" name="area" checked="checked" />
+                              <p class="select-box__input-text">Kharkiv</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio" id="area2"
+                                value="Odessa" name="area" checked="checked" />
+                              <p class="select-box__input-text">Odessa</p>
+                            </div>
+
+
+
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="area0" aria-hidden="aria-hidden">Kyiv</label>
+                            </li>
+                            <li><label class="select-box__option" for="area1" aria-hidden="aria-hidden">Kharkiv</label>
+                            </li>
+                            <li><label class="select-box__option" for="area2" aria-hidden="aria-hidden">Odessa</label>
+                            </li>
+
+                          </ul>
+                        </div>
+
+                        <div class="center">
+                          <button type="button" class="add-btn add-area-btn">
+                            <div class="tooltip-bottom-arrow">Add field</div>
+                            <span class="add-btn-img">+</span>
+                          </button>
+                        </div>
+
+                        <ul class="delivery-areas-list  delivery-areas-desktop reset-list-styles">
+
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- /.restaurant-delivery-block -->
+
+
+                    <div class="restaurant-delivery-block">
+                      <p class="restaurant-delivery-text">
+                        Time of delivery:
+                      </p>
+                      <div class="restaurant-delivery-form-field delivery-time">
+                        <input type="text" value="60" name="delivery-time" class="delivery-time-input">
+                        <div class="select-box sort-select">
+                          <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="deliveryTime0" value="min" name="deliveryTime" checked="checked" />
+                              <p class="select-box__input-text">min</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="deliveryTime1" value="hours" name="deliveryTime" checked="checked" />
+                              <p class="select-box__input-text">hours</p>
+                            </div>
+                            <div class="select-box__value"><input class="select-box__input" type="radio"
+                                id="deliveryTime2" value="days" name="deliveryTime" checked="checked" />
+                              <p class="select-box__input-text">days</p>
+                            </div>
+
+
+
+
+                            <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                              aria-hidden="true" />
+                          </div>
+                          <ul class="select-box__list">
+                            <li><label class="select-box__option" for="deliveryTime0"
+                                aria-hidden="aria-hidden">min</label>
+                            </li>
+                            <li><label class="select-box__option" for="deliveryTime1"
+                                aria-hidden="aria-hidden">hours</label></li>
+                            <li><label class="select-box__option" for="deliveryTime2"
+                                aria-hidden="aria-hidden">days</label>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.restaurant-delivery-block -->
+                    <div class="restaurant-delivery-block free-shipping">
+                      <p class="restaurant-delivery-text">Free shipping:</p>
+                      <div class="restaurant-delivery-form-field free-shipping-content disabling-input-wrapper">
+                        <div class="radio-wrapper">
+                          <div class="md-radio md-radio-inline">
+                            <input id="free-shipping-true" type="radio" name="free-shipping" checked
+                              class="disabling-input-checkbox-true">
+                            <label for="free-shipping-true">
+                              <span class="label-text">Yes</span>
+                            </label>
+                          </div>
+                          <div class="md-radio md-radio-inline">
+                            <input id="free-shipping-false" type="radio" name="free-shipping"
+                              class="disabling-input-checkbox">
+                            <label for="free-shipping-false">
+                              <span class="label-text second">No</span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                          <span>of</span>
+                          <input type="text" value="100" class="free-shipping-input" name="free-shipping-min">
+                          <span>AED</span>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- /.restaurant-delivery-block -->
+
+                    <div class="restaurant-delivery-block min-order-amount">
+                      <p class="restaurant-delivery-text">Minimum order amount:</p>
+                      <div class="restaurant-delivery-form-field min-order-amount-content disabling-input-wrapper">
+                        <div class="radio-wrapper">
+                          <div class="md-radio md-radio-inline">
+                            <input id="min-order-amount-true" type="radio" name="min-order-amount"
+                              class="disabling-input-checkbox-true" checked>
+                            <label for="min-order-amount-true">
+                              <span class="label-text">Yes</span>
+                            </label>
+                          </div>
+                          <div class="md-radio md-radio-inline">
+                            <input id="min-order-amount-false" class="disabling-input-checkbox" type="radio"
+                              name="min-order-amount">
+                            <label for="min-order-amount-false">
+                              <span class="label-text second">No</span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                          <span>of</span>
+                          <input type="text" value="100" class="min-order-amount-input" name="min-order-amount-min">
+                          <span>AED</span>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- /.restaurant-delivery-block -->
+                    <div class="restaurant-delivery-block include-cost">
+                      <p class="include-cost-text">Include the cost of package?</p>
+                      <div class="restaurant-delivery-form-field include-cost-content disabling-input-wrapper">
+                        <div class="radio-wrapper">
+                          <div class="md-radio md-radio-inline">
+                            <input id="include-cost-true" type="radio" name="include-cost"
+                              class="disabling-input-checkbox-true">
+                            <label for="include-cost-true">
+                              <span class="label-text">Yes</span>
+                            </label>
+                          </div>
+                          <div class="md-radio md-radio-inline">
+                            <input id="include-cost-false" type="radio" name="include-cost" checked
+                              class="disabling-input-checkbox">
+                            <label for="include-cost-false">
+                              <span class="label-text second">No</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="input-wrapper disabled">
+
+                          <span>of</span>
+                          <input type="text" value="100" class="include-cost-input" name="include-cost-min">
+                          <span>AED</span>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- /.restaurant-delivery-block -->
+                    <div class="restaurant-delivery-block type-of-payment">
+                      <p class="restaurant-delivery-text">Choose the type of payment:</p>
+                      <div class="restaurant-delivery-form-field">
+                        <button type="button" class="type-of-payment-btn selected">Cash</button>
+                        <button type="button" class="type-of-payment-btn">Card</button>
+                      </div>
+                    </div>
+                    <!-- /.restaurant-delivery-block -->
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- /.restaurant-card-second -->
+            <div class="restaurant-card-second-mobile">
+              <div class="light-card no-shadow restaurant-description-mobile">
+                <div class="restaurant-card-header">
+                  <div class="light-card-h3 bolder before-el">Description</div>
+
+                  <div class="restaurant-registration-lang-menu dropdown-menu-wrapper">
+                      <button type="button" class="add-btn dropdown-opener">
+                            
+                        <div class="tooltip-bottom-arrow">Change language</div>
+                        <!-- <span class="add-btn-img">+</span> -->
+                      </button>
+                    <ul class="dropdown-menu reset-list-styles">
+                      <li class="dropdown-menu-item">English</li>
+                      <li class="dropdown-menu-item">Arabian</li>
+                      <li class="dropdown-menu-item">Spanish</li>
+                      <li class="dropdown-menu-item">Italian</li>
+                      <li class="dropdown-menu-item">Chinese</li>
+                      <li class="dropdown-menu-item">Russian</li>
+                    </ul>
+                  </div>
+                  <div class="js-tabs">
+
+                    <ul class="js-tabs__header">
+                      <li><a href="#" class="js-tabs__title">English</a></li>
+                      <li><a href="#" class="js-tabs__title">Arabian</a></li>
+                    </ul>
+                    <div class="js-tabs__content">
+                      <div class="restaurant-description-name">
+                        <label for="restaurant-name-mob" class="light-card-h3">Dish Name</label>
+                        <input type="text" class="restaurant-description-name-input" id="restaurant-name-mob"
+                          value="Name" name="restaurant-name">
+                      </div>
+                      <div class="restaurant-description-text">
+                        <label class="light-card-h3" for="restaurant-description-mob">Description</label>
+                        <div class="base-textarea-wrapper">
+
+
+                          <textarea id="restaurant-description-mob" maxlength="440"
+                            class="base-textarea">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, Многие думают,</textarea>
+                          <div class="symbols">
+                            <span class="symbols-now">0 \</span>
+                            <span class="symbols-max"> 440</span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                    <div class="js-tabs__content">
+                      <div class="restaurant-description-name">
+                        <label for="restaurant-name-arabian-mob" class="light-card-h3">Dish Name</label>
+                        <input type="text" class="restaurant-description-name-input" id="restaurant-name-arabian-mob"
+                          value="Name" name="restaurant-name-arabian">
+                      </div>
+                      <div class="restaurant-description-text">
+                        <label class="light-card-h3" for="restaurant-description-arabian-mob">Description</label>
+                        <div class="base-textarea-wrapper">
+
+
+                          <textarea id="restaurant-description-arabian-mob" maxlength="440"
+                            class="base-textarea">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, Многие думают,</textarea>
+                          <div class="symbols">
+                            <span class="symbols-now">0 \</span>
+                            <span class="symbols-max"> 440</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="restaurant-gallery light-card no-shadow accordion-tablet">
+                <a class="light-card-h3 bolder before-el accordion-tablet-btn">Add Gallery</a>
+                <div class="accordion-tablet-content">
+                  <ul class="reset-list-styles restaurant-gallery-list">
+                    <li class="restaurant-gallery-item">
+                      <div class="img-load restaurant-logo">
+                        <label for="restaurantImg1-mob">
+                          <button type="button" class="add-btn">
+
+                            <span class="add-btn-img">+</span>
+                          </button>
+                          <input type="file" id="restaurantImg1-mob" class="d-none">
+                          <button class="img-delete-btn d-none">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                fill="#E3B100" />
+                            </svg>
+
+                          </button>
+                        </label>
+
+                      </div>
+                    </li>
+                    <li class="restaurant-gallery-item">
+                      <div class="img-load restaurant-logo">
+                        <label for="restaurantImg2-mob">
+                          <button type="button" class="add-btn">
+
+                            <span class="add-btn-img">+</span>
+                          </button>
+                          <input type="file" id="restaurantImg2-mob" class="d-none">
+                          <button class="img-delete-btn d-none">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                fill="#E3B100" />
+                            </svg>
+
+                          </button>
+                        </label>
+
+                      </div>
+                    </li>
+                    <li class="restaurant-gallery-item">
+                      <div class="img-load restaurant-logo">
+                        <label for="restaurantImg3-mob">
+                          <button type="button" class="add-btn">
+
+                            <span class="add-btn-img">+</span>
+                          </button>
+                          <input type="file" id="restaurantImg3-mob" class="d-none">
+                          <button class="img-delete-btn d-none">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                fill="#E3B100" />
+                            </svg>
+
+                          </button>
+                        </label>
+
+                      </div>
+                    </li>
+                    <li class="restaurant-gallery-item">
+                      <div class="img-load restaurant-logo">
+                        <label for="restaurantImg4-mob">
+                          <button type="button" class="add-btn">
+
+                            <span class="add-btn-img">+</span>
+                          </button>
+                          <input type="file" id="restaurantImg4-mob" class="d-none">
+                          <button class="img-delete-btn d-none">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                fill="#E3B100" />
+                              <path
+                                d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                fill="#E3B100" />
+                            </svg>
+
+                          </button>
+                        </label>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="light-card-gradient no-shadow 
+                  restaurant-tables accordion-tablet">
+                <div class="restaurant-tables-title-section">
+                  <a class="light-card-h3 bolder before-el accordion-tablet-btn">
+                    Create table numbering
+                  </a>
+                  <button type="button" class="add-btn add-table-btn">
+                    <span class="add-btn-img">+</span>
+                  </button>
+
+                </div>
+                <div class="accordion-tablet-content">
+                  <ul class="reset-list-styles restaurant-tables-heading">
+                    <li class="checkbox"></li>
+                    <li class="zone">Zone</li>
+                    <li class="table-number">Table Number</li>
+                    <li class="qr-code">QR Code</li>
+                  </ul>
+                  <div class="center">
+                    <button type="button" class="add-btn add-table-btn">
+                      <span class="add-btn-img">+</span>
+                    </button>
+                  </div>
+                  <div class="restaurant-tables-items-wrapper restaurant-tables-items-wrapper-mob">
+                    <ul class="reset-list-styles restaurant-tables-item">
+                      <li class="checkbox">
+                        <div class="checkbox-wrapper">
+                          <div class="custom-checkbox-wrapper">
+                            <input class="styled-checkbox" id="styled-checkbox-restaurant-tables1-mob" type="checkbox"
+                              value="value0">
+                            <label for="styled-checkbox-restaurant-tables1-mob"></label>
+                          </div>
+
+                        </div>
+                      </li>
+                      <li class="zone">
+                        <label class="zone-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+
+                          <input type="text" name="zone" value="-">
+
+
+                        </label>
+                      </li>
+                      <li class="table-number">
+                        <label class="table-number-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+                          <input type="text" value="455" name="table-number">
+                        </label>
+                      </li>
+                      <li class="qr-code">
+                        <div class="img-load restaurant-logo">
+                          <label for="qrCode1-mob">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="qrCode1-mob" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+
+                          </label>
+                          <div class="qr-hover">
+                            <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                fill="#2DA82D" />
+                              <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                            </svg>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="reset-list-styles restaurant-tables-item">
+                      <li class="checkbox">
+                        <div class="checkbox-wrapper">
+                          <div class="custom-checkbox-wrapper">
+                            <input class="styled-checkbox" id="styled-checkbox-restaurant-tables2-mob" type="checkbox"
+                              value="value0">
+                            <label for="styled-checkbox-restaurant-tables2-mob"></label>
+                          </div>
+
+                        </div>
+                      </li>
+                      <li class="zone">
+                        <label class="zone-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+
+                          <input type="text" name="zone" value="-">
+
+
+                        </label>
+                      </li>
+                      <li class="table-number">
+                        <label class="table-number-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+                          <input type="text" value="455" name="table-number">
+                        </label>
+                      </li>
+                      <li class="qr-code">
+                        <div class="img-load restaurant-logo">
+                          <label for="qrCode2-mob">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="qrCode2-mob" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+
+                          </label>
+                          <div class="qr-hover">
+                            <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                fill="#2DA82D" />
+                              <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                            </svg>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="reset-list-styles restaurant-tables-item">
+                      <li class="checkbox">
+                        <div class="checkbox-wrapper">
+                          <div class="custom-checkbox-wrapper">
+                            <input class="styled-checkbox" id="styled-checkbox-restaurant-tables3-mob" type="checkbox"
+                              value="value0">
+                            <label for="styled-checkbox-restaurant-tables3-mob"></label>
+                          </div>
+
+                        </div>
+                      </li>
+                      <li class="zone">
+                        <label class="zone-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+
+                          <input type="text" name="zone" value="-">
+
+
+                        </label>
+                      </li>
+                      <li class="table-number">
+                        <label class="table-number-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+                          <input type="text" value="455" name="table-number">
+                        </label>
+                      </li>
+                      <li class="qr-code">
+                        <div class="img-load restaurant-logo">
+                          <label for="qrCode3-mob">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="qrCode3-mob" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+
+                          </label>
+                          <div class="qr-hover">
+                            <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                fill="#2DA82D" />
+                              <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                            </svg>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="reset-list-styles restaurant-tables-item">
+                      <li class="checkbox">
+                        <div class="checkbox-wrapper">
+                          <div class="custom-checkbox-wrapper">
+                            <input class="styled-checkbox" id="styled-checkbox-restaurant-tables4-mob" type="checkbox"
+                              value="value0">
+                            <label for="styled-checkbox-restaurant-tables4-mob"></label>
+                          </div>
+
+                        </div>
+                      </li>
+                      <li class="zone">
+                        <label class="zone-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+
+                          <input type="text" name="zone" value="-">
+
+
+                        </label>
+                      </li>
+                      <li class="table-number">
+                        <label class="table-number-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+                          <input type="text" value="455" name="table-number">
+                        </label>
+                      </li>
+                      <li class="qr-code">
+                        <div class="img-load restaurant-logo">
+                          <label for="qrCode4-mob">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="qrCode4-mob" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+
+                          </label>
+                          <div class="qr-hover">
+                            <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                fill="#2DA82D" />
+                              <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                            </svg>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="reset-list-styles restaurant-tables-item">
+                      <li class="checkbox">
+                        <div class="checkbox-wrapper">
+                          <div class="custom-checkbox-wrapper">
+                            <input class="styled-checkbox" id="styled-checkbox--restaurant-tables5-mob" type="checkbox"
+                              value="value0">
+                            <label for="styled-checkbox-restaurant-tables5-mob"></label>
+                          </div>
+
+                        </div>
+                      </li>
+                      <li class="zone">
+                        <label class="zone-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+
+                          <input type="text" name="zone" value="-">
+
+
+                        </label>
+                      </li>
+                      <li class="table-number">
+                        <label class="table-number-label">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
+                              fill="#7C7E92" />
+                          </svg>
+                          <input type="text" value="455" name="table-number">
+                        </label>
+                      </li>
+                      <li class="qr-code">
+                        <div class="img-load restaurant-logo">
+                          <label for="qrCode5-mob">
+                            <button type="button" class="add-btn">
+
+                              <span class="add-btn-img">+</span>
+                            </button>
+                            <input type="file" id="qrCode5-mob" class="d-none">
+                            <button class="img-delete-btn d-none">
+                              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                                  fill="#E3B100" />
+                                <path
+                                  d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                                  fill="#E3B100" />
+                              </svg>
+
+                            </button>
+
+                          </label>
+                          <div class="qr-hover">
+                            <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M21.8063 14.5804C21.7251 14.3757 21.5355 14.2421 21.3252 14.2421H15.6198V0.556713C15.6198 0.254538 15.3865 0.00927734 15.0991 0.00927734H6.76858C6.48118 0.00927734 6.24791 0.254538 6.24791 0.556713V14.2422H0.520671C0.310341 14.2422 0.120805 14.3758 0.0395817 14.5794C-0.0406161 14.7841 0.00311917 15.0195 0.152044 15.1761L10.5392 26.1332C10.6371 26.2361 10.7693 26.2942 10.9078 26.2942C11.0463 26.2942 11.1786 26.2361 11.2764 26.1343L21.6938 15.1772C21.8427 15.0206 21.8875 14.7852 21.8063 14.5804Z"
+                                fill="#2DA82D" />
+                              <rect x="1" y="31" width="19" height="1" rx="0.5" fill="#2DA82D" />
+                            </svg>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.restaurant-card-second-mobile -->
+            <div class="restaurant-card-third-mobile accordion-tablet">
+              <a class="light-card-h3 before-el bolder accordion-tablet-btn mobile-padding">Delivery</a>
+              <div class="restaurant-delivery accordion-tablet-content">
+                <div class="restaurant-delivery-block">
+                  <p class="restaurant-delivery-text">
+                    Do you have delivery?
+                  </p>
+                  <div class="restaurant-delivery-form-field">
+                    <div class="md-radio md-radio-inline">
+                      <input id="delivery-true-mob" type="radio" name="delivery-mob" checked>
+                      <label for="delivery-true-mob">
+                        <span class="label-text">Yes</span>
+                      </label>
+                    </div>
+                    <div class="md-radio md-radio-inline">
+                      <input id="delivery-false-mob" type="radio" name="delivery-mob">
+                      <label for="delivery-false-mob">
+                        <span class="label-text second">No</span>
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="restaurant-delivery-block">
+                  <p class="restaurant-delivery-text">
+                    Is pickup possible:
+                  </p>
+                  <div class="restaurant-delivery-form-field">
+                    <div class="md-radio md-radio-inline">
+                      <input id="pickup-true-mob" type="radio" name="pickup-mob" checked>
+                      <label for="pickup-true-mob">
+                        <span class="label-text">Yes</span>
+                      </label>
+                    </div>
+                    <div class="md-radio md-radio-inline">
+                      <input id="pickup-false-mob" type="radio" name="pickup-mob">
+                      <label for="pickup-false-mob">
+                        <span class="label-text second">No</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="restaurant-delivery-block align-top">
+                  <p class="restaurant-delivery-text">What areas or cities do you deliver to:</p>
+                  <div class="restaurant-delivery-form-field areas-select">
+                    <div class="select-box sort-select">
+                      <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="area0-mob"
+                            value="Kyiv" name="area-mob" checked="checked" />
+                          <p class="select-box__input-text">Kyiv</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="area1-mob"
+                            value="Kharkiv" name="area-mob" checked="checked" />
+                          <p class="select-box__input-text">Kharkiv</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio" id="area2-mob"
+                            value="Odessa" name="area-mob" checked="checked" />
+                          <p class="select-box__input-text">Odessa</p>
+                        </div>
+
+
+
+
+                        <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                          aria-hidden="true" />
+                      </div>
+                      <ul class="select-box__list">
+                        <li><label class="select-box__option" for="area0-mob" aria-hidden="aria-hidden">Kyiv</label>
+                        </li>
+                        <li><label class="select-box__option" for="area1-mob" aria-hidden="aria-hidden">Kharkiv</label>
+                        </li>
+                        <li><label class="select-box__option" for="area2-mob" aria-hidden="aria-hidden">Odessa</label>
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <div class="center">
+                      <button type="button" class="add-btn add-area-btn">
+                        <div class="tooltip-bottom-arrow">Add field</div>
+                        <span class="add-btn-img">+</span>
+                      </button>
+                    </div>
+
+                    <ul class="delivery-areas-list  dilevery-areas-tablet reset-list-styles">
+
+                    </ul>
+                  </div>
+                </div>
+                <!-- /.restaurant-delivery-block -->
+
+
+                <div class="restaurant-delivery-block">
+                  <p class="restaurant-delivery-text">
+                    Time of delivery:
+                  </p>
+                  <div class="restaurant-delivery-form-field delivery-time">
+                    <input type="text" value="60" name="delivery-time" class="delivery-time-input">
+                    <div class="select-box sort-select">
+                      <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value"><input class="select-box__input" type="radio"
+                            id="deliveryTime0-mob" value="min" name="deliveryTime-mob" checked="checked" />
+                          <p class="select-box__input-text">min</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio"
+                            id="deliveryTime1-mob" value="hours" name="deliveryTime-mob" checked="checked" />
+                          <p class="select-box__input-text">hours</p>
+                        </div>
+                        <div class="select-box__value"><input class="select-box__input" type="radio"
+                            id="deliveryTime2-mob" value="days" name="deliveryTime-mob" checked="checked" />
+                          <p class="select-box__input-text">days</p>
+                        </div>
+
+
+
+
+                        <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                          aria-hidden="true" />
+                      </div>
+                      <ul class="select-box__list">
+                        <li><label class="select-box__option" for="deliveryTime0-mob"
+                            aria-hidden="aria-hidden">min</label>
+                        </li>
+                        <li><label class="select-box__option" for="deliveryTime1-mob"
+                            aria-hidden="aria-hidden">hours</label></li>
+                        <li><label class="select-box__option" for="deliveryTime2-mob"
+                            aria-hidden="aria-hidden">days</label>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.restaurant-delivery-block -->
+                <div class="restaurant-delivery-block free-shipping">
+                  <p class="restaurant-delivery-text">Free delivery:</p>
+                  <div class="restaurant-delivery-form-field free-shipping-content disabling-input-wrapper">
+                    <div class="radio-wrapper">
+                      <div class="md-radio md-radio-inline">
+                        <input id="free-shipping-true-mob" type="radio" name="free-shipping-mob" checked
+                          class="disabling-input-checkbox-true">
+                        <label for="free-shipping-true-mob">
+                          <span class="label-text">Yes</span>
+                        </label>
+                      </div>
+                      <div class="md-radio md-radio-inline">
+                        <input id="free-shipping-false-mob" type="radio" name="free-shipping-mob"
+                          class="disabling-input-checkbox">
+                        <label for="free-shipping-false-mob">
+                          <span class="label-text second">No</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                      <span>of</span>
+                      <input type="text" value="100" class="free-shipping-input" name="free-shipping-min">
+                      <span>$
+
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- /.restaurant-delivery-block -->
+
+                <div class="restaurant-delivery-block min-order-amount disabling-input-wrapper">
+                  <p class="restaurant-delivery-text">Minimum order amount:</p>
+                  <div class="restaurant-delivery-form-field min-order-amount-content">
+                    <div class="radio-wrapper">
+                      <div class="md-radio md-radio-inline">
+                        <input id="min-order-amount-true-mob" type="radio" name="min-order-amount-mob" checked
+                          class="disabling-input-checkbox-true">
+                        <label for="min-order-amount-true-mob">
+                          <span class="label-text">Yes</span>
+                        </label>
+                      </div>
+                      <div class="md-radio md-radio-inline">
+                        <input id="min-order-amount-false-mob" type="radio" name="min-order-amount-mob"
+                          class="disabling-input-checkbox">
+                        <label for="min-order-amount-false-mob">
+                          <span class="label-text second">No</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                      <span>of</span>
+                      <input type="text" value="100" class="min-order-amount-input" name="min-order-amount-min">
+                      <span>$</span>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- /.restaurant-delivery-block -->
+                <div class="restaurant-delivery-block include-cost disabling-input-wrapper">
+                  <p class="include-cost-text">Include the cost of package?</p>
+                  <div class="restaurant-delivery-form-field include-cost-content">
+                    <div class="radio-wrapper">
+                      <div class="md-radio md-radio-inline">
+                        <input id="include-cost-true-mob" type="radio" name="include-cost-mob"
+                          class="disabling-input-checkbox-true">
+                        <label for="include-cost-true-mob">
+                          <span class="label-text">Yes</span>
+                        </label>
+                      </div>
+                      <div class="md-radio md-radio-inline">
+                        <input id="include-cost-false-mob" type="radio" name="include-cost-mob" checked
+                          class="disabling-input-checkbox">
+                        <label for="include-cost-false-mob">
+                          <span class="label-text second">No</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="input-wrapper disabled">
+
+                      <span>of</span>
+                      <input type="text" value="100" class="include-cost-input" name="include-cost-min">
+                      <span>$</span>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- /.restaurant-delivery-block -->
+                <div class="restaurant-delivery-block type-of-payment">
+                  <p class="restaurant-delivery-text">Choose the type of payment:</p>
+                  <div class="restaurant-delivery-form-field">
+                    <button type="button" class="type-of-payment-btn selected">Cash</button>
+                    <button type="button" class="type-of-payment-btn">Card</button>
+                  </div>
+                </div>
+                <!-- /.restaurant-delivery-block -->
+
+              </div>
+            </div>
+            <!-- /.restaurant-card-thirs-mobile -->
+
+
+
+          </div>
+        </div>
+      </main>
+      <div class="mobile-sticky-footer-btn">
+          <button type="submit" class="btn btn-base submit-btn restaurant-submit-btn">
+            <span class="btn-base-text">Save</span>
+            <i class="icon">
+              <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6.03226L7.61225 13L19 1" stroke="#2DA82D" stroke-width="2" />
+              </svg>
+            </i>
+          </button>
+        </div>
+    </form>
+    <!-- /.wrapper -->
+  </div>
+  <!-- /.container -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer></script> -->
+  <script src="./js/vendor.min.js" defer></script>
+  <script src="./js/app.min.js" defer></script>
+
+</body>
+
+</html>

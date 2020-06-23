@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+  <div class="darker-wrapper"></div>
+  <div class="container container-main dish-card">
+    @@include('../partials/components/menu.html')
+    <div class="wrapper">
+      @@include('../partials/components/menu.html')
+      <form name="dish-form" action="">
+        <div class="title-section mobile-fixed-header light-card mobile-menu-header">
+            <svg width="20" class="desktop-only" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.24942 20.3536H18.7413C19.0726 20.3536 19.3904 20.2195 19.6247 19.981C19.859 19.7424 19.9907 19.4188 19.9907 19.0815C19.9907 18.7441 19.859 18.4205 19.6247 18.182C19.3904 17.9434 19.0726 17.8094 18.7413 17.8094H1.24942C0.918051 17.8094 0.600256 17.9434 0.365944 18.182C0.131633 18.4205 0 18.7441 0 19.0815C0 19.4188 0.131633 19.7424 0.365944 19.981C0.600256 20.2195 0.918051 20.3536 1.24942 20.3536Z"
+                fill="#E3B100" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.2448 2.63324V1.2721C11.2448 0.934717 11.1131 0.611153 10.8788 0.372588C10.6445 0.134024 10.3267 0 9.99534 0C9.66397 0 9.34618 0.134024 9.11187 0.372588C8.87756 0.611153 8.74592 0.934717 8.74592 1.2721V2.63324C6.33202 2.94288 4.11192 4.13832 2.50183 5.99543C0.891736 7.85255 0.00220621 10.2438 0 12.721V13.9931C0 14.3305 0.131633 14.654 0.365944 14.8926C0.600256 15.1311 0.918051 15.2652 1.24942 15.2652H18.7413C20.0806 15.2652 20.0191 13.797 19.9889 13.0749C19.9819 12.9078 19.9766 12.7807 19.9907 12.721C19.9885 10.2438 19.0989 7.85255 17.4888 5.99543C15.8788 4.13832 13.6587 2.94288 11.2448 2.63324ZM4.69451 7.32392C3.28864 8.75531 2.49883 10.6967 2.49883 12.721H17.4918C17.4918 10.6967 16.702 8.75531 15.2962 7.32392C13.8903 5.89253 11.9835 5.08839 9.99534 5.08839C8.00714 5.08839 6.10038 5.89253 4.69451 7.32392Z"
+                fill="#E3B100" />
+            </svg>
+            <button type="button" class="mobile-menu-opening-btn">
+              <div class="mobile-menu-opening-btn-item mobile-menu-opening-btn-item-first"></div>
+              <div class="mobile-menu-opening-btn-item mobile-menu-opening-btn-item-second"></div>
+              </button>
+            <h1 class="pages-h1"> Menu management </h1>
+            <a href="orders.html" class="mobile-only"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 7.87499H19.2642L15.3395 1.33368C15.1448 1.00874 14.7225 0.902652 14.3962 1.09803C14.0706 1.29341 13.9652 1.71569 14.1606 2.04132L17.6608 7.87499H6.33928L9.83947 2.04127C10.0349 1.71564 9.92945 1.29336 9.60382 1.09798C9.27685 0.902606 8.85592 1.0087 8.66054 1.33363L4.7358 7.87494H1V9.24995H2.49216L4.23876 18.5668C4.42137 19.5423 5.27402 20.25 6.26638 20.25H17.7337C18.726 20.25 19.5786 19.5423 19.7606 18.5675L21.5078 9.24995H23C23 9.24995 23 7.87499 23 7.87499ZM18.409 18.3144C18.3486 18.6393 18.0646 18.875 17.7336 18.875H6.26638C5.93538 18.875 5.6514 18.6394 5.5903 18.3137L3.89068 9.24995H20.1094L18.409 18.3144Z" fill="#E3B100" stroke="#E3B100" stroke-width="1.07723"/>
+              </svg>
+              </a>
+    
+          <div class="activations-btn-wrapper">
+            <button type="button" class="btn deactivate-btn">
+              Deactivate
+            </button>
+            <button type="button" class="btn activate-btn active">
+              Activate
+            </button>
+            <button type="submit" class="btn btn-base submit-btn">
+              <span class="btn-base-text">Save</span>
+              <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                    fill="#FF0000" stroke="#FF0000" />
+                </svg>
+              </i>
+              <i class="success-icon">
+                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.03226L7.61225 13L19 1" stroke="#2DA82D" stroke-width="2" />
+                </svg>
+
+              </i>
+            </button>
+          </div>
+          <!-- /.activations-btn-wrapper -->
+          <div class="mobile-footer-btn">
+            <button type="submit" class="btn btn-base mobile">
+              <span class="btn-base-text">Save</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="dish-card-content">
+          <div class="mobile-wrapper">
+            <h3 class="light-card-h3 mobile">Activate the dish before saving</h3>
+            <div class="activations-btn-wrapper">
+              <button type="button" class="btn deactivate-btn">
+                Deactivate
+              </button>
+              <button type="button" class="btn activate-btn">
+                Activate
+              </button>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <div class="dish-card-first light-card">
+              <div class="dish-details accordion">
+                <a class="light-card-h3 accordion-btn before-el">Details</a>
+                <div class="accordion-content dish-details-content">
+                  <div class="select-box">
+                    <p class="select-box-label gray-color">Category</p>
+                    <div class="select-box__current" tabindex="1">
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="category0"
+                          value="1" name="category" checked="checked" />
+                        <p class="select-box__input-text">Soup</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="category1"
+                          value="2" name="category" checked="checked" />
+                        <p class="select-box__input-text">Salad</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="category2"
+                          value="3" name="category" checked="checked" />
+                        <p class="select-box__input-text">Appetizer</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="category3"
+                          value="4" name="category" checked="checked" />
+                        <p class="select-box__input-text">Dessert</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="category4"
+                          value="5" name="category" checked="checked" />
+                        <p class="select-box__input-text">Beverage</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="category5"
+                          value="5" name="category" checked="checked" />
+                        <p class="select-box__input-text">Main Dish</p>
+                      </div>
+
+
+                      <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                        aria-hidden="true" />
+                    </div>
+                    <ul class="select-box__list">
+                      <li><label class="select-box__option" for="category0" aria-hidden="aria-hidden">Soup</label></li>
+                      <li><label class="select-box__option" for="category1" aria-hidden="aria-hidden">Salad</label></li>
+                      <li><label class="select-box__option" for="category2" aria-hidden="aria-hidden">Appetizer</label>
+                      </li>
+                      <li><label class="select-box__option" for="category3" aria-hidden="aria-hidden">Dessert</label>
+                      </li>
+                      <li><label class="select-box__option" for="category4" aria-hidden="aria-hidden">Beverage</label>
+                      </li>
+                      <li><label class="select-box__option" for="category5" aria-hidden="aria-hidden">Main Dish</label>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                  <div class="form-group small-width input-animation">
+                    <input type="text" name="price" class="gray-color" id="price" required>
+                    <span>AED</span>
+                    <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                          fill="#FF0000" stroke="#FF0000" />
+                      </svg>
+                    </i>
+                    <label class="gray-color" for="price">Price</label>
+                  </div>
+
+                  <div class="form-group small-width input-animation">
+                    <input type="text" name="weight" class="gray-color" id="weight" required>
+                    <span>grams</span>
+                    <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                          fill="#FF0000" stroke="#FF0000" />
+                      </svg>
+                    </i>
+                    <label class="gray-color" for="weight">Weight</label>
+                  </div>
+                </div>
+              </div>
+              <!-- /.dish-details -->
+              <div class="dish-ingredients accordion">
+                <a class=" before-el light-card-h3 accordion-btn">Ingredients</a>
+                <div class="accordion-content">
+                  <div class="select-box">
+                    <div class="select-box__current" tabindex="1">
+                      <div class="select-box__value"><input required class="select-box__input" type="radio"
+                          id="ingredient0" value="Potato" name="ingredient" checked="checked" />
+                        <p class="select-box__input-text">Potato</p>
+                      </div>
+                      <div class="select-box__value"><input required class="select-box__input" type="radio"
+                          id="ingredient1" value="Salad" name="ingredient" checked="checked" />
+                        <p class="select-box__input-text">Salad</p>
+                      </div>
+                      <div class="select-box__value"><input required class="select-box__input" type="radio"
+                          id="ingredient2" value="Cheese" name="ingredient" checked="checked" />
+                        <p class="select-box__input-text">Cheese</p>
+                      </div>
+                      <div class="select-box__value"><input required class="select-box__input" type="radio"
+                          id="ingredient3" value="Cucumber" name="ingredient" checked="checked" />
+                        <p class="select-box__input-text">Cucumber</p>
+                      </div>
+                      <div class="select-box__value"><input required class="select-box__input" type="radio"
+                          id="ingredient4" value="Onion" name="ingredient" checked="checked" />
+                        <p class="select-box__input-text">Onion</p>
+                      </div>
+                      <div class="select-box__value"><input required class="select-box__input" type="radio"
+                          id="ingredient5" value="Fish" name="ingredient" checked="checked" />
+                        <p class="select-box__input-text">Fish</p>
+                      </div>
+
+
+                      <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
+                        aria-hidden="true" />
+                    </div>
+                    <ul class="select-box__list">
+                      <li><label class="select-box__option" for="ingredient0" aria-hidden="aria-hidden">Potato</label>
+                      </li>
+                      <li><label class="select-box__option" for="ingredient1" aria-hidden="aria-hidden">Salad</label>
+                      </li>
+                      <li><label class="select-box__option" for="ingredient2" aria-hidden="aria-hidden">Cheese</label>
+                      </li>
+                      <li><label class="select-box__option" for="ingredient3" aria-hidden="aria-hidden">Cucumber</label>
+                      </li>
+                      <li><label class="select-box__option" for="ingredient4" aria-hidden="aria-hidden">Onion</label>
+                      </li>
+                      <li><label class="select-box__option" for="ingredient5" aria-hidden="aria-hidden">Fish</label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="center">
+                    <button type="button" class="add-btn add-ingredient-btn">
+                      <div class="tooltip-bottom-arrow">Add field</div>
+                      <span class="add-btn-img">+</span>
+                    </button>
+                  </div>
+                  <ul class="dish-ingredients-list reset-list-styles">
+                  </ul>
+                </div>
+              </div>
+
+              <!-- /.dish-ingredients -->
+              <div class="dish-add-date">
+                Update date: 00. 00. 20
+              </div>
+            </div>
+
+            <div class="dish-card-second light-card">
+              <div class="dish-card-title-section">
+                <h3 class="light-card-h3 before-el">Description</h3>
+                <div class="dish-registration-lang-menu dropdown-menu-wrapper">
+                  <button type="button" class="add-btn dropdown-opener">
+                    <div class="tooltip-bottom-arrow">Change language</div>
+                    <span class="add-btn-img">+</span>
+                  </button>
+                  <ul class="dropdown-menu reset-list-styles">
+                    <li class="dropdown-menu-item">English</li>
+                    <li class="dropdown-menu-item">Arabian</li>
+                    <li class="dropdown-menu-item">Spanish</li>
+                    <li class="dropdown-menu-item">Italian</li>
+                    <li class="dropdown-menu-item">Chinese</li>
+                    <li class="dropdown-menu-item">Russian</li>
+                    <li class="dropdown-menu-item">German</li>
+                    <li class="dropdown-menu-item">French</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="js-tabs dish-card-second-description">
+
+                <ul class="js-tabs__header">
+                  <li><a href="#" class="js-tabs__title">English</a></li>
+                  <li><a href="#" class="js-tabs__title">Arabian</a></li>
+                </ul>
+
+                <div class="js-tabs__content dish-card-second-description-content">
+                  <h3 class="light-card-h3">Dish name</h3>
+                  <input required type="text" name="dishName">
+                  <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                        fill="#FF0000" stroke="#FF0000" />
+                    </svg>
+                  </i>
+                  <h3 class="light-card-h3">Description</h3>
+                  <div class="base-textarea-wrapper">
+                    <i class="error-icon-textarea"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                          fill="#FF0000" stroke="#FF0000" />
+                      </svg>
+                    </i>
+
+                    <textarea required maxlength="440"
+                      class="base-textarea">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, Многие думают,</textarea>
+                    <div class="symbols">
+                      <span class="symbols-now">0 \</span>
+                      <span class="symbols-max"> 440</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="js-tabs__content dish-card-second-description-content">
+                  <h3 class="light-card-h3">Dish name Arabian</h3>
+                  <input required type="text" name="dishName">
+
+                  <h2 class="light-card-h3">Description</h2>
+                  <div class="base-textarea-wrapper">
+                    <i class="error-icon-textarea"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                          fill="#FF0000" stroke="#FF0000" />
+                      </svg>
+                    </i>
+
+                    <textarea required maxlength="440"
+                      class="base-textarea">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.Многие думают, Многие думают,</textarea>
+                    <div class="symbols">
+                      <span class="symbols-now">0 \</span>
+                      <span class="symbols-max"> 440</span>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- /.dish-card-second -->
+            <div class="dish-card-third light-card">
+              <h2 class="light-card-h2 border-bt-light">Files</h2>
+
+              <div class="dish-files">
+                <div class="dish-preview accordion">
+                  <a class="light-card-h3 accordion-btn before-el">Add dish preview</a>
+                  <div class="img-load accordion-content restaurant-logo">
+                    <div class="mobile-flex-wrapper">
+                      <label for="dishImg">
+                        <button type="button" class="add-btn">
+                          <div class="tooltip-left-arrow">
+                            Format: .jpeg .png<br>Resolution: 72dpi <br>Min. size: 500*500</div>
+                          <span class="add-btn-img">+</span>
+                        </button>
+                        <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                              fill="#FF0000" stroke="#FF0000" />
+                          </svg>
+                        </i>
+
+                        <input required type="file" id="dishImg" class="d-none">
+                        <button class="img-delete-btn d-none">
+                          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                              fill="#E3B100" />
+                            <path
+                              d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                              fill="#E3B100" />
+                            <path
+                              d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                              fill="#E3B100" />
+                          </svg>
+
+                        </button>
+                      </label>
+                      <div class="img-load-description">
+                        This model will be displayed as<br>
+                        a preview in the application.<br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dish-3d accordion">
+                  <a class="light-card-h3 accordion-btn before-el">Add a 3D model of the dish</a>
+                  <div class="img-load accordion-content restaurant-logo">
+                    <div class="mobile-flex-wrapper">
+                      <label for="dish3d">
+                        <button type="button" class="add-btn">
+                          <div class="tooltip-left-arrow">
+                            Format: .jpeg .png<br>Resolution: 72dpi <br>Min. size: 500*500</div>
+                          <span class="add-btn-img">+</span>
+                        </button>
+                        <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                              fill="#FF0000" stroke="#FF0000" />
+                          </svg>
+                        </i>
+
+                        <input required type="file" id="dish3d" class="d-none">
+                        <button class="img-delete-btn d-none">
+                          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.41754 0.784729H7.59022V1.15031H8.37485V0.733551C8.37495 0.329086 8.04607 0 7.6418 0H5.36597C4.9617 0 4.63281 0.329086 4.63281 0.733551V1.15031H5.41754V0.784729Z"
+                              fill="#E3B100" />
+                            <path
+                              d="M10.1873 4.25928H2.82119C2.61936 4.25928 2.46047 4.43146 2.47673 4.6327L3.09255 12.2475C3.12687 12.6726 3.48145 13 3.90743 13H9.10091C9.5269 13 9.88147 12.6726 9.91579 12.2474L10.5316 4.6327C10.548 4.43146 10.3891 4.25928 10.1873 4.25928ZM4.60478 12.1878C4.59655 12.1883 4.58832 12.1886 4.58019 12.1886C4.37448 12.1886 4.20181 12.0284 4.18901 11.8203L3.8031 5.56898C3.7898 5.35266 3.95435 5.1665 4.17056 5.15321C4.38609 5.14011 4.57305 5.30426 4.58634 5.52068L4.97215 11.772C4.98554 11.9883 4.821 12.1744 4.60478 12.1878ZM6.90095 11.7962C6.90095 12.0128 6.7253 12.1885 6.50858 12.1885C6.29187 12.1885 6.11622 12.0128 6.11622 11.7962V5.54478C6.11622 5.32806 6.29187 5.15241 6.50858 5.15241C6.7252 5.15241 6.90095 5.32806 6.90095 5.54478V11.7962ZM9.20535 5.56789L8.83689 11.8192C8.82469 12.0277 8.65171 12.1885 8.44561 12.1885C8.43788 12.1885 8.43004 12.1883 8.4222 12.1879C8.20589 12.1751 8.04085 11.9894 8.05364 11.7731L8.42201 5.52167C8.4347 5.30535 8.61978 5.14031 8.83669 5.15311C9.053 5.1658 9.21804 5.35157 9.20535 5.56789Z"
+                              fill="#E3B100" />
+                            <path
+                              d="M11.5438 3.04848L11.2861 2.27605C11.2182 2.07243 11.0275 1.93506 10.8128 1.93506H2.19499C1.98036 1.93506 1.78963 2.07243 1.72179 2.27605L1.46411 3.04848C1.41442 3.19745 1.47909 3.3494 1.59979 3.42517C1.64899 3.45602 1.70721 3.47456 1.77118 3.47456H11.2367C11.3007 3.47456 11.359 3.45602 11.4081 3.42507C11.5288 3.3493 11.5935 3.19735 11.5438 3.04848Z"
+                              fill="#E3B100" />
+                          </svg>
+
+                        </button>
+                      </label>
+                      <div class="img-load-description">
+                        This photo will be displayed<br>
+                        in augmented reality
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.dish-files -->
+            </div>
+            <!-- /.dish-card-third -->
+
+          </div>
+        </div>
+        <!-- /.dish-card-content -->
+        <div class="mobile-sticky-footer-btn">
+            <button type="submit" class="btn btn-base mobile">
+              <span class="btn-base-text">Save</span>
+            </button>
+          </div>
+      </form>
+    </div>
+    <!-- /.wrapper -->
+
+  </div>
+  <!-- /.container -->
+
+  @@include('../partials/scripts/common.html')
+</body>
+
+</html>

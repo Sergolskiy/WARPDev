@@ -1,0 +1,464 @@
+// This is base reset for form elements.
+//
+// Note: If you use a framework that includes form styling then you need to remove this file.
+input:focus,
+button:focus {
+  outline: none;
+}
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+
+.form-group {
+  position: relative;
+
+  &.error {
+    label {
+      color: map-get($colors, invalid-color) !important;
+    }
+
+    input {
+      color: map-get($colors, invalid-color) !important;
+      border-color: map-get($colors, invalid-color) !important;
+    }
+  }
+
+  label {
+    font-size: 14px;
+    display: block;
+    padding: 0 2px;
+    position: absolute;
+    transition: all 0.2s;
+    top: -8px;
+    left: 10px;
+    z-index: 2;
+    color: #596079;
+  }
+
+  input {
+    display: block;
+    border: 1px solid #596079;
+    border-radius: 10px;
+    padding: 11px 8px;
+    font-size: 16px;
+    width: 100%;
+    color: #596079;
+
+    &.input-color {
+      border-color: map-get($colors, secondary-text-color);
+      color: map-get($colors, secondary-text-color);
+      background-color: transparent;
+    }
+  }
+}
+
+.base-select {
+  position: relative;
+  background-color: map-get($colors, light-gray-bg-color);
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  margin-right: 10px;
+
+  select {
+    display: none;
+  }
+}
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #596079;
+  border: 1px solid #596079;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  &.active {
+    .select-box__list {
+      opacity: 1 !important;
+      animation-name: none;
+    }
+
+    .select-box__option {
+      cursor: pointer;
+    }
+
+    .select-box__icon {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &-label {
+    position: absolute;
+    z-index: 99;
+    padding: 0 3px;
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    color: #596079;
+  }
+
+
+  &__current {
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 15px;
+    transition: 0.2s ease;
+  }
+
+  &__value {
+    display: flex;
+    border-radius: 10px;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked+.select-box__input-text {
+      display: block;
+    }
+  }
+
+  &__input-text {
+    border-radius: 10px;
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 11px 8px;
+    background-color: #E4E5EB;
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    margin-block-start: 0.5em;
+    list-style: none;
+    opacity: 0;
+
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0px 5px 10px rgba(111, 113, 121, 0.31);
+    background-color: #E4E5EB;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 100;
+  }
+
+  &__option {
+    display: block;
+    padding: 7px;
+    background-color: #E4E5EB;
+    border-radius: 10px;
+
+    &:hover,
+    &:focus {
+      color: #0009DA;
+      background-color: #D6D7DF;
+    }
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+
+  to {
+    transform: scaleY(0);
+  }
+}
+
+.img-load {
+  label {
+    position: relative;
+    display: inline-block;
+    background: #EDEEF3;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .add-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: coarse;
+  }
+
+  .img-delete-btn {
+    border: none;
+    width: 27px;
+    height: 27px;
+    background: rgba(237, 238, 243, 0.34);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+.base-textarea {
+  box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  background: rgba(245, 246, 250, 0.54);
+  border: 1px solid #7E8296;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+  min-height: 230px;
+  font-family: 'Roboto', sans-serif;
+  color: #181D30;
+  &:focus {
+    outline: none;
+  }
+  
+
+  @include respond-to(desktop) {
+    padding: 5px;
+    padding-bottom: 20px;
+    //min-height: 400px;
+  }
+
+  @include respond-to(phone) {
+    padding: 5px;
+    min-height: 30px;
+    padding-bottom: 20px;
+  }
+
+  &-wrapper {
+    position: relative;
+
+    .symbols {
+      position: absolute;
+      bottom: 7px;
+      right: 15px;
+      font-size: 12px;
+      line-height: 14px;
+      color: map-get($colors, 'blue-color');
+      
+      @include respond-to(desktop) {
+        right: 22px;
+        color: rgba(0, 9, 218, 0.2);;
+      }
+    }
+  }
+}
+
+.custom-checkbox-wrapper {
+  .styled-checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+
+    &+label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    // Box.
+    &+label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 16px;
+      height: 16px;
+      background: white;
+    }
+
+
+    // Box checked
+    &:checked+label:before {
+      content: '';
+      color: white;
+      padding-left: 2px;
+      background-color: map-get($colors, 'green-color');
+      background-image: url('../images/checkbox-tick.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+$md-radio-checked-color: #2DA82D;
+;
+$md-radio-border-color: rgba(0, 0, 0, 0.54);
+$md-radio-size: 20px;
+$md-radio-checked-size: 10px;
+$md-radio-ripple-size: 15px;
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.0);
+  }
+
+  50% {
+    box-shadow: 0px 0px 0px $md-radio-ripple-size rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px $md-radio-ripple-size rgba(0, 0, 0, 0);
+  }
+}
+
+.md-radio {
+  margin: 16px 0;
+
+  &.md-radio-inline {
+    display: inline-block;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked+label:before {
+      border-color: $md-radio-checked-color;
+      animation: ripple 0.2s linear forwards;
+    }
+
+    &:checked+label:after {
+      transform: scale(1);
+    }
+  }
+
+  label {
+    display: inline-block;
+    min-height: $md-radio-size;
+    position: relative;
+    padding: 0 ($md-radio-size + 10px);
+    margin-bottom: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+
+    .label-text {
+      position: absolute;
+      top: -23px;
+      left: -3px;
+
+      &.second {
+        left: 0px;
+      }
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      transition: all .3s ease;
+      transition-property: transform, border-color;
+    }
+
+    &:before {
+      left: 0;
+      top: 0;
+      width: $md-radio-size;
+      height: $md-radio-size;
+      border: 2px solid $md-radio-border-color;
+    }
+
+    &:after {
+      top: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      left: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      width: $md-radio-checked-size;
+      height: $md-radio-checked-size;
+      transform: scale(0);
+      background: $md-radio-checked-color;
+    }
+  }
+}
+
+.dropdown-content.select-dropdown {
+  display: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.input-select-wrapper {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+  }
+  .select-ingredient-input {
+    display: block;
+    max-width: 100% !important;
+    width: 100% !important;
+    font-size: 11px !important;
+    line-height: 13px !important;
+    /* identical to box height */
+    padding: 4px 10px !important;
+    background: #C6C8D5 !important;
+    border-radius: 6px !important;
+    letter-spacing: 0.005em;
+    border: none !important;
+    color: rgba(24, 29, 48, 0.29);
+  }
+  
+  .select-ingredient-list {
+    position: absolute;
+    width: 195px;
+    top: 40px;
+    left: 0;
+    transition: all 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    background: map-get($colors, 'light-gray-bg-color');
+    box-shadow: 0px 5px 10px rgba(111, 113, 121, 0.31);
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: 0;
+    &.opened {
+      opacity: 1;
+      visibility: visible;
+    }
+    &-item {
+      padding: 5px;
+      margin-bottom: 5px;
+      background: map-get($colors, 'light-gray-bg-color');
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          border-radius: 10px;
+          background: #D6D7DF;
+          color: map-get($colors, 'blue-color')
+        }
+      }
+    }
+  }
+}
+
+
+
+

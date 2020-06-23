@@ -1,0 +1,288 @@
+.dashboard {
+  background: #f5f6fa;
+  min-height: 100vh;
+
+  .js-tabs__content {
+    padding: 15px 0 !important;
+    height: 250px;
+  }
+
+  .title-section {
+    height: 63px;
+    display: flex;
+    margin-bottom: 30px;
+    box-shadow: 0 0 0 rgba(111, 113, 121, 0.31);
+
+    h1 {
+      margin-left: 10px;
+    }
+  }
+
+
+
+  .guide,
+  .order-stats,
+  .team,
+  .orders {
+    height: 320px !important;
+    min-height: 320px;
+    width: 48.5%;
+
+    @include respond-to(desktop) {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
+    @include respond-to(phone) {
+      width: 100%;
+    }
+  }
+
+  .guide {
+    @include respond-to(desktop) {
+      order: 1;
+    }
+
+    @include respond-to(phone) {
+      order: 4;
+      margin-bottom: 50px;
+      height: auto !important;
+      min-height: auto !important;
+
+      .light-card-h2 {
+        padding-bottom: 10px;
+      }
+
+      .guide-list {
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        &-item {
+          padding: 8px 0;
+        }
+
+        .content-img {
+          flex-shrink: 0;
+        }
+
+        a {
+          color: map-get($colors, blue-color);
+        }
+      }
+    }
+  }
+
+  .team {
+    @include respond-to(desktop) {
+      order: 2;
+    }
+
+    @include respond-to(phone) {
+      order: 3;
+    }
+  }
+
+  .order-stats {
+    @include respond-to(desktop) {
+      order: 3;
+    }
+
+    @include respond-to(phone) {
+      order: 2;
+    }
+  }
+
+  .orders {
+    @include respond-to(desktop) {
+      order: 4;
+    }
+
+    @include respond-to(phone) {
+      order: 1;
+      margin-top: 110px;
+    }
+  }
+
+  .guide,
+  .order-stats {
+    margin-bottom: 30px;
+  }
+
+  .guide,
+  .team {
+    &-list {
+      margin-bottom: 30px;
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+
+        a {
+          transition: color 0.2s;
+
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              color: rgba(24, 29, 48, 0.7) !important;
+            }
+          }
+        }
+
+        .content {
+          display: flex;
+          align-items: center;
+
+          p {
+            margin-top: 2px;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.005em;
+            color: rgba(24, 29, 48, 0.7);
+          }
+
+        }
+
+        .content-img {
+          width: 38px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: map-get($colors, green-color);
+          border-radius: 50%;
+          margin-right: 17px;
+        }
+      }
+    }
+  }
+
+  .order-stats {
+    &-title-section {
+
+      @include respond-to(phone) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .team {
+    @include respond-to(phone) {
+      height: 285px !important;
+      min-height: 285px !important;
+
+      .team-list-item:last-child {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  .guide {
+    @include respond-to(phone) {
+      .guide-list-item {
+        padding: 20px 0;
+
+        .content-text {
+          .light-card-h3 {
+            padding-bottom: 8px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .team,
+  .orders,
+  .order-stats {
+    &-title-section {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        margin-left: 10px;
+      }
+
+      .btn-invisible {
+        margin-left: auto;
+      }
+    }
+
+    &-list {
+      &-item {
+        .content-img {
+          font-size: 19px;
+
+          &.violet {
+            background-color: map-get($colors, violet-color);
+          }
+
+          &.green {
+            background-color: #00848C;
+          }
+
+          &.red {
+            background-color: #AC044A;
+          }
+        }
+      }
+    }
+  }
+
+  .orders {
+    &-title-section {
+      padding-bottom: 17px;
+    }
+
+    .orders-table {
+      height: 225px;
+      overflow: auto;
+      position: relative;
+
+      @include respond-to(phone) {
+        height: 210px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(24, 29, 48, 0.16);
+
+        li {
+          width: 25%;
+          padding: 20px 0;
+
+          @include respond-to(phone) {
+            font-size: 13px;
+          }
+
+          :last-of-type {
+            align-self: flex-end;
+          }
+        }
+      }
+
+      &-wrapper {
+        .table-heading {
+          display: flex;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.005em;
+          color: #555864;
+          padding-bottom: 3px;
+          padding-right: 5px;
+          border-bottom: 1px solid rgba(24, 29, 48, 0.16);
+
+          @include respond-to(phone) {
+            font-size: 12px;
+          }
+
+          li {
+            width: 25%;
+          }
+        }
+      }
+
+    }
+  }
+}

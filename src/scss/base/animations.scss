@@ -1,0 +1,162 @@
+@keyframes logo-loader {
+  to {
+    width: 210px;
+  }
+}
+
+@keyframes logo-loader-fast {
+  from {
+    width: 210px;
+  }
+
+  to {
+    width: 210px;
+  }
+}
+
+@keyframes small-logo {
+  from {
+    width: 170px;
+  }
+
+  to {
+    width: 170px;
+  }
+}
+
+@keyframes gradient-btn-animation-infinite {
+
+  93% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 21%, rgba(255, 255, 255, 1) 28%, rgba(244, 202, 94, 1) 35%);
+  }
+
+  93.5% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 28%, rgba(255, 255, 255, 1) 35%, rgba(244, 202, 94, 1) 42%);
+  }
+
+  94% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 35%, rgba(255, 255, 255, 1) 42%, rgba(244, 202, 94, 1) 49%);
+  }
+
+  94.5% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 42%, rgba(255, 255, 255, 1) 49%, rgba(244, 202, 94, 1) 56%);
+  }
+
+  95% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 49%, rgba(255, 255, 255, 1) 56%, rgba(244, 202, 94, 1) 63%);
+  }
+
+  95.5% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 56%, rgba(255, 255, 255, 1) 63%, rgba(244, 202, 94, 1) 70%);
+  }
+
+  96% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 63%, rgba(255, 255, 255, 1) 70%, rgba(244, 202, 94, 1) 77%);
+  }
+
+  96.5% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 70%, rgba(255, 255, 255, 1) 77%, rgba(244, 202, 94, 1) 84%);
+  }
+
+  97% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 77%, rgba(255, 255, 255, 1) 84%, rgba(244, 202, 94, 1) 91%);
+  }
+
+  97.5% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 0%, rgba(244, 202, 94, 1) 86%, rgba(255, 255, 255, 1) 93%, rgba(244, 202, 94, 1) 100%);
+  }
+
+  98% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 0%, rgba(255, 255, 255, 1) 7%, rgba(244, 202, 94, 1) 14%);
+  }
+
+  98.5% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 7%, rgba(255, 255, 255, 1) 14%, rgba(244, 202, 94, 1) 21%);
+  }
+
+  99% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 14%, rgba(255, 255, 255, 1) 21%, rgba(244, 202, 94, 1) 28%);
+  }
+
+  100% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 21%, rgba(255, 255, 255, 1) 28%, rgba(244, 202, 94, 1) 35%);
+  }
+}
+
+@keyframes gradient-btn-animation {
+
+  0% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 21%, rgba(255, 255, 255, 1) 28%, rgba(244, 202, 94, 1) 35%);
+  }
+
+  8% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 28%, rgba(255, 255, 255, 1) 35%, rgba(244, 202, 94, 1) 42%);
+  }
+
+  16% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 35%, rgba(255, 255, 255, 1) 42%, rgba(244, 202, 94, 1) 49%);
+  }
+
+  24% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 42%, rgba(255, 255, 255, 1) 49%, rgba(244, 202, 94, 1) 56%);
+  }
+
+  32% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 49%, rgba(255, 255, 255, 1) 56%, rgba(244, 202, 94, 1) 63%);
+  }
+
+  40% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 56%, rgba(255, 255, 255, 1) 63%, rgba(244, 202, 94, 1) 70%);
+  }
+
+  48% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 63%, rgba(255, 255, 255, 1) 70%, rgba(244, 202, 94, 1) 77%);
+  }
+
+  56% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 70%, rgba(255, 255, 255, 1) 77%, rgba(244, 202, 94, 1) 84%);
+  }
+
+  64% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 77%, rgba(255, 255, 255, 1) 84%, rgba(244, 202, 94, 1) 91%);
+  }
+
+  72% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 0%, rgba(244, 202, 94, 1) 86%, rgba(255, 255, 255, 1) 93%, rgba(244, 202, 94, 1) 100%);
+  }
+
+  79% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 0%, rgba(255, 255, 255, 1) 7%, rgba(244, 202, 94, 1) 14%);
+  }
+
+  88% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 7%, rgba(255, 255, 255, 1) 14%, rgba(244, 202, 94, 1) 21%);
+  }
+
+  95% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 14%, rgba(255, 255, 255, 1) 21%, rgba(244, 202, 94, 1) 28%);
+  }
+
+  100% {
+    background-image: linear-gradient(150deg, rgba(244, 202, 94, 1) 21%, rgba(255, 255, 255, 1) 28%, rgba(244, 202, 94, 1) 35%);
+  }
+}
+
+@keyframes gradientClick {
+  0% {
+    background: radial-gradient(circle at center, map-get($colors, 'green-color') 0%, #596079 0%, #596079 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, map-get($colors, 'green-color') 24%, #596079 25%, #596079 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, map-get($colors, 'green-color') 49%, #596079 50%, #596079 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, map-get($colors, 'green-color') 74%, #596079 75%, #596079 100%);
+  }
+  100% {
+    color: #fff;
+    background: radial-gradient(circle at center, map-get($colors, 'green-color') 99%, #596079 100%, #596079 100%);
+  }
+}

@@ -1,0 +1,159 @@
+.login-page {
+  color: map-get($colors, secondary-text-color);
+}
+
+.login-form {
+  margin-top: 10px;
+}
+
+.login-title {
+  padding-top: 225px;
+
+  @media (min-height: 900px) {
+    padding-top: 25px;
+  }
+
+  @include respond-to(tablet) {
+    padding-top: 0px;
+    margin-top: -90px;
+  }
+
+  @include respond-to(phone) {
+    padding-top: 20px;
+    margin-top: 0px;
+  }
+
+}
+
+.form-wrapper {
+  @include respond-to(phone) {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+.form-group.login-form-group {
+  input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #000 !important;
+    /* Цвет фона */
+    -webkit-text-fill-color: map-get($colors, secondary-text-color) !important;
+    /* цвет текста */
+    color: map-get($colors, secondary-text-color) !important;
+  }
+
+  label {
+    top: 57px;
+    left: 20px;
+    font-size: 16px;
+    color: map-get($colors, secondary-text-color);
+
+    &.input-activated {
+      font-size: 13px;
+      top: 32.5px;
+      background-color: #000000;
+      left: 10px;
+
+      @media (max-height: 680px) {
+        top: 12.5px;
+      }
+
+      @include respond-to(phone) {
+        top: 0;
+      }
+    }
+
+    @media (max-height: 680px) {
+      top: 37px;
+    }
+
+    @include respond-to(phone) {
+      top: 27px;
+    }
+  }
+
+  .input-color {
+    padding: 16px;
+    width: 370px;
+    margin-top: 40px;
+
+    @media (max-height: 680px) {
+      margin-top: 20px;
+    }
+
+    @include respond-to(phone) {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    &:focus+label {
+      font-size: 13px;
+      top: 32.5px;
+      background-color: #000000;
+      left: 10px;
+
+      @media (max-height: 680px) {
+        top: 12.5px;
+      }
+
+      @include respond-to(phone) {
+        top: 0;
+      }
+    }
+  }
+}
+
+.extra-login-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+  @include respond-to(phone) {
+    padding: 15px 0;
+  }
+
+  .remember-btn {
+    label {
+      font-size: 14px;
+      color: rgba(244, 202, 95, 0.7);
+      position: relative;
+      padding-left: 15px;
+      letter-spacing: 0.005em;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked+.checkmark:after {
+        opacity: 1;
+      }
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 11px;
+      width: 11px;
+      background-color: transparent;
+      border: 1px solid map-get($colors, secondary-text-color);
+      transition: 0.2s;
+      top: 3px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        background-color: map-get($colors, secondary-text-color);
+        width: 7px;
+        height: 7px;
+        left: 1px;
+        top: 1px;
+      }
+    }
+  }
+}

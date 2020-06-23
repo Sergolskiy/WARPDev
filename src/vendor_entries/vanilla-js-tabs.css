@@ -1,0 +1,40 @@
+
+.js-tabs {
+  max-width: 100%;
+  color: #181D30;
+  font-size: 16px;
+}
+.js-tabs__header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(24, 29, 48, 0.16);
+}
+
+.js-tabs__header li {
+  margin-left: 20px;
+}
+
+.js-tabs__header li:first-child {
+  margin-left: 0;
+}
+
+.js-tabs__title {
+  cursor: pointer;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+
+.js-tabs__title:hover {
+  text-decoration: none;
+}
+.js-tabs__title-active {
+  border-bottom: 2px solid #E3B100;
+}
+.js-tabs__content {
+  padding: 1em 2em 3em;
+}

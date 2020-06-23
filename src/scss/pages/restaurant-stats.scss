@@ -1,0 +1,722 @@
+.restaurant-stats {
+
+  .restaurant-map-link {
+    ul {
+      transition: 0.2s;
+    }
+
+    &:active {
+      ul {
+        background: #D6D7DF !important;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        ul {
+          background: #D6D7DF !important;
+        }
+      }
+    }
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  @include respond-to(phone) {
+    .before-el {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 8px;
+        left: -40px;
+        background: map-get($colors, 'secondary-text-color');
+        border-radius: 0px 10px 10px 0px;
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+      }
+
+      &.mobile-only {
+        margin-top: 10px;
+        padding-left: 25px;
+        display: block;
+
+        &:before {
+          left: -15px;
+        }
+      }
+    }
+
+  }
+
+  .title-section {
+    box-shadow: 0 0 0 0 transparent;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .pages-h1 {
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+  }
+
+  .restaurant-stats-h5 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    @include respond-to(desktop) {
+      font-weight: 500;
+    }
+  }
+
+  .js-tabs__content {
+    padding: 10px 0;
+
+    &.chart-container {
+      height: 100px;
+
+      @include respond-to(desktop) {
+        height: 200px;
+      }
+    }
+  }
+}
+
+.restaurant-stats-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+
+  @include respond-to(phone) {
+    margin-top: 120px;
+  }
+
+  .restaurant-rating {
+    width: 285px;
+    padding: 10px 20px;
+    height: 145px;
+
+    @include respond-to(midDesktop) {
+      width: 230px;
+    }
+
+    @include respond-to(desktop) {
+      width: 44%;
+    }
+
+    @include respond-to(phone) {
+      width: 100%;
+      max-width: 335px;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+
+    .stars-wrapper {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @include respond-to(phone) {
+        padding: 0 20px 5px 20px;
+      }
+    }
+
+    .rating {
+      color: #596079;
+      font-weight: 600;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+
+  .new-restaurants-number {
+    width: 285px;
+    padding: 10px 20px;
+    padding-bottom: 0;
+    @include respond-to(phone) {
+      //height: 145px;
+      //margin-bottom: 0;
+    }
+
+    &.missed-orders {
+      @include respond-to(phone) {
+        margin-left: 0;
+      }
+    }
+
+    .js-tabs__content {
+      @include respond-to(phone) {
+        padding: 0 !important;
+      }
+    }
+
+    @include respond-to(midDesktop) {
+      width: 230px;
+    }
+
+    @include respond-to(desktop) {
+      width: 44%;
+
+
+      &.amount-of-earings {
+        display: none;
+      }
+    }
+
+    @include respond-to(phone) {
+      width: 100%;
+      padding: 10px 20px;
+      max-width: 335px;
+      margin: 30px auto 0 auto;
+    }
+
+    .js-tabs {
+      margin-top: 20px;
+    }
+
+
+    .js-tabs__content {
+      text-align: center;
+    }
+
+    .restaurants-number {
+      color: #596079;
+      font-weight: 600;
+      font-size: 50px;
+    }
+  }
+
+  .new-restaurants-graphic {
+    width: 51%;
+    padding: 10px 20px;
+
+    @include respond-to(desktop) {
+      width: 100%;
+      margin-top: 30px;
+      background: transparent;
+      box-shadow: 0 0 0 0 transparent;
+    }
+
+
+  }
+
+  .restaurant-activity-tabs .js-tabs__title.js-tabs__title-active::after {
+    display: none;
+  }
+
+  .js-tabs {
+    margin-top: 10px;
+  }
+
+  .restaurant-activity {
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 0 0 0 transparent;
+
+
+    @include respond-to(phone) {
+      background: transparent;
+
+      .before-el {
+        padding-left: 10px;
+
+        @include respond-to(phone) {
+          padding-left: 15px !important;
+        }
+
+        &:before {
+          @include respond-to(phone) {
+            left: -25px !important;
+          }
+
+        }
+      }
+    }
+
+    &-sort {
+
+      .restaurant-activity-tabs.js-tabs {
+        .js-tabs__content {
+          height: 290px;
+        }
+
+        .js-tabs__header {
+          border: none;
+          justify-content: flex-start;
+
+          .js-tabs__title {
+            font-size: 14px !important;
+          }
+
+          li:last-of-type {
+            height: 26px;
+
+            a {
+              height: 26px;
+              padding-top: 2px;
+              font-size: 14px !important;
+            }
+          }
+
+          li:not(:last-of-type) {
+            width: 42px;
+            height: 26px;
+            margin-left: 5px;
+
+            @include respond-to(phone) {
+              margin-left: 0;
+            }
+
+            a {
+              padding: 0;
+              display: flex;
+              height: 26px;
+              align-items: center;
+              justify-content: center;
+              font-size: 14px !important;
+
+              @include respond-to(phone) {
+                height: 25px;
+              }
+            }
+
+          }
+
+          @include respond-to(phone) {
+            justify-content: center;
+
+            li {
+              margin-left: 0;
+              border: 1px solid rgba(73, 81, 108, 0.9);
+              border-left: none;
+              border-right: none;
+
+              &:first-child {
+                border-left: 1px solid rgba(73, 81, 108, 0.9);
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+
+                .js-tabs__title {
+                  border-top-left-radius: 7px;
+                  border-bottom-left-radius: 8px;
+                }
+              }
+
+              &:nth-child(3) {
+                border-right: 1px solid rgba(73, 81, 108, 0.9);
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+
+                .js-tabs__title {
+                  border-top-right-radius: 7px;
+                  border-bottom-right-radius: 8px;
+                }
+              }
+
+              &:last-child {
+                margin-left: 15px;
+                border: 1px solid rgba(73, 81, 108, 0.9) !important;
+                border-radius: 8px !important;
+              }
+            }
+          }
+        }
+
+        .js-tabs__title {
+          padding: 4px 11px;
+          background: transparent;
+          transition: all 0.2s;
+          border: 1px solid rgba(73, 81, 108, 0.9);
+          border-radius: 8px;
+
+          &:not(:last-of-type) {
+            width: 42px !important;
+          }
+
+          @include respond-to(phone) {
+            border: none;
+            border-radius: 0;
+            padding: 5px;
+          }
+
+
+          .restaurant-activity-data {
+            display: flex;
+            align-items: center;
+
+            input {
+              background: transparent;
+              border: none;
+              margin-right: 10px;
+
+              @include respond-to(phone) {
+                padding: 0px;
+                max-width: 123px;
+              }
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+
+          &-active:not(.restaurant-data-input) {
+            background: rgba(0, 9, 218, 0.99);
+            color: map-get($colors, 'light-text-color')
+          }
+        }
+      }
+    }
+  }
+
+  .restaurant-orders {
+    margin-top: 30px;
+    box-shadow: 0 0 0 0 transparent;
+    padding: 20px 0;
+
+    .restaurant-stats-table-heading {
+      font-weight: 500;
+    }
+
+    .restaurant-stats-table-item,
+    .restaurant-stats-table-heading {
+      display: flex;
+      align-items: center;
+      padding: 14px 20px;
+
+      @include respond-to(desktop) {
+        justify-content: space-between;
+      }
+
+      .restaurant-number {
+        width: 10%;
+
+        @include respond-to(desktop) {
+          display: none;
+        }
+      }
+
+      .restaurant-name {
+        width: 25%;
+
+        @include respond-to(phone) {
+          width: 65%;
+        }
+      }
+
+      .restaurant-number-orders {
+        width: 25%;
+
+        @include respond-to(phone) {
+          width: 35%;
+        }
+      }
+
+      .restaurant-reviews {
+        width: 30%;
+
+        @include respond-to(phone) {
+          display: none;
+        }
+      }
+
+      .restaurant-amount {
+        width: 10%;
+
+        @include respond-to(desktop) {
+          width: inherit;
+        }
+
+        @include respond-to(phone) {
+          display: none;
+        }
+      }
+    }
+
+    .restaurant-stats-table-item.active {
+      background: #D6D7DF;
+    }
+
+    .restaurant-stats-table-item {
+      transition: background-color 0.2s;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: map-get($colors, medium-gray-bg-color);
+        }
+      }
+
+      background-color: map-get($colors, light-gray-bg-color);
+    }
+
+    &-sort {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 0 20px;
+
+      @include respond-to(phone) {
+        flex-wrap: wrap;
+      }
+
+      .mobile-restaurants-sort {
+        display: none;
+
+        @include respond-to(phone) {
+          display: flex;
+          align-items: center;
+          margin-top: 15px;
+
+          span {
+            font-weight: 500;
+          }
+
+          i {
+            margin-left: 7px;
+          }
+        }
+      }
+
+      .search-field {
+        display: flex;
+        align-items: center;
+        width: 47%;
+
+        @include respond-to(desktop) {
+          width: 70%;
+        }
+
+        @include respond-to(phone) {
+          width: 100%;
+        }
+
+        label {
+          @include respond-to(phone) {
+            order: 2;
+          }
+        }
+
+        input {
+          margin-left: 10px;
+          display: block;
+          width: 100%;
+          background: transparent;
+          border-radius: 10px;
+          border: 1px solid rgba(73, 81, 108, 0.9);
+          padding: 6px 20px;
+
+          @include respond-to(phone) {
+            order: 1;
+            margin-left: 0;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .btn-base {
+        width: 150px;
+        margin-left: 20px;
+        border: none;
+
+        @include respond-to(desktop) {
+          display: none;
+        }
+      }
+
+      .sort-select {
+        width: 180px;
+        margin-left: auto;
+        margin-bottom: 0;
+
+        @include respond-to(desktop) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.restaurant-best-selling {
+  width: 45%;
+  margin-top: 30px;
+
+  @include respond-to(desktop) {
+    width: 100%;
+
+  }
+
+  .restaurant-best-selling-chart-wrapper {
+    height: 320px;
+
+    @include respond-to(desktop) {
+      height: 240px;
+    }
+  }
+}
+
+.missed-orders {
+  width: 52% !important;
+  margin-top: 30px;
+
+  @include respond-to(desktop) {
+    width: 100% !important;
+  }
+}
+
+.average-check {
+  width: 52% !important;
+  margin-left: auto;
+  margin-top: -210px;
+  padding: 20px 0 !important;
+
+  @include respond-to(desktop) {
+    width: 100% !important;
+    margin-top: 30px;
+  }
+
+  .js-tabs__header,
+  .restaurant-stats-h5 {
+    padding: 0 20px !important;
+  }
+
+  &-heading,
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px 20px;
+
+    .number {
+      width: 15%;
+    }
+
+    .name {
+      width: 45%;
+    }
+
+    .result {
+      width: 20%;
+    }
+
+    .percent {
+      width: 20%;
+    }
+  }
+
+  &-item {
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background: #D6D7DF;
+      }
+    }
+  }
+}
+
+.restaurant-stats-content {
+  @include respond-to(phone) {
+    flex-direction: column;
+
+
+    .restaurant-rating {
+      order: 1 !important;
+    }
+
+    .new-restaurants-number {
+      order: 2 !important;
+    }
+
+    .missed-orders {
+      order: 3 !important;
+      background: transparent;
+      box-shadow: 0 0 0 0 transparent;
+      margin-left: 0!important;
+      margin-right: 0!important;
+      width: 100% !important;
+      max-width: 100% !important;
+      
+
+      .before-el {
+        &:before {
+          left: -36px;
+        }
+
+        padding-left: 4px;
+      }
+    }
+
+    .restaurant-activity {
+      order: 4 !important;
+    }
+
+    .restaurant-best-selling {
+      order: 5 !important;
+      background: transparent;
+      box-shadow: 0 0 0 0 transparent;
+
+      @include respond-to(phone) {
+        .before-el {
+          padding-left: 15px;
+
+          &::before {
+            left: -25px;
+          }
+        }
+      }
+    }
+
+    .average-check {
+      order: 6 !important;
+      background: transparent;
+      box-shadow: 0 0 0 0 transparent;
+      margin-top: 0px !important;
+      margin-bottom: 10px !important;
+      margin-left: 0!important;
+      margin-right: 0!important;
+      width: 100% !important;
+      max-width: 100% !important;
+      
+
+      .before-el {
+        padding-left: 26px !important;
+
+        &:before {
+          left: -16px;
+        }
+      }
+
+
+      .js-tabs__content {
+        border-radius: 10px;
+        background: map-get($colors, 'light-gray-bg-color');
+        margin-top: 15px;
+      }
+    }
+
+    .mobile-only {
+      order: 7 !important;
+    }
+
+    .restaurant-orders {
+      order: 8 !important;
+
+      .restaurant-stats-table-heading {
+        align-items: flex-start;
+      }
+    }
+  }
+}

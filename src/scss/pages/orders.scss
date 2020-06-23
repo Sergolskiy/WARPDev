@@ -1,0 +1,665 @@
+.orders {
+  background: #f5f6fa;
+  min-height: 100vh;
+  
+  .title-section {
+    justify-content: flex-start !important;
+    .pages-h1{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .mobile-only {
+      display: none !important;
+    }
+  }
+
+  .large-tabs {
+    @include respond-to(phone) {
+      .js-tabs__header {
+        padding-left: 20px;
+      }
+    }
+  }
+
+
+  .wrapper {
+    @include respond-to(phone) {
+      padding: 0;
+    }
+  }
+
+  .light-card {
+    box-shadow: 0 0 0 0 transparent;
+
+  }
+
+  .title-section {
+    display: flex;
+    height: 63px;
+
+    .pages-h1 {
+      margin-left: 10px;
+      font-weight: 500;
+      padding-top: 2px;
+    }
+  }
+
+  &-content {
+    position: relative;
+    margin-top: 30px;
+
+    @include respond-to(phone) {
+      margin-top: 90px;
+    }
+  }
+
+  .sort-pagination {
+    margin: 0 30px 0 auto !important;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(phone) {
+      position: absolute;
+      top: -55px;
+      right: 0px;
+    }
+
+    button {
+      padding: 0;
+      background: transparent;
+      border: none;
+      fill: #C6C8D4;
+      transition: all 0.2s;
+
+      &.activated {
+        fill: #2DA82D;
+      }
+    }
+  }
+
+  &-sort {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond-to(phone) {
+      padding: 0 20px;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .orders-flex-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .sort-select {
+    width: 228px;
+    margin-bottom: 0;
+    border: none;
+
+    @include respond-to(phone) {
+      width: 180px;
+    }
+  }
+
+  .orders-table {
+    padding: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    .orders-table-heading,
+    .orders-table-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+
+      @include respond-to(phone) {
+        padding: 10px 10px !important;
+        font-size: 12px !important;
+
+        p {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .orders-table-list {
+      transition: background-color 0.2s;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: map-get($colors, medium-gray-bg-color);
+        }
+      }
+
+      background-color: map-get($colors, light-gray-bg-color);
+
+      &:last-child {
+        border: none !important;
+      }
+
+      &.active {
+        background: #D6D7DF;
+      }
+    }
+
+    .orders-table-heading {
+      padding-top: 20px;
+    }
+
+
+    .checkbox {
+      width: 3%;
+
+      @include respond-to(desktop) {
+        width: 5%;
+      }
+
+      @include respond-to(phone) {
+        display: block;
+        width: 10%;
+      }
+    }
+
+    .number-time {
+      width: 10%;
+
+      @include respond-to(desktop) {
+        width: 21%;
+      }
+
+      @include respond-to(phone) {
+        width: 30%;
+      }
+    }
+
+    .order {
+      width: 13.5%;
+
+      @include respond-to(desktop) {
+        width: 12%;
+      }
+
+      @include respond-to(phone) {
+        width: 20%;
+      }
+    }
+
+    .order-type {
+      width: 12.5%;
+
+      @include respond-to(desktop) {
+        display: block;
+        width: 20%;
+      }
+
+      @include respond-to(phone) {
+        display: block;
+        width: 24%;
+      }
+    }
+
+    .serving-quantity {
+      width: 8%;
+
+      @include respond-to(desktop) {
+        width: 14%;
+      }
+
+      @include respond-to(phone) {
+        width: 20%;
+      }
+    }
+
+    .when-delivery {
+      width: 11%;
+
+      @include respond-to(desktop) {
+        display: none;
+      }
+
+    }
+
+    .order-amount {
+      width: 10.5%;
+
+      @include respond-to(phone) {
+        display: none;
+      }
+    }
+
+    .comment {
+      width: 19%;
+
+      @include respond-to(desktop) {
+        display: none;
+      }
+
+      @include respond-to(phone) {
+        display: none;
+      }
+    }
+
+    .status {
+      width: 12.5%;
+
+      @include respond-to(desktop) {
+        width: 14%;
+      }
+
+      @include respond-to(phone) {
+        display: none;
+      }
+    }
+
+    .orders-table-list {
+      align-items: flex-start;
+      padding: 10px 20px;
+      position: relative;
+      max-height: 100%;
+
+      overflow: hidden;
+      transition: all 0.2s;
+
+      &.not-extended {
+        max-height: 87px;
+
+        @include respond-to(phone) {
+          max-height: 78px;
+        }
+
+        .order-expand-btn {
+          button svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .order-expand-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: 1px solid #0009DA;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+        button {
+          background: transparent;
+          border: none;
+          padding: 0;
+
+          svg {
+            transition: all 0.2s;
+          }
+        }
+      }
+
+      .checkbox {
+        input {
+          background: red;
+          border: 1px solid transparent;
+        }
+      }
+
+      .number-time {
+
+        .time,
+        .date {
+          color: map-get($colors, 'blue-color');
+          margin-top: 7px;
+        }
+
+      }
+
+      .order,
+      .serving-quantity {
+        p {
+          margin-bottom: 10px;
+        }
+      }
+
+      .order-type {
+        color: map-get($colors, 'blue-color');
+      }
+
+      .order-amount {
+        .payment-status.paid {
+          margin-top: 10px;
+          color: map-get($colors, 'green-color');
+        }
+
+        .payment-status.unpaid {
+          margin-top: 10px;
+          color: map-get($colors, 'invalid-color');
+        }
+      }
+
+      .comment {
+        p {
+          padding: 5px 10px;
+          border: 1px solid rgba(89, 96, 121, 0.3);
+          width: 90%;
+          border-radius: 10px;
+
+          &::before {
+            right: 5px !important;
+          }
+        }
+      }
+
+      .status {
+        .order-status {
+          padding: 7px;
+          text-align: center;
+          border-radius: 10px;
+          border: 1px solid map-get($colors, 'green-color');
+          background: map-get($colors, light-text-color);
+        }
+      }
+    }
+  }
+}
+
+.completed-orders-interaction {
+  width: 60px !important;
+  justify-content: center !important;
+}
+
+.orders-interaction {
+  display: flex;
+  border-radius: 10px;
+  background: map-get($colors, 'light-gray-bg-color');
+  align-items: center;
+  width: 103px;
+  height: 30px;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  button {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .delay-orders-btn,
+  .delete-orders-btn {
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background: rgba(180, 181, 190, 0.5);
+      }
+    }
+  }
+
+  .delete-orders-btn {
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+    display: flex;
+    padding: 4px 5px;
+    padding-top: 3px;
+
+    button {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  .delay-orders-btn {
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 25px;
+    padding: 4px 5px;
+    padding-top: 5px;
+    transition: all 0.2s;
+
+    button {
+      padding-top: 3px;
+    }
+
+    &.activated {
+      background: rgba(180, 181, 190, 0.5);
+    }
+
+    .delay-submenu {
+      position: absolute;
+      border-radius: 10px;
+      background: map-get($colors, 'light-gray-bg-color');
+      width: 208px;
+      height: 126px;
+      box-shadow: 0px 5px 10px rgba(111, 113, 121, 0.31);
+      padding: 10px 20px;
+      box-sizing: border-box;
+      top: 35px;
+      left: 45px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      transition: all 0.2s;
+
+      &.opened {
+        opacity: 1;
+        visibility: visible;
+        z-index: 999;
+      }
+
+      &-header {
+        display: flex;
+        align-items: center;
+
+        &-h4 {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          margin-left: 5px;
+          letter-spacing: 0.005em;
+
+          color: #555864;
+        }
+      }
+
+      &-content {
+        .datepicker-day-button {
+          font-weight: 500 !important;
+        }
+
+        .datepicker-footer {
+          margin-top: -20px !important;
+        }
+
+        .datepicker-modal,
+        .timepicker-modal {
+          border-radius: 10px;
+
+
+
+
+          .datepicker-calendar-container {
+            padding: 10px 20px;
+
+            @include respond-to(phone) {
+              padding: 10px 0;
+            }
+          }
+
+          .confirmation-btns {
+            margin-top: 30px;
+
+            @include respond-to(phone) {
+              margin-right: 13px;
+            }
+
+            .btn-flat {
+              font-size: 16px;
+              line-height: 19px;
+              /* identical to box height */
+
+              letter-spacing: 0.005em;
+              text-transform: uppercase;
+
+              color: #0D0E18;
+
+              &.datepicker-cancel,
+              &.timepicker-close {
+                margin-right: 30px;
+              }
+            }
+          }
+
+
+
+          .datepicker-table-wrapper {
+            th {
+              display: none;
+            }
+
+            td {
+              font-weight: 600 !important;
+              font-size: 16px !important;
+              line-height: 21px !important;
+              color: #646464 !important;
+
+              &.is-selected {
+                background: map-get($colors, 'secondary-text-color');
+                color: map-get($colors, 'light-text-color') !important;
+              }
+            }
+          }
+
+          .selects-container {
+
+            .select-month,
+            .select-year {
+              font-size: 16px;
+              line-height: 19px;
+              color: #596079;
+            }
+
+            .select-dropdown {
+              border: none !important;
+            }
+          }
+
+          .timepicker-plate .timepicker-canvas .timepicker-svg .timepicker-canvas-bg,
+          .timepicker-plate .timepicker-canvas .timepicker-svg .timepicker-canvas-bearing {
+            fill: map-get($colors, 'secondary-text-color');
+          }
+
+          .timepicker-plate .timepicker-canvas .timepicker-svg line {
+            stroke: map-get($colors, 'secondary-text-color');
+          }
+
+          .timepicker-digital-display {
+            background: map-get($colors, 'dark-bg');
+
+
+
+            .timepicker-display-column {
+              font-size: 48px;
+            }
+
+            .timepicker-display-am-pm {
+              font-size: 24px;
+              margin-top: 40px;
+
+              @include respond-to(phone) {
+                top: -45px;
+              }
+
+              .am-btn {
+                margin-bottom: 10px;
+              }
+            }
+          }
+
+          .datepicker-date-display {
+            text-align: left;
+            background: #0D0E18 !important;
+
+            .year-text {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 28px;
+              letter-spacing: 0.005em;
+              margin-bottom: 10px;
+              color: #F5F6FA;
+            }
+
+            .date-text {
+              font-weight: 500;
+              font-size: 36px;
+              line-height: 42px;
+              letter-spacing: 0.005em;
+
+              color: #F5F6FA;
+            }
+          }
+        }
+
+        .delay-form-field {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          label {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            letter-spacing: 0.005em;
+            color: #555864;
+            margin-right: 10px;
+          }
+
+          input {
+            background: transparent;
+            border: none;
+            width: 100%;
+            border-bottom: 1px solid rgba(141, 141, 141, 0.25);
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.multiselect-completed-orders-table {
+
+  .orders-table-list,
+  .orders-table-heading {
+    .number-time {
+      width: 15%;
+    }
+
+    .serving-quantity {
+      width: 14%;
+    }
+
+    .order-type {
+      width: 15%;
+    }
+
+    .status {
+      width: 15%;
+    }
+  }
+}

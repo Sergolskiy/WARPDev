@@ -1,0 +1,559 @@
+.user-map {
+  background: #f5f6fa;
+  min-height: 100vh;
+
+  @include respond-to(phone) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title-section {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0 0 transparent;
+    height: 63px;
+
+    .pages-h1 {
+      margin-left: 10px;
+      font-weight: 500;
+    }
+
+    @include respond-to(phone) {
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
+}
+
+.user-map-content {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include respond-to(phone) {
+    margin-top: 90px;
+  }
+}
+
+.user-map-h5 {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+
+  @include respond-to(desktop) {
+    font-weight: 500;
+  }
+
+  @include respond-to(phone) {
+    &.before-el {
+      position: relative;
+      padding-left: 20px;
+
+      &:before {
+        content: '';
+        width: 28px;
+        height: 3px;
+        background: rgba(227, 177, 0, 0.5);
+        border-radius: 0px 10px 10px 0px;
+        display: block;
+        position: absolute;
+        left: -15px;
+        top: 8px;
+      }
+    }
+  }
+}
+
+.user-map-data {
+  width: 48%;
+
+  @include respond-to(desktop) {
+    background: transparent;
+    width: 100%;
+    box-shadow: 0 0 0 0 transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    .desktop-only {
+      display: none;
+    }
+
+  }
+
+  @include respond-to(phone) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .user-map-photo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: flex-end;
+
+    @include respond-to(desktop) {
+      padding-left: 0;
+    }
+
+    &-img {
+      margin-right: 10px;
+    }
+
+    &-content {
+      .name {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 4px;
+
+        @include respond-to(phone) {
+          font-size: 18px;
+        }
+
+        @include respond-to(desktop) {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .user-map-details-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(89, 96, 121, 0.15);
+    padding: 15px 15px 0 15px;
+
+    @include respond-to(desktop) {
+      border: none;
+      padding-left: 0;
+      padding-right: 10%;
+    }
+
+    @include respond-to(phone) {
+      padding-right: 0px;
+      justify-content: flex-start;
+
+      &-left {
+        width: 31%;
+        margin-right: 8%;
+      }
+
+      &-right {
+        width: 61%;
+
+        @include respond-to(phone) {
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+
+  .user-map-details-comment {
+    margin-top: 20px;
+
+    p {
+      padding-left: 15px;
+    }
+
+    &-field {
+      border: 1px solid rgba(89, 96, 121, 0.3);
+      height: 100px;
+      border-radius: 10px;
+      color: #596079;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    @include respond-to(desktop) {
+      display: flex;
+      padding-right: 10%;
+      justify-content: space-between;
+      align-items: flex-start;
+      order: 12;
+
+      p {
+        padding-left: 0;
+        width: 30%;
+      }
+
+      &-field {
+        margin: 0;
+        width: 37%;
+      }
+    }
+
+    @include respond-to(phone) {
+      display: block;
+
+      p {
+        width: 100%;
+      }
+
+      &-field {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .user-map-footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: rgba(24, 29, 48, 0.6);
+
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+}
+
+.user-map-reviews {
+  width: 48%;
+  position: relative;
+
+  @include respond-to(desktop) {
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0 0 0 0 transparent;
+    background: transparent;
+    padding: 0;
+  }
+
+  @include respond-to(phone) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .user-map-reviews-heading {
+    margin: 20px 0;
+  }
+
+  .user-map-reviews-heading,
+  .user-map-reviews-item {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .data {
+      width: 25%;
+    }
+
+    .review {
+      width: 70%;
+    }
+  }
+
+  .user-map-reviews-heading {
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+
+  .user-map-reviews-item {
+    &:after {
+      content: '';
+      display: block;
+      width: 88px;
+      height: 1px;
+      margin: 30px auto;
+      background: #E3B100;
+
+      @include respond-to(desktop) {
+        display: none;
+      }
+    }
+
+    &:nth-child(4n) {
+      &:after {
+
+        opacity: 0;
+      }
+    }
+  }
+
+  .js-pagination {
+    &-controls {
+      display: flex;
+      margin-left: -5px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &-item {
+        width: 26px;
+        height: 26px;
+        background: rgba(124, 126, 146, 0.5);
+        border-radius: 50%;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+        cursor: pointer;
+
+        &.active {
+          background: #E3B100;
+        }
+      }
+    }
+
+    @include respond-to(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .js-pagination-content-item {
+        width: 48%;
+        background: rgba(237, 238, 243, 0.55);
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 10px;
+
+        .data {
+          color: rgba(24, 29, 48, 0.6);
+          padding-right: 10px;
+        }
+      }
+
+      .js-pagination-controls {
+        bottom: -30px;
+      }
+    }
+  }
+
+  @include respond-to(phone) {
+    .js-pagination {
+      display: block;
+
+      &-content-item {
+        width: 100% !important;
+        background: transparent !important;
+
+        .data {
+          width: 30%;
+        }
+
+        .review {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.user-map-orders {
+  width: 100%;
+  margin-top: 30px;
+  background: #E4E5EB;
+  border-radius: 10px 10px 0px 0px;
+
+
+
+  @include respond-to(desktop) {
+    margin-top: 60px;
+  }
+
+  @include respond-to(phone) {
+    border-radius: 0;
+  }
+}
+
+
+.user-map-table-heading,
+.user-map-table-item {
+  padding: 5px 20px;
+  display: flex;
+  align-items: flex-start;
+
+  @include respond-to(desktop) {
+    padding: 5px 10px;
+    justify-content: space-between;
+  }
+
+  @include respond-to(phone) {
+    padding: 5px;
+  }
+
+
+  .number {
+    width: 10%;
+
+    @include respond-to(phone) {
+      width: 18%;
+    }
+
+  }
+
+  .order {
+    width: 15%;
+
+    @include respond-to(phone) {
+      width: 10%;
+    }
+  }
+
+  .serving-quantity {
+    width: 10%;
+
+    @include respond-to(desktop) {
+      width: 10%;
+    }
+
+    @include respond-to(phone) {
+      width: 9%;
+    }
+  }
+
+  .order-amount {
+    width: 15%;
+
+    @include respond-to(desktop) {
+      width: 11%;
+    }
+
+    @include respond-to(desktop) {
+      width: 15%;
+    }
+  }
+
+  .comment {
+    width: 25%;
+
+    @include respond-to(desktop) {
+      width: 18%;
+    }
+
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+
+  .status {
+    width: 15%;
+
+    @include respond-to(phone) {
+      width: 23%;
+    }
+  }
+
+  .reviews {
+    width: 10%;
+
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+}
+
+.user-map-table-heading {
+  padding: 20px;
+  align-items: center;
+  color: #555864;
+
+  @include respond-to(desktop) {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+
+  @include respond-to(phone) {
+    padding: 20px 5px;
+  }
+}
+
+.user-map-table-item {
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @include respond-to(phone) {
+    position: relative;
+    z-index: 123;
+  }
+
+  @include respond-to(phone) {
+    font-size: 14px;
+  }
+
+  &.active {
+    background: #D6D7DF;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background: #D6D7DF;
+    }
+  }
+
+  .number {
+    color: map-get($colors, 'blue-color');
+  }
+
+  .order-amount {
+    @include respond-to(phone) {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .paid,
+    .unpaid {
+      margin-top: 6px;
+
+      @include respond-to(phone) {
+        font-size: 14px;
+      }
+    }
+
+    .paid {
+      color: map-get($colors, 'green-color');
+    }
+
+    .unpaid {
+      color: map-get($colors, 'invalid-color');
+
+    }
+  }
+
+  .comment {
+    &-text {
+      border: 1px solid rgba(89, 96, 121, 0.3);
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 10px;
+      max-width: 190px;
+    }
+  }
+
+  .status {
+
+    .delivered,
+    .canceled {
+      background: map-get($colors, 'light-text-color');
+      padding: 5px;
+      border-radius: 8px;
+      border: 1px solid map-get($colors, 'invalid-color');
+      max-width: 110px;
+      text-align: center;
+
+      @include respond-to(phone) {
+        font-size: 14px;
+      }
+    }
+
+    .delivered {
+      border: 1px solid map-get($colors, 'green-color');
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.restaurant-stats-mobile-pop-up {
+  position: absolute;
+  z-index: 99999999999;
+  background: #D7D7DF;
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  min-width: 310px;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .update-date {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.005em;
+      color: #596079;
+    }
+
+    .close-btn {
+      border: none;
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  &-content {
+    .name {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+    }
+
+    .content-fields {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .field-name {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.005em;
+        color: #555864;
+      }
+
+      .field-data {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.005em;
+        color: #181D30;
+      }
+    }
+  }
+}

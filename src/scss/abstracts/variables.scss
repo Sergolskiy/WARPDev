@@ -1,0 +1,70 @@
+// Global variables
+
+// 'rem' base value
+$rem: 16px;
+
+// Breakpoints for include media mixin
+$breakpoints: (
+  'smallPhone': 350px,
+  'mediumPhone': 370px,
+  'phone': 600px,
+  'tablet': 768px,
+  'desktop': 980px,
+  'midDesktop': 1200px,
+  'widescreen': 1500px,
+);
+
+$colors: ('white': #ffffff,
+  'dark-bg': #0D0E18,
+  'invalid-color': #F05150,
+  'light-text-color': #F5F6FA,
+  'dark-text-color': #181D30,
+  'secondary-text-color': #F4CA5F,
+  'dark-grey-bg-color': #A0A0A0,
+  'medium-gray-bg-color': #D6D7DF,
+  'light-gray-bg-color': #E4E5EB,
+  'base-text-color': #000000,
+  'grey-text-color': #A4A4A4,
+  'yellow-bg-color': #E3B100,
+  'green-color': #2DA82D,
+  'violet-color': #3E008C,
+  'blue-color': #001AFF,
+  'dish-card-bg-color': #E4E5EB,
+  'light-green-color': #74F45F,
+);
+
+// Keywords for include media mixin
+$media-expressions: ('screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)',
+  'hover': '(hover: hover) and (pointer: fine)',
+  'theme-light': 'prefers-color-scheme: light',
+  'theme-dark': 'prefers-color-scheme: dark',
+);
+
+:root {
+  // Fonts
+  --font-sans-serif: 'Roboto', sans-serif;
+  --font-serif: 'Roboto', sans-serif;
+
+  // Links base
+  --base-link-color: var(--color-blue);
+
+  // Buttons base
+  --btn-color: var(--color-white);
+  --btn-background: var(--color-blue);
+  --btn-padding: 0.4em 0.7em;
+  --btn-font-size: inherit;
+  --btn-font-family: inherit;
+
+  // Forms base
+  --form-font-family: inherit;
+  --form-element-padding: var(--btn-padding);
+  --form-element-border-color: var(--color-grey);
+  --form-element-focus-border-color: var(--color-black);
+  --placeholder-color: var(--color-grey);
+}

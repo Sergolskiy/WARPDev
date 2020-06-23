@@ -1,0 +1,339 @@
+.restaurant-management {
+  background: #f5f6fa;
+  min-height: 100vh;
+
+  .title-section {
+    height: 63px;
+    box-shadow: 0 0 0 rgba(111, 113, 121, 0.31);
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .btn-base {
+      width: 105px;
+      height: 37px;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      display: flex;
+
+      .btn-base-icon {
+        font-weight: 300;
+        font-size: 18px;
+        margin-right: 10px;
+        padding-bottom: 2px;
+      }
+
+      @include respond-to(phone) {
+        width: 90px;
+
+        .btn-base-text {
+          display: none;
+        }
+
+        .btn-base-icon {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .pages-h1 {
+      margin: 0 auto 0 10px;
+    }
+  }
+
+}
+
+.restaurant-management-content {
+  .no-records-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    max-width: 220px;
+    align-items: center;
+
+    &-title {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.005em;
+      color: #555864;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+      color: #555864;
+      margin-bottom: 30px;
+    }
+
+    .btn-base {
+      width: 170px;
+    }
+  }
+
+  .restaurant-sort {
+    display: flex;
+    margin-bottom: 10px;
+
+    @include respond-to(phone) {
+      margin-top: 120px;
+    }
+  }
+}
+
+.restaurant-list-wrapper {
+  box-shadow: 0 0 0 rgba(111, 113, 121, 0.31);
+  padding: 17px 0 0 0 !important;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.restaurant-list-heading,
+.restaurant-list-item {
+  &.inactive {
+    background: rgb(238, 237, 243);
+
+    .interaction {
+      .visible-icon .visible-cross {
+        opacity: 1;
+      }
+    }
+
+    .activation-icon .visible-cross {
+      opacity: 1 !important;
+    }
+  }
+
+  &.active {
+    background: #D6D7DF;
+  }
+
+  display: flex;
+
+  .checkbox,
+  .delete {
+    width: 15%;
+  }
+
+  .delete {
+    @include respond-to(phone) {
+      width: 0;
+      display: none;
+    }
+  }
+
+  .name,
+  .description {
+    width: 35%;
+  }
+
+  .name {
+    @include respond-to(phone) {
+      width: 55%;
+      margin-left: 10px;
+    }
+  }
+
+  .description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 382px;
+  }
+
+  .delete {
+    text-align: right;
+  }
+
+  .interaction {
+    margin-left: auto;
+
+
+    @include respond-to(phone) {
+      display: none;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    .visible-icon {
+      position: relative;
+      margin-right: 15px;
+
+      .visible-cross {
+        position: absolute;
+        background-color: #ff0000;
+        width: 1px;
+        height: 20px;
+        transform: rotate(-135deg);
+        left: 10px;
+        top: -3px;
+        transition: opacity 0.2s;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.restaurant-list-heading {
+  font-weight: 500;
+
+  .checkbox {
+    padding-left: 17px;
+  }
+
+  padding-bottom: 10px;
+
+  @include respond-to(phone) {
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+
+
+    .description {
+      display: none;
+    }
+
+    .checkbox {
+      padding-left: 0;
+      width: 17px;
+    }
+
+    .phone-menu {
+      width: 30px;
+    }
+  }
+}
+
+.restaurant-list-item {
+  padding: 17px;
+  transition: background-color 0.2s;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: map-get($colors, medium-gray-bg-color);
+    }
+  }
+
+  background-color: map-get($colors, light-gray-bg-color);
+
+
+
+  @include respond-to(phone) {
+    &:last-child {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    padding: 5px 10px;
+    background: #D6D7DF;
+    align-items: center;
+    justify-content: space-between;
+
+    .description {
+      display: none;
+    }
+
+    .checkbox {
+      width: 16px;
+      height: 16px;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    .delete {
+      display: none;
+    }
+  }
+}
+
+
+.restaurant-phone-menu {
+  display: none;
+
+  @include respond-to(phone) {
+    display: block;
+    position: relative;
+    width: 30px;
+    text-align: right;
+    margin-right: -10px;
+
+    .restaurant-phone-menu-icon {
+      width: 30px;
+      text-align: right;
+      background: transparent !important;
+      border: none;
+      padding: 0;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    &.open {
+      .restaurant-phone-menu-list {
+        display: block;
+      }
+    }
+
+    .restaurant-phone-menu-list {
+      position: absolute;
+      background: #EFF0F2;
+      box-shadow: 0px 5px 10px rgba(111, 113, 121, 0.31);
+      border-radius: 10px;
+      padding: 10px;
+      left: -195px;
+      top: 30px;
+      min-width: 200px;
+      display: none;
+
+      &.open {
+        display: block;
+      }
+
+      &-item {
+        padding: 15px;
+        display: flex;
+        background: #E4E5EB;
+        border-radius: 8px;
+        font-size: 13px;
+        line-height: 15px;
+
+        .activation-icon {
+          position: relative;
+
+          .visible-cross {
+            position: absolute;
+            background-color: #ff0000;
+            width: 1px;
+            height: 20px;
+            transform: rotate(-135deg);
+            left: 10px;
+            top: -3px;
+            transition: opacity 0.2s;
+            opacity: 0;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+
+        span {
+          margin-left: 11px;
+        }
+      }
+    }
+  }
+}

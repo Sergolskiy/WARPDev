@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W.A.R.P</title> 
+  <link media="all" rel="stylesheet" href="./css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="./css/styles.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+
+
+<body>
+  <div class="full-screen-wrapper dark-bg flex-center login-page">
+    <figure class="logo logo-animation">
+      <img src="./images/logo-dark.png" alt="W.A.R.P">
+    </figure>
+    <h1 class="custom-h1 login-title">Sign <span class="uppercase">in</span> </h1>
+    <div class="form-wrapper">
+      <form action="#" class="login-form">
+        <fieldset class="form-group input-animation login-form-group">
+          <input type="text" id="email" name="email" class="input-color" required>
+          <label for="email">Your login or email</label>
+        </fieldset>
+
+        <fieldset class="form-group input-animation login-form-group">
+          <input type="password" name="password" id="password" class="input-color" required>
+          <label for="password">Your password</label>
+        </fieldset>
+        <!-- ссылку нужно заменить на этот код, если вы захотите отправлять форму -->
+        <!-- <input type="submit" class="btn btn-gradient" value="Login"> -->
+        <a href="dashboard.html" class="btn btn-gradient">Login</a>
+        <div class="extra-login-btns">
+          <div class="remember-btn">
+            <label for="remember">
+              <input type="checkbox" id="remember">
+              <span class="checkmark"></span>
+              Remember me</label>
+          </div>
+          <a href="reset-password.html" class=" border-hover-link">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer></script> -->
+  <script src="./js/vendor.min.js" defer></script>
+  <script src="./js/app.min.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+// All imports in this file will be compiled into vendors.css file.
+//
+// Note: You can import SCSS and CSS files as well.
+
+@import '../../node_modules/normalize.css/normalize.css';
+@import './vanilla-js-tabs.css';
+@import '../../node_modules/chart.js/dist/Chart.css';
+@import '../../node_modules/animate.css/animate.min.css';
+

@@ -1,0 +1,534 @@
+.menu-management {
+  background: #f5f6fa;
+  min-height: 100vh;
+
+  .title-section {
+    margin-bottom: 30px;
+    display: flex;
+    height: 63px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 0 0 transparent;
+
+    .pages-h1 {
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+    .btn-base {
+      margin-left: auto;
+      width: 105px;
+      height: 37px;
+      display: block;
+
+      .btn-base-icon {
+        font-weight: 300;
+        font-size: 18px;
+      }
+
+      @include respond-to(phone) {
+        width: 80px;
+        font-size: 24px;
+      }
+
+      &-text {
+        margin: 0 5px;
+
+        @include respond-to(phone) {
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+
+.menu-management-content {
+  @include respond-to(phone) {
+    margin-top: 100px;
+
+    .base-select {
+      display: none;
+    }
+  }
+
+  .no-records-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    max-width: 220px;
+    align-items: center;
+
+    &-title {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.005em;
+      color: #555864;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+      color: #555864;
+      margin-bottom: 30px;
+    }
+
+    .btn-base {
+      width: 120px;
+    }
+  }
+
+  .menu-sort {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .search-field {
+      display: flex;
+      position: relative;
+      width: 35%;
+
+      @include respond-to(phone) {
+        order: 2;
+        margin-left: auto;
+
+        label {
+          margin-left: auto;
+        }
+      }
+
+      &-input {
+        display: block;
+        border: 1px solid rgba(73, 81, 108, 0.9);
+        border-radius: 8px;
+        background-color: transparent;
+        padding: 5px 15px;
+        width: 400px;
+        margin-right: 10px;
+
+        @include respond-to(phone) {
+          opacity: 0;
+          transition: opacity 0.2s;
+          position: absolute;
+          top: 35px;
+          width: 300px;
+          background: #f5f6fa;
+          right: -16%;
+          z-index: 111;
+
+          &:focus {
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+
+    .sort-select {
+      margin-left: auto;
+      width: 25%;
+      border: none;
+      color: map-get($colors, dark-bg);
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      @include respond-to(phone) {
+        order: 1;
+        margin-left: 0;
+        margin-right: 0;
+        width: 65%;
+      }
+
+      .select-box__input-text {
+        padding-left: 15px;
+      }
+    }
+
+    .btn-base {
+      margin-left: auto;
+      width: 188px;
+    }
+  }
+
+  .menu-list-wrapper {
+    padding: 11px 0;
+    box-shadow: 0 0 0 0 transparent;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    @include respond-to(phone) {
+      margin-top: 35px;
+
+      .menu-list-heading,
+      .menu-list-item {
+        border-bottom: 1px solid rgba(24, 29, 48, 0.16);
+      }
+
+      .menu-list-item {
+        background: #D6D7DF !important;
+      }
+    }
+
+    .checkbox {
+      width: 4%;
+
+      @include respond-to(desktop) {
+        width: 4%;
+      }
+
+      @include respond-to(phone) {
+        width: 15% !important;
+      }
+    }
+
+    .name {
+      width: 29%;
+      text-align: left;
+      margin-left: 5px;
+
+      @include respond-to(desktop) {
+        width: 24%;
+      }
+    }
+
+    .category {
+      width: 14%;
+
+      @include respond-to(desktop) {
+        width: 27%;
+
+        @include respond-to(phone) {
+          display: none;
+        }
+      }
+    }
+
+    .description {
+      width: 32%;
+
+      @include respond-to(phone) {
+        display: none !important;
+      }
+    }
+
+    .price {
+      width: 14%;
+
+      @include respond-to(desktop) {
+        width: 14%;
+      }
+
+      @include respond-to(phone) {
+        display: none;
+      }
+    }
+
+    .interaction {
+      width: 7%;
+      text-align: right;
+
+      @include respond-to(desktop) {
+        width: 12%;
+      }
+
+      .visible-icon {
+        margin-right: 15px;
+      }
+
+      @include respond-to(phone) {
+        margin-left: auto;
+        display: none;
+      }
+    }
+
+    .restaurant-phone-menu {
+      display: none;
+
+      &-list-item {
+        z-index: 999999999999;
+      }
+
+      @include respond-to(phone) {
+        display: flex;
+        margin-left: auto;
+
+        &-list {
+          padding-bottom: 0px;
+        }
+
+        &-list-item {
+          margin-bottom: 10px;
+
+          .activation-icon {
+            position: relative;
+
+            .visible-cross {
+              position: absolute;
+              background-color: #ff0000;
+              width: 1px;
+              height: 20px;
+              transform: rotate(-135deg);
+              left: 10px;
+              top: -3px;
+              transition: opacity 0.2s;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-list-heading {
+      display: flex;
+      padding: 0 20px 11px 20px;
+      font-weight: 500;
+
+
+
+      .price {
+        padding-left: 25px;
+      }
+    }
+
+    .menu-list-item {
+      padding: 5px 20px;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.2s;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: map-get($colors, medium-gray-bg-color);
+        }
+      }
+
+      background-color: map-get($colors, light-gray-bg-color);
+
+      &.inactive {
+        background: rgb(238, 237, 243);
+
+        .interaction {
+          .visible-icon .visible-cross {
+            opacity: 1;
+          }
+        }
+
+        .activation-icon .visible-cross {
+          opacity: 1;
+        }
+      }
+
+      &.active {
+        background: #D6D7DF;
+      }
+
+      .name {
+        display: flex;
+
+        position: relative;
+
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            label {
+              opacity: 1;
+            }
+          }
+        }
+
+        .mobile-only {
+          display: none;
+
+          @include respond-to(phone) {
+            display: block;
+          }
+        }
+
+        label {
+          position: absolute;
+          left: -2%;
+          top: 6px;
+          transform: translateX(-35%);
+          opacity: 0;
+          transition: opacity 0.2s;
+
+          @include respond-to(phone) {
+            display: none;
+          }
+        }
+
+        input {
+          display: block;
+          height: 20px;
+          padding: 15px 5px;
+          border: none;
+          border-radius: 8px;
+          width: 80%;
+          background: transparent;
+
+          @include respond-to(phone) {
+            display: none;
+          }
+
+          &:focus {
+            background: white;
+            margin-left: 0;
+
+            &+label {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .category {
+        .select-box {
+          margin-left: -8px;
+          border: none;
+          color: map-get($colors, dark-bg);
+          width: 90%;
+          margin-bottom: 0;
+
+          .select-box__current {
+            display: flex;
+          }
+
+          .select-box__icon {
+            position: static;
+            height: 10px;
+            margin-top: 18px;
+          }
+
+          @include respond-to(desktop) {
+            width: 100%;
+          }
+        }
+
+        .select-box__list,
+        .select-box__list li label {
+          background: white;
+        }
+
+        .select-box__input-text {
+          background: transparent;
+        }
+      }
+
+      .description {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        svg {
+          position: absolute;
+          left: -25px;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+          svg {
+            opacity: 0;
+            transition: opacity 0.2s;
+          }
+
+          &:hover {
+            svg {
+              opacity: 1;
+            }
+          }
+        }
+
+        input {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          border: none;
+          background: transparent;
+          border-radius: 10px;
+          padding: 8px;
+          padding-left: 0;
+          display: block;
+          width: 90%;
+
+          &:focus {
+            background: map-get($colors, 'light-text-color');
+          }
+        }
+      }
+
+      .checkbox {
+        input {
+          width: 14px;
+          height: 14px;
+          display: block;
+          border-radius: 2px;
+          border: none;
+          box-shadow: 0 0 0 0 transparent;
+          background: map-get($colors, light-text-color) !important;
+        }
+      }
+
+      .price {
+        position: relative;
+
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            label {
+              opacity: 1;
+            }
+          }
+        }
+
+        input {
+          background: transparent;
+          border: none;
+          width: 100%;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        label {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+
+        input {
+          padding-left: 25px;
+        }
+      }
+
+      .interaction {
+        button {
+          background: transparent;
+          border: none;
+          padding: 0;
+        }
+
+        .visible-icon {
+          position: relative;
+
+          .visible-cross {
+            position: absolute;
+            background-color: #ff0000;
+            width: 1px;
+            height: 20px;
+            transform: rotate(-135deg);
+            left: 10px;
+            top: -3px;
+            transition: opacity 0.2s;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

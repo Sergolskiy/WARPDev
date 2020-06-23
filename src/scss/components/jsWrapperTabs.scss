@@ -1,0 +1,39 @@
+.js-wrapper-tabs {
+  &__header {
+    display: flex;
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    li {
+      position: relative;
+      margin-right: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    color: rgba(24, 29, 48, 0.5);
+
+    &-active {
+      color: #181D30;
+      border-bottom: 4px solid map-get($colors, 'secondary-text-color');
+      display: flex;
+      flex-direction: column;
+      border-color: transparent;
+      
+      &::after {
+        content: '';
+        width: calc(100% + 4px);
+        height: 4px;
+        background-color: #E3B100;
+        position: absolute;
+        z-index: 20;
+        border-radius: 2px;
+        left: -2px;
+        top: 28px;
+      }
+    }
+  }
+}
