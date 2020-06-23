@@ -83,6 +83,8 @@
   }
 
   .order-stats {
+    padding: 23px 10px 22px 16px;
+
     @include respond-to(desktop) {
       order: 3;
     }
@@ -90,6 +92,14 @@
     @include respond-to(phone) {
       order: 2;
     }
+  }
+
+  .order-stats-title-section{
+    margin-bottom: 17px;
+  }
+
+  .js-tabs .js-tabs__header li{
+    margin: 0 15px;
   }
 
   .orders {
@@ -157,6 +167,20 @@
     }
   }
 
+  .guide-list-item a{
+    font-size: 15px;
+    margin-right: 18px;
+  }
+
+  .guide .light-card-h2{
+    padding-bottom: 15px;
+  }
+
+  .guide-list-item{
+    padding-top: 16px;
+    padding-bottom: 11px;
+  }
+
   .order-stats {
     &-title-section {
 
@@ -191,6 +215,8 @@
     }
 
   }
+
+
 
   .team,
   .orders,

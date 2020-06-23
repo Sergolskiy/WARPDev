@@ -52,7 +52,8 @@
   }
 
   .restaurant-card-first {
-    width: 37%;
+    width: 38%;
+    padding: 24px 55px 25px 41px;
 
     @include respond-to(desktop) {
       width: 50%;
@@ -60,13 +61,93 @@
       order: 2;
       padding-top: 15px !important;
     }
+
+    .js-tabs__header{
+      overflow: unset;
+    }
+
+    .js-tabs .js-tabs__header > li:last-child{
+      display: flex;
+      align-items: center;
+    }
+
+    .restaurant-card-header{
+      padding-top: 0;
+    }
+
+    .restaurant-registration-lang-menu{
+      position: relative;
+      top: 0;
+    }
+
+    .restaurant-registration-lang-menu .dropdown-menu{
+      top: 13px;
+    }
+
+    .js-tabs .js-tabs__header .dropdown-menu li{
+      margin: 0;
+    }
+
+    .js-tabs__header .select-box__icon{
+      position: static;
+      transform: translate(0, 0);
+    }
   }
 
   .restaurant-card-second {
-    width: 58.5%;
+    width: 56.5%;
 
     @include respond-to(desktop) {
       display: none;
+    }
+
+    .js-tabs__header{
+      overflow: unset;
+    }
+
+    .js-tabs .js-tabs__header > li:last-child{
+      display: flex;
+      align-items: center;
+    }
+
+    .restaurant-card-header{
+      padding-top: 0;
+    }
+
+    .restaurant-registration-lang-menu{
+      position: relative;
+      top: 0;
+    }
+
+    .restaurant-registration-lang-menu .dropdown-menu{
+      top: 13px;
+    }
+
+    .js-tabs .js-tabs__header .dropdown-menu li{
+      margin: 0;
+    }
+
+    .js-tabs__header .select-box__icon{
+      position: static;
+      transform: translate(0, 0);
+    }
+
+    .light-card{
+      padding: 23px 39px 23px 25px;
+    }
+
+    .js-tabs__content{
+      padding-left: 0;
+      padding-top: 15px;
+    }
+
+    .restaurant-description-text .light-card-h3,
+    .restaurant-description-name .light-card-h3{
+      padding-left: 15px;
+    }
+
+    .restaurant-description-name-input{
+      width: 96%;
     }
   }
 
@@ -92,6 +173,9 @@
     }
   }
 
+  .js-tabs__header li:first-child {
+    margin: 0 25px;
+  }
 
 }
 
@@ -101,20 +185,39 @@
 }
 
 .restaurant-card-first .restaurant-card-header .add-btn {
-  position: absolute;
-  right: -15px;
-  top: -45px;
+  //position: absolute;
+  //right: -15px;
+  //top: -45px;
+
+  background: no-repeat;
+  padding: 0;
+  width: 12px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  position: static;
+  margin-left: 10px;
 }
 
 .restaurant-registration-lang-menu {
   .add-btn {
-    position: absolute;
-    right: -13px;
-    top: -65px;
+    //position: absolute;
+    //right: -13px;
+    //top: -65px;
+    //
+    //@include respond-to(desktop) {
+    //  top: -43px;
+    //}
 
-    @include respond-to(desktop) {
-      top: -43px;
-    }
+    background: no-repeat;
+    padding: 0;
+    width: 12px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    position: static;
+    margin-left: 10px;
+
   }
 
   .tooltip-bottom-arrow {
@@ -201,7 +304,11 @@
     .form-group,
     .checkbox-wrapper {
       margin-bottom: 0 !important;
-      margin-top: 20px;
+      margin-top: 15px;
+    }
+
+    .select-box{
+      margin-top: 22px;
     }
 
     .form-group {
@@ -322,15 +429,15 @@
       display: flex;
       padding-left: 15px;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
 
 
       .work-days {
-        width: 45%;
+        width: 50%;
       }
 
       .opening-hours {
-        width: 55%;
+        width: 50%;
       }
     }
 
@@ -360,12 +467,14 @@
         .custom-checkbox-wrapper .styled-checkbox+label:before {
           background: #7C7E92;
           border-radius: 2px;
+          margin-right: 25px;
         }
 
         .custom-checkbox-wrapper .styled-checkbox:checked+label:before {
           background: #181D30;
           content: '';
           border-radius: 2px;
+          margin-right: 25px;
         }
       }
 
@@ -411,7 +520,7 @@
   }
 
   &-footer {
-    margin-top: 60px;
+    margin-top: 55px;
     text-align: center;
     font-size: 14px;
     line-height: 16px;

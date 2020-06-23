@@ -147,11 +147,14 @@
       &:after {
         content: '';
         width: 320px;
+        width: 52px;
         display: block;
         height: 5px;
         border-radius: 10px;
         margin: 25px 0px 0 -20px;
+        margin: 25px 0px 0 0px;
         background-color: rgb(79, 79, 87);
+        transition: 0.5s;
       }
     }
 
@@ -205,6 +208,13 @@
       }
     }
   }
+
+  &:not(.closed){
+    .user-data:after{
+      width: 320px;
+      margin-left: -20px;
+    }
+  }
 }
 
 .menu-list {
@@ -231,7 +241,7 @@
 
 .list-item {
   a {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     display: flex;
     align-items: center;
     position: relative;
@@ -270,7 +280,7 @@
   }
 
   i {
-    margin-right: 10%;
+    margin-right: 14%;
 
     @include respond-to(desktop) {
       margin-right: 30px;
@@ -493,7 +503,7 @@
   }
   &.new-order-notification-activated {
     .new-order-notification-inner {
-    display: flex;      
+    display: flex;
     }
   }
 }
