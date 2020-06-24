@@ -18,6 +18,7 @@ import Pagination from './modules/pagination';
 import UserMapPopUp from './modules/userMapPopup';
 import RestaurantStatsMobilePopup from './modules/restaurantStatsMobilePopup';
 import Multiselect from './modules/multisecelect';
+import MSFmultiSelect from './modules/MSFmultiSelect';
 
 const menu = new Menu();
 const tabs = new TabsInit();
@@ -33,6 +34,16 @@ const ordersPopUp = new OrdersPopUp();
 const userMapPopUp = new UserMapPopUp();
 const restaurantStatsMobilePopup = new RestaurantStatsMobilePopup();
 const multiselect = new Multiselect();
+const selectMulti = document.querySelector('#multiselect') ? document.querySelector('#multiselect') : false;
+if (selectMulti) {
+  new MSFmultiSelect(
+    document.querySelector('#multiselect'),
+    {
+      appendTo: '#example',
+      // options here
+    }
+  );
+}
 
 (($) => {
   // When DOM is ready
@@ -52,6 +63,7 @@ const multiselect = new Multiselect();
     ordersPopUp.init();
     userMapPopUp.init();
     restaurantStatsMobilePopup.init();
+    // FmultiSelect.init();
     const paginationArr = Array.from(document.querySelectorAll('.js-pagination'));
     if (paginationArr.length > 0) {
       paginationArr.forEach((pagination) => {
@@ -64,3 +76,25 @@ const multiselect = new Multiselect();
     }
   });
 })(jQuery);
+
+
+
+$('.restaurant-management .restaurant-tables-items-wrapper .styled-checkbox').change(function () {
+  $(this).closest('.restaurant-tables-item').toggleClass('hover');
+});
+
+$('.restaurant-management .restaurant-tables-heading .styled-checkbox').change(function () {
+  if($(this).is(':checked')){
+    $(this).closest('.restaurant-tables').find('input[type="checkbox"]').prop('checked', true)
+      .closest('.restaurant-tables-item').toggleClass('hover');
+  } else {
+    $(this).closest('.restaurant-tables').find('input[type="checkbox"]').prop('checked', false)
+      .closest('.restaurant-tables-item').toggleClass('hover');
+  }
+});
+
+$('.restaurant-management .restaurant-tables .visible-icon').click(function () {
+  $(this).toggleClass('active');
+});
+
+

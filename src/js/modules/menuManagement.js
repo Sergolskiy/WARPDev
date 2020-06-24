@@ -6,6 +6,8 @@ export default class MenuManagement {
     this.ingredientsList = document.querySelector('.dish-ingredients-list');
     this.textareas = Array.from(document.querySelectorAll('.base-textarea-wrapper'));
     this.wrapper = document.querySelector('.dish-card');
+
+    this.search = document.querySelector('.search-field-icon');
   }
 
   activateDish() {
@@ -78,9 +80,24 @@ export default class MenuManagement {
     }
   }
 
+  openSearch(){
+    if (this.search) {
+      this.search.addEventListener('click', () => {
+        if (document.getElementsByClassName('search-field-input')[0].classList.contains('open')) {
+          document.getElementsByClassName('search-field-input')[0].classList.remove('open');
+        } else {
+          document.getElementsByClassName('search-field-input')[0].classList.add('open');
+        }
+
+      });
+    }
+
+  }
+
   init() {
     this.addIngredient();
     this.countTextareaSymbols();
     this.activateDish();
+    this.openSearch();
   }
 }

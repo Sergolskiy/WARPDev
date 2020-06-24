@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    padding-right: 43px;
 
     .btn-base {
       width: 105px;
@@ -40,6 +41,121 @@
 
     .pages-h1 {
       margin: 0 auto 0 10px;
+    }
+  }
+
+
+  .menu-sort {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .btn-field{
+      background: #E4E5EB;
+      border-radius: 10px;
+      padding: 0 13px;
+
+      button{
+        border: 0;
+        background: transparent;
+        padding: 5px 13px;
+      }
+    }
+
+    .search-field {
+      margin-left: auto;
+      display: flex;
+      position: relative;
+      width: 35%;
+
+      @include respond-to(phone) {
+        order: 2;
+        margin-left: auto;
+
+        label {
+          margin-left: auto;
+        }
+      }
+
+      &-input {
+        display: block;
+        border: 1px solid rgba(73, 81, 108, 0.9);
+        border-radius: 8px;
+        background-color: transparent;
+        padding: 5px 15px;
+        width: 400px;
+        margin-right: 10px;
+        opacity: 0;
+        transition: 0.3s;
+        cursor: context-menu;
+
+        &.open{
+          opacity: 1;
+          cursor: initial;
+        }
+
+        @include respond-to(phone) {
+          opacity: 0;
+          transition: opacity 0.2s;
+          position: absolute;
+          top: 35px;
+          width: 300px;
+          background: #f5f6fa;
+          right: -16%;
+          z-index: 111;
+
+          &:focus {
+            opacity: 1;
+          }
+        }
+      }
+
+      label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #E4E5EB;
+        border-radius: 10px;
+        padding: 0 15px;
+      }
+
+    }
+
+    .sort-select {
+      //margin-left: auto;
+      //width: 25%;
+      border: none;
+      color: map-get($colors, dark-bg);
+      margin-bottom: 0;
+      //margin-right: 30px;
+
+      margin-left: 30px;
+      margin-right: 0;
+      width: 21%;
+
+      @include respond-to(phone) {
+        order: 1;
+        margin-left: 0;
+        margin-right: 0;
+        width: 65%;
+      }
+
+      .select-box__input-text {
+        //padding-left: 15px;
+
+        padding: 7px 8px 7px 15px;
+        font-weight: 800;
+        color: #555864;
+      }
+    }
+
+    .btn-base {
+      margin-left: auto;
+      width: 188px;
+    }
+
+    .select-box__icon{
+      opacity: 0.5;
     }
   }
 

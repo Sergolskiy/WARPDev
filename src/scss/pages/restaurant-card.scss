@@ -4,9 +4,9 @@
   }
 
   .submit-btn {
-    width: 150px !important;
+    //width: 105px !important;
     display: flex;
-    height: 32px !important;
+    //height: 37px !important;
     align-items: center;
     justify-content: center;
 
@@ -66,6 +66,10 @@
       overflow: unset;
     }
 
+    .js-tabs .js-tabs__title-active{
+      font-weight: bold;
+    }
+
     .js-tabs .js-tabs__header > li:last-child{
       display: flex;
       align-items: center;
@@ -99,6 +103,10 @@
 
     @include respond-to(desktop) {
       display: none;
+    }
+
+    .js-tabs .js-tabs__title-active{
+      font-weight: bold;
     }
 
     .js-tabs__header{
@@ -609,15 +617,67 @@
   }
 }
 
+.restaurant-btn-field{
+  margin-top: 20px;
+  background: #E4E5EB;
+  border-radius: 10px;
+  padding: 2px 13px;
+  max-width: 108px;
+  display: flex;
+  justify-content: center;
+
+  button{
+    border: 0;
+    background: transparent;
+    //padding: 5px 13px;
+    cursor: pointer;
+
+    width: 37px;
+    height: 26px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    path{
+      fill: rgba(124, 126, 146, 0.4);
+      fill-opacity: 1;
+    }
+
+    &:hover{
+      background: rgba(207, 209, 222, 0.6);
+      path{
+        fill: #7c7e92;
+      }
+    }
+  }
+}
+
+.restaurant-delivery .delivery-time .select-box.sort-select .tooltip-left-arrow{
+  position: absolute;
+  left: 114%;
+  top: 0;
+  transform: translateY(-22%);
+  width: 150px;
+}
+.restaurant-delivery .delivery-time .select-box.sort-select:hover .tooltip-left-arrow{
+  opacity: 1;
+}
+
 .restaurant-tables {
-  background-image: linear-gradient(180deg, rgba(228, 229, 234, 1) 79px, rgba(215, 215, 223, 1) 79px, rgba(215, 215, 223, 1) 376px, rgba(228, 229, 234, 1) 376px, rgba(228, 229, 234, 1) 396px) !important;
+  //background-image: linear-gradient(180deg, rgba(228, 229, 234, 1) 79px, rgba(215, 215, 223, 1) 79px, rgba(215, 215, 223, 1) 376px, rgba(228, 229, 234, 1) 376px, rgba(228, 229, 234, 1) 396px) !important;
+
+  background: #D6D7E0;
+  background-image: unset !important;
 
   @include respond-to(phone) {
     background-image: none !important;
   }
 
   box-shadow: 0 0 0 transparent !important;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 20px 0;
 
   &-items-wrapper {
@@ -644,6 +704,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 4px 20px;
+    background: #E4E5EB;
 
     .checkbox {
       width: 8%;
@@ -669,6 +730,7 @@
     color: #555864;
     align-items: flex-start;
     padding-bottom: 8px !important;
+    background: #D6D7E0;
 
     .zone,
     .table-number {

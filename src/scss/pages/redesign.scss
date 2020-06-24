@@ -1,0 +1,351 @@
+.select-box-2{
+  margin-top: 22px;
+  position: relative;
+}
+
+.multiselect-wrap{
+  position: relative;
+  width: 100%;
+}
+
+.msf_multiselect_container{
+  height: 40px;
+}
+
+.msf_multiselect_container .msf_multiselect_textarea{
+  width: 100% !important;
+  color: #181D30;
+  border-radius: 10px;
+  padding: 11px 8px;
+  background-color: #E4E5EB;
+  height: 40px !important;
+  overflow: hidden !important;
+  cursor: pointer;
+}
+
+.msf_multiselect_container .msf_multiselect_textarea:focus{
+  outline: 0;
+}
+
+.msf_multiselect_container .msf_multiselect{
+  width: 96% !important;
+  left: 2%;
+  background: #ECEEF6;
+  box-shadow: 0px 5px 10px rgba(111, 113, 121, 0.31);
+  border-radius: 10px;
+  padding: 7px 16px;
+}
+
+.msf_multiselect_container li input{
+  display: none;
+}
+.msf_multiselect_container li{
+  margin-bottom: 7px;
+  padding: 3px 10px;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  color: #555864;
+}
+
+
+.msf_multiselect_container li.active {
+  color: #0009DA;
+  background: transparent;
+  position: relative;
+}
+
+
+.msf_multiselect_container li:hover {
+  background: #D6D7DF;
+}
+
+.msf_multiselect_container li.active:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 10px;
+  background: #0009DA;
+  border-radius: 50%;
+}
+
+.multiselect-open .select-box__icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.msf_multiselect_container .msf_multiselect{
+  height: auto;
+  max-height: 345px;
+}
+
+.msf_multiselect_container .msf_multiselect.show-all{
+  max-height: 1000px;
+}
+
+.see-all li{
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.005em;
+  color: #0009DA;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:after{
+    content: "";
+    margin-left: 5px;
+    display: block;
+    width: 8px;
+    height: 10px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgBbYu7CQAhEETnBOHExBIswf4TSzARRBPrMJNd8IuTzLDvLUAxweDOnyyV4NF0gIxuQlkcPuHXIx1UqSzxzpX7yJCecJcu2AHLOhgEBboHZgAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.restaurant-tables .restaurant-tables-item .qr-code.download .img-load label{
+  background: url("../../images/download.svg") center center no-repeat;
+}
+
+.restaurant-tables .restaurant-tables-item .qr-code .qr-hover{
+  right: 0;
+  opacity: 1;
+}
+.restaurant-tables .restaurant-tables-item .qr-code .qr-hover .restaurant-btn-field{
+  margin-top: 0;
+}
+
+.restaurant-tables-item.hover{
+  background: rgba(245, 246, 250, 0.81);
+}
+
+.qr-hover .restaurant-btn-field{
+  background: transparent;
+}
+
+.visible-icon.active svg path{
+  fill: #ED3E53;
+}
+
+.restaurant-management .img-delete-btn{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(35, 36, 40, 0) 0%, #232428 100%);
+  border-radius: 10px;
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: rgba(237, 238, 243, 0.34);
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  svg{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+
+    @media (max-width: 992px) {
+      width: 23px;
+      height: 31px;
+      position: static;
+    }
+  }
+}
+
+.restaurant-tables .restaurant-tables-item .zone-label input, .restaurant-tables .restaurant-tables-item .table-number-label input{
+  max-width: 75%;
+}
+
+
+
+
+@media (max-width: 980px){
+
+
+  .restaurant-card-first .restaurant-card-first-details .light-card-h3{
+    font-size: 16px;
+  }
+
+  .accordion-tablet .accordion-tablet-content{
+    margin-left: -15px;
+  }
+
+  .restaurant-card-first .restaurant-card-first-details{
+    padding-left: 0;
+  }
+
+
+
+  .restaurant-card-form-wrapper .restaurant-logo .light-card-h3.bolder{
+    margin-left: -15px;
+  }
+
+  .restaurant-gallery .accordion-tablet-content{
+    margin-left: 0;
+  }
+
+  .restaurant-management .light-card-h3{
+    font-size: 16px;
+  }
+
+  .restaurant-gallery {
+    width: 370px;
+  }
+
+  .restaurant-card-first .img-load label{
+    margin-bottom: 0;
+  }
+
+  .restaurant-card-first .restaurant-opening-hours .light-card-h3{
+    margin-left: -15px;
+  }
+  .accordion-tablet .accordion-tablet-content{
+    margin-left: 0;
+  }
+  .restaurant-card-first .accordion-tablet-content{
+    margin-left: -15px;
+  }
+
+  .restaurant-card-form-wrapper .restaurant-card-first{
+    padding-left: 17px;
+  }
+  .restaurant-card-first .restaurant-card-first-details .form-group.extra-icon svg {
+    position: absolute;
+    top: 7px;
+    left: 12px;
+  }
+
+  label[for="addressMore"]{
+    display: none;
+  }
+
+  #addressMore{
+    padding-left: 40px;
+  }
+
+  .msf_multiselect_container .msf_multiselect_textarea{
+    background: #f5f6fa !important;
+  }
+
+
+  .restaurant-card-form-wrapper .restaurant-description-mobile .js-tabs .js-tabs__header > li:last-child{
+    display: flex;
+    align-items: center;
+  }
+
+  .restaurant-card-form-wrapper .restaurant-description-mobile .restaurant-card-header {
+    padding-top: 0;
+  }
+
+  .restaurant-card-form-wrapper .restaurant-description-mobile .restaurant-registration-lang-menu {
+    position: relative;
+    top: 0;
+  }
+
+  .restaurant-description-mobile .restaurant-card-header .add-btn {
+    background: no-repeat;
+    padding: 0;
+    width: 12px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    position: static;
+    margin-left: 10px;
+  }
+
+  .restaurant-card-form-wrapper .restaurant-description-mobile .js-tabs__header .select-box__icon {
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  .restaurant-card-form-wrapper .restaurant-description-mobile .restaurant-registration-lang-menu .dropdown-menu {
+    top: 13px;
+    right: -33px;
+  }
+
+  .restaurant-card-form-wrapper .restaurant-description-mobile .js-tabs__header {
+    overflow: unset;
+  }
+
+  .restaurant-tables .restaurant-tables-heading .checkbox, .restaurant-tables .restaurant-tables-item .checkbox {
+    display: block;
+  }
+
+  .restaurant-tables .restaurant-tables-heading{
+    margin-bottom: 0;
+  }
+
+  .restaurant-card-first .restaurant-card-first-details {
+    margin-top: 17px;
+  }
+
+  .restaurant-gallery{
+    padding-bottom: 10px;
+  }
+
+  .restaurant-card-first .restaurant-opening-hours .light-card-h3 {
+    margin-top: 18px;
+  }
+
+  .restaurant-management .accordion-tablet-content .center{
+    position: absolute;
+    right: 8px;
+    top: 46px;
+  }
+
+}
+
+@media (max-width: 600px){
+
+  .restaurant-management .accordion-tablet-content .center{
+    position: static;
+  }
+
+  .restaurant-management-content .restaurant-card-first{
+    padding-bottom: 0;
+  }
+
+  .restaurant-card-third-mobile{
+    margin-left: -8px;
+  }
+
+  .restaurant-description-mobile > .restaurant-card-header > .restaurant-registration-lang-menu{
+    display: none;
+  }
+
+  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover {
+    position: absolute;
+    top: 0;
+    right: -30px !important;
+  }
+
+  .restaurant-tables .restaurant-tables-heading {
+    margin-bottom: 15px;
+  }
+
+
+  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover .restaurant-btn-field{
+    flex-direction: column;
+  }
+}
+

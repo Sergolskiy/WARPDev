@@ -36,17 +36,98 @@
       </header>
       <main class="restaurant-management-content restaurant-management-list-content">
         <form>
-          <div class="restaurant-sort">
-            <div class="base-select">
+          <!--<div class="restaurant-sort">-->
+            <!--<div class="base-select">-->
+              <!--<select>-->
+              <!--</select>-->
+            <!--</div>-->
+            <!--<div class="base-select">-->
+              <!--<select>-->
+              <!--</select>-->
+            <!--</div>-->
+          <!--</div>-->
+
+          <div class="menu-sort">
+
+            <div class="btn-field">
+
+              <button type="button" class="delete-icon">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.08478 1.02618H9.92598V1.50426H10.952V0.959259C10.9522 0.430344 10.5221 0 9.99342 0H7.01733C6.48868 0 6.05859 0.430344 6.05859 0.959259V1.50426H7.08478V1.02618Z" fill="#7C7E92" fill-opacity="0.5"/>
+                  <path d="M13.3213 5.56982H3.68876C3.42482 5.56982 3.21704 5.79498 3.23832 6.05814L4.04362 16.016C4.0885 16.5719 4.55217 17 5.10923 17H11.9007C12.4578 17 12.9214 16.5719 12.9663 16.0158L13.7716 6.05814C13.793 5.79498 13.5852 5.56982 13.3213 5.56982ZM6.02115 15.9379C6.01039 15.9385 5.99962 15.9389 5.98899 15.9389C5.71999 15.9389 5.49418 15.7295 5.47745 15.4574L4.97279 7.28251C4.95541 6.99963 5.17058 6.75619 5.45333 6.73881C5.73516 6.72169 5.97965 6.93634 5.99703 7.21935L6.50156 15.3942C6.51907 15.6771 6.3039 15.9204 6.02115 15.9379ZM9.02383 15.4258C9.02383 15.7091 8.79413 15.9388 8.51074 15.9388C8.22734 15.9388 7.99765 15.7091 7.99765 15.4258V7.25086C7.99765 6.96747 8.22734 6.73777 8.51074 6.73777C8.794 6.73777 9.02383 6.96747 9.02383 7.25086V15.4258ZM12.0373 7.28108L11.5554 15.4559C11.5395 15.7286 11.3133 15.9388 11.0438 15.9388C11.0337 15.9388 11.0234 15.9385 11.0132 15.938C10.7303 15.9213 10.5145 15.6785 10.5312 15.3956L11.0129 7.22064C11.0295 6.93777 11.2715 6.72195 11.5552 6.73868C11.8381 6.75528 12.0539 6.99821 12.0373 7.28108Z" fill="#7C7E92" fill-opacity="0.5"/>
+                  <path d="M15.0957 3.98628L14.7588 2.97618C14.6699 2.70991 14.4206 2.53027 14.1398 2.53027H2.87037C2.5897 2.53027 2.34028 2.70991 2.25157 2.97618L1.91461 3.98628C1.84963 4.18109 1.93419 4.37979 2.09204 4.47888C2.15637 4.51922 2.2325 4.54347 2.31616 4.54347H14.6942C14.7778 4.54347 14.8541 4.51922 14.9183 4.47875C15.0761 4.37966 15.1607 4.18096 15.0957 3.98628Z" fill="#7C7E92" fill-opacity="0.5"/>
+                </svg>
+              </button>
+              <button type="button" class="visible-icon">
+                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 0C4.73858 0 2.5 2.19788 2.5 4.90909V6.67582C2.24443 6.72779 2.02328 6.80048 1.82003 6.90216C1.19282 7.21593 0.68289 7.71659 0.363312 8.33239C0 9.03247 0 9.94892 0 11.7818V12.7636C0 14.5965 0 15.513 0.363312 16.2131C0.68289 16.8289 1.19282 17.3295 1.82003 17.6433C2.53307 18 3.46649 18 5.33333 18H9.66667C11.5335 18 12.4669 18 13.18 17.6433C13.8072 17.3295 14.3171 16.8289 14.6367 16.2131C15 15.513 15 14.5965 15 12.7636V11.7818C15 9.94892 15 9.03247 14.6367 8.33239C14.3171 7.71659 13.8072 7.21593 13.18 6.90216C12.9767 6.80048 12.7556 6.72779 12.5 6.67582V4.90909C12.5 2.19788 10.2614 0 7.5 0ZM10.8333 6.55003V4.90909C10.8333 3.10161 9.34095 1.63636 7.5 1.63636C5.65905 1.63636 4.16667 3.10161 4.16667 4.90909V6.55003C4.51051 6.54545 4.89635 6.54545 5.33333 6.54545H9.66667C10.1037 6.54545 10.4895 6.54545 10.8333 6.55003ZM5.83333 11.4545C5.83333 10.5508 6.57953 9.81818 7.5 9.81818C8.42047 9.81818 9.16667 10.5508 9.16667 11.4545C9.16667 12.0602 8.8315 12.5891 8.33333 12.872V13.9091C8.33333 14.361 7.96024 14.7273 7.5 14.7273C7.03976 14.7273 6.66667 14.361 6.66667 13.9091V12.872C6.1685 12.5891 5.83333 12.0602 5.83333 11.4545Z" fill="#7C7E92" fill-opacity="0.5"/>
+                </svg>
+                <div class="visible-cross"></div>
+              </button>
+            </div>
+
+            <div class="select-box sort-select">
+              <div class="select-box__current" tabindex="1">
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1"
+                                                      name="sort" checked="checked" />
+                  <p class="select-box__input-text">By date added</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2"
+                                                      name="sort" checked="checked" />
+                  <p class="select-box__input-text">Price - Low to high</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="3"
+                                                      name="sort" checked="checked" />
+                  <p class="select-box__input-text">Price - High to low</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="4"
+                                                      name="sort" checked="checked" />
+                  <p class="select-box__input-text">Inactive first</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="4" value="5"
+                                                      name="sort" checked="checked" />
+                  <p class="select-box__input-text">Sort by</p>
+                </div>
+
+
+                <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon" aria-hidden="true" />
+              </div>
+              <ul class="select-box__list">
+                <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">By date added</label></li>
+                <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">Price - Low to high</label></li>
+                <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">Price - Hight to low</label></li>
+                <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">Inactive first</label></li>
+                <li><label class="select-box__option" for="4" aria-hidden="aria-hidden">Sort by</label></li>
+              </ul>
+            </div>
+
+            <!--<div class="base-select">
               <select>
               </select>
             </div>
             <div class="base-select">
               <select>
               </select>
+            </div>-->
+
+            <div class="search-field">
+              <input id="foodSearch" class="search-field-input" type="search" placeholder="Search">
+              <label for="foodSearch" class="search-field-icon">
+
+                <!--<svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle r="7.96262" transform="matrix(-1 0 0 1 8.96267 8.96262)" stroke="#E3B100" stroke-width="2" />
+                  <path d="M13.1454 16.7302L18.5229 26.2904" stroke="#E3B100" stroke-width="2" />
+                </svg>-->
+
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.8 0C3.04446 0 0 3.04446 0 6.8C0 10.5555 3.04446 13.6 6.8 13.6C10.5555 13.6 13.6 10.5555 13.6 6.8C13.6 3.04446 10.5555 0 6.8 0ZM2.55 6.8C2.55 4.45279 4.45279 2.55 6.8 2.55C9.14721 2.55 11.05 4.45279 11.05 6.8C11.05 9.14721 9.14721 11.05 6.8 11.05C4.45279 11.05 2.55 9.14721 2.55 6.8Z" fill="#0D0E18"/>
+                  <path d="M13.175 11.3719L11.3719 13.175L14.8234 16.6266C15.3214 17.1245 16.1286 17.1245 16.6266 16.6266C17.1245 16.1286 17.1245 15.3214 16.6266 14.8234L13.175 11.3719Z" fill="#0D0E18"/>
+                </svg>
+
+              </label>
             </div>
           </div>
-          
+
           <div class="no-records-menu d-none">
             <div class="no-records-menu-icon"><svg width="56" height="57" viewBox="0 0 56 57" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +147,7 @@
               <span class="btn-base-text">Add Restaurant</span>
             </a>
           </div>
-          
+
           <div class="restaurant-list-wrapper multiselect-table  light-card">
             <ul class="reset-list-styles restaurant-list-heading">
               <li class="checkbox">
@@ -118,9 +199,9 @@
                           d="M13.3198 3.51738L13.0224 2.62611C12.944 2.39117 12.7241 2.23267 12.4763 2.23267H2.53268C2.28503 2.23267 2.06496 2.39117 1.98668 2.62611L1.68936 3.51738C1.63203 3.68927 1.70664 3.86459 1.84592 3.95203C1.90268 3.98762 1.96986 4.00902 2.04367 4.00902H12.9655C13.0393 4.00902 13.1066 3.98762 13.1632 3.95191C13.3025 3.86448 13.3771 3.68916 13.3198 3.51738Z"
                           fill="#7C7E92" />
                       </svg>
-    
+
                     </button>
-    
+
                   </div>
                 <div class="restaurant-phone-menu">
                   <button type="button" class="restaurant-phone-menu-icon"><svg width="5" height="21" viewBox="0 0 5 21" fill="none"
@@ -197,9 +278,9 @@
                           d="M13.3198 3.51738L13.0224 2.62611C12.944 2.39117 12.7241 2.23267 12.4763 2.23267H2.53268C2.28503 2.23267 2.06496 2.39117 1.98668 2.62611L1.68936 3.51738C1.63203 3.68927 1.70664 3.86459 1.84592 3.95203C1.90268 3.98762 1.96986 4.00902 2.04367 4.00902H12.9655C13.0393 4.00902 13.1066 3.98762 13.1632 3.95191C13.3025 3.86448 13.3771 3.68916 13.3198 3.51738Z"
                           fill="#7C7E92" />
                       </svg>
-    
+
                     </button>
-    
+
                   </div>
                 <div class="restaurant-phone-menu">
                   <button type="button" class="restaurant-phone-menu-icon"><svg width="5" height="21" viewBox="0 0 5 21" fill="none"

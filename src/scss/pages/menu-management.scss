@@ -123,6 +123,14 @@
         padding: 5px 15px;
         width: 400px;
         margin-right: 10px;
+        opacity: 0;
+        transition: 0.3s;
+        cursor: context-menu;
+
+        &.open{
+          opacity: 1;
+          cursor: initial;
+        }
 
         @include respond-to(phone) {
           opacity: 0;
