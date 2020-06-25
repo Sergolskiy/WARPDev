@@ -281,14 +281,15 @@
               <path d="M23 7.87499H19.2642L15.3395 1.33368C15.1448 1.00874 14.7225 0.902652 14.3962 1.09803C14.0706 1.29341 13.9652 1.71569 14.1606 2.04132L17.6608 7.87499H6.33928L9.83947 2.04127C10.0349 1.71564 9.92945 1.29336 9.60382 1.09798C9.27685 0.902606 8.85592 1.0087 8.66054 1.33363L4.7358 7.87494H1V9.24995H2.49216L4.23876 18.5668C4.42137 19.5423 5.27402 20.25 6.26638 20.25H17.7337C18.726 20.25 19.5786 19.5423 19.7606 18.5675L21.5078 9.24995H23C23 9.24995 23 7.87499 23 7.87499ZM18.409 18.3144C18.3486 18.6393 18.0646 18.875 17.7336 18.875H6.26638C5.93538 18.875 5.6514 18.6394 5.5903 18.3137L3.89068 9.24995H20.1094L18.409 18.3144Z" fill="#E3B100" stroke="#E3B100" stroke-width="1.07723"/>
               </svg>
               </a>
-    
+
           <div class="activations-btn-wrapper">
-            <button type="button" class="btn deactivate-btn">
-              Deactivate
-            </button>
-            <button type="button" class="btn activate-btn active">
-              Activate
-            </button>
+
+            <span>Activate</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+
             <button type="submit" class="btn btn-base submit-btn">
               <span class="btn-base-text">Save</span>
               <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -476,29 +477,44 @@
             <div class="dish-card-second light-card">
               <div class="dish-card-title-section">
                 <h3 class="light-card-h3 before-el">Description</h3>
-                <div class="dish-registration-lang-menu dropdown-menu-wrapper">
-                  <button type="button" class="add-btn dropdown-opener">
-                    <div class="tooltip-bottom-arrow">Change language</div>
-                    <span class="add-btn-img">+</span>
-                  </button>
-                  <ul class="dropdown-menu reset-list-styles">
-                    <li class="dropdown-menu-item">English</li>
-                    <li class="dropdown-menu-item">Arabian</li>
-                    <li class="dropdown-menu-item">Spanish</li>
-                    <li class="dropdown-menu-item">Italian</li>
-                    <li class="dropdown-menu-item">Chinese</li>
-                    <li class="dropdown-menu-item">Russian</li>
-                    <li class="dropdown-menu-item">German</li>
-                    <li class="dropdown-menu-item">French</li>
-                  </ul>
-                </div>
+                <!--<div class="dish-registration-lang-menu dropdown-menu-wrapper">-->
+                  <!--<button type="button" class="add-btn dropdown-opener">-->
+                    <!--<div class="tooltip-bottom-arrow">Change language</div>-->
+                    <!--<span class="add-btn-img">+</span>-->
+                  <!--</button>-->
+                  <!--<ul class="dropdown-menu reset-list-styles">-->
+                    <!--<li class="dropdown-menu-item">English</li>-->
+                    <!--<li class="dropdown-menu-item">Arabian</li>-->
+                    <!--<li class="dropdown-menu-item">Spanish</li>-->
+                    <!--<li class="dropdown-menu-item">Italian</li>-->
+                    <!--<li class="dropdown-menu-item">Chinese</li>-->
+                    <!--<li class="dropdown-menu-item">Russian</li>-->
+                    <!--<li class="dropdown-menu-item">German</li>-->
+                    <!--<li class="dropdown-menu-item">French</li>-->
+                  <!--</ul>-->
+                <!--</div>-->
               </div>
 
               <div class="js-tabs dish-card-second-description">
 
-                <ul class="js-tabs__header">
+                <ul class="js-tabs__header custom-select-new custom-select-js">
                   <li><a href="#" class="js-tabs__title">English</a></li>
-                  <li><a href="#" class="js-tabs__title">Arabian</a></li>
+                  <li>
+                    <a href="#" class="js-tabs__title">Arabian</a>
+                    <div class="restaurant-registration-lang-menu dropdown-menu-wrapper">
+                      <button type="button" class="add-btn dropdown-opener">
+                        <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon" aria-hidden="true">
+                      </button>
+                      <ul class="dropdown-menu reset-list-styles">
+                        <li class="dropdown-menu-item">English</li>
+                        <li class="dropdown-menu-item">Arabian</li>
+                        <li class="dropdown-menu-item">Spanish</li>
+                        <li class="dropdown-menu-item">Italian</li>
+                        <li class="dropdown-menu-item">Chinese</li>
+                        <li class="dropdown-menu-item">Russian</li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
 
                 <div class="js-tabs__content dish-card-second-description-content">

@@ -35,10 +35,10 @@ export default class OrderStatsChart {
     this.restaurantMonthOrderStatsCanvas = document.querySelector('.restaurant-order-stats-month-chart');
     this.restaurantYearOrderStatsCanvas = document.querySelector('.restaurant-order-stats-year-chart');
   }
-  
+
   chartExtensions() {
     Chart.elements.Rectangle.prototype.draw = function() {
-    
+
       var ctx = this._chart.ctx;
       var vm = this._view;
       var left, right, top, bottom, signX, signY, borderSkipped, radius;
@@ -46,7 +46,7 @@ export default class OrderStatsChart {
       // Set Radius Here
       // If radius is large enough to cause drawing errors a max radius is imposed
       var cornerRadius = 5;
-  
+
       if (!vm.horizontal) {
           // bar
           left = vm.x - vm.width / 2;
@@ -66,7 +66,7 @@ export default class OrderStatsChart {
           signY = 1;
           borderSkipped = vm.borderSkipped || 'left';
       }
-  
+
       // Canvas doesn't allow us to stroke inside the width so we can
       // adjust the sizes to fit if we're setting a stroke on the line
       if (borderWidth) {
@@ -90,12 +90,12 @@ export default class OrderStatsChart {
               right = borderRight;
           }
       }
-  
+
       ctx.beginPath();
       ctx.fillStyle = vm.backgroundColor;
       ctx.strokeStyle = vm.borderColor;
       ctx.lineWidth = borderWidth;
-  
+
       // Corner points, from bottom-left to bottom-right clockwise
       // | 1 2 |
       // | 0 3 |
@@ -105,18 +105,18 @@ export default class OrderStatsChart {
           [right, top],
           [right, bottom]
       ];
-  
+
       // Find first (starting) corner with fallback to 'bottom'
       var borders = ['bottom', 'left', 'top', 'right'];
       var startCorner = borders.indexOf(borderSkipped, 0);
       if (startCorner === -1) {
           startCorner = 0;
       }
-  
+
       function cornerAt(index) {
           return corners[(startCorner + index) % 4];
       }
-  
+
       // Draw rectangle from 'startCorner'
       var corner = cornerAt(0);
       ctx.moveTo(corner[0], corner[1]);
@@ -127,23 +127,23 @@ export default class OrderStatsChart {
           if(nextCornerId == 4){
               nextCornerId = 0
           }
-  
+
           let nextCorner = cornerAt(nextCornerId);
-  
+
           let width = corners[2][0] - corners[1][0];
           let height = corners[0][1] - corners[1][1];
           let x = corners[1][0];
           let y = corners[1][1];
-          
+
           var radius = cornerRadius;
-          
+
           // Fix radius being too large
           if(radius > height/2){
               radius = height/2;
           }if(radius > width/2){
               radius = width/2;
           }
-  
+
           ctx.moveTo(x + radius, y);
           ctx.lineTo(x + width - radius, y);
           ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
@@ -153,14 +153,14 @@ export default class OrderStatsChart {
           ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
           ctx.lineTo(x, y + radius);
           ctx.quadraticCurveTo(x, y, x + radius, y);
-  
+
       }
-  
+
       ctx.fill();
       if (borderWidth) {
           ctx.stroke();
       }
-  }; 
+  };
   }
 
   getRandomNumber() {
@@ -771,7 +771,7 @@ export default class OrderStatsChart {
           labels: ['Name', 'Name', 'Name', 'Name', 'Name', 'Name', 'Name', 'Name', 'Name', 'Name'],
           datasets: [{
             label: false,
-            backgroundColor: ['#ED3E53', '#ED3E53', '#E3B100', '#ED3E53', '#ED3E53', '#ED3E53', '#ED3E53', '#ED3E53', '#ED3E53', '#ED3E53'],
+            backgroundColor: ['#0009DA', '#0009DA', '#0009DA', '#0009DA', '#0009DA', '#0009DA', '#0009DA', '#0009DA', '#0009DA', '#0009DA'],
             borderWidth: 0,
             borderColor: 'transparent',
             borderSkipped: 'bottom, top, left, right',

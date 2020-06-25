@@ -158,415 +158,558 @@
       </header>
 
       <main class="restaurant-stats-content">
-          <div class="restaurant-stats-mobile-pop-up animated fadeIn d-none">
-            <div class="restaurant-stats-mobile-pop-up-header">
-              <p class="update-date">Update date: 00.99.99.</p>
-              <button type="button" class="close-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.76284 7.74805L15.7454 1.95364C15.91 1.79414 16.0008 1.58133 16.001 1.35442C16.001 1.12738 15.9102 0.914329 15.7454 0.755074L15.2211 0.24745C15.0563 0.0875649 14.8366 0 14.6021 0C14.3679 0 14.1482 0.0875649 13.9833 0.24745L8.00078 6.04148L2.01795 0.24745C1.85339 0.0875649 1.63354 0 1.39912 0C1.16495 0 0.945102 0.0875649 0.780538 0.24745L0.256017 0.755074C-0.0853389 1.08568 -0.0853389 1.62342 0.256017 1.95364L6.23871 7.74805L0.256017 13.5422C0.091323 13.702 0.000650449 13.9148 0.000650449 14.1417C0.000650449 14.3686 0.091323 14.5814 0.256017 14.741L0.780408 15.2486C0.944972 15.4084 1.16495 15.4961 1.39898 15.4961C1.63341 15.4961 1.85326 15.4084 2.01782 15.2486L8.00065 9.45449L13.9832 15.2486C14.148 15.4084 14.3678 15.4961 14.6019 15.4961H14.6022C14.8365 15.4961 15.0562 15.4084 15.221 15.2486L15.7453 14.741C15.9098 14.5815 16.0006 14.3686 16.0006 14.1417C16.0006 13.9148 15.9098 13.702 15.7453 13.5423L9.76284 7.74805Z" fill="#596079" fill-opacity="0.7"/>
-                </svg>
-                </button>
-            </div>
-            <div class="restaurant-stats-mobile-pop-up-content">
-              <h3 class="name blue-color"></h3>
-              <div class="content-fields">
-                <p class="field-name">The number of orders</p>
-                <p class="number-of-orders field-data"></p>
-              </div>
-              <div class="content-fields">
-                  <p class="field-name">Reviews</p>
-                  <p class="reviews field-data"></p>
-              </div>
-              <div class="content-fields">
-                  <p class="field-name">Amount</p>
-                  <p class="amount field-data"></p>
-              </div>
-            </div>
-          </div>
-          <!-- /.restaurant-stats-mobile-pop-up -->
-        <div class="restaurant-rating light-card">
-          <h5 class="restaurant-stats-h5">User rating</h5>
-          <ul class="stars-wrapper reset-list-styles">
-            <li class="star">
-              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.7249 1.4192C14.4715 -0.0187913 16.5285 -0.0187892 17.2751 1.4192L20.6228 7.86784C20.8964 8.39479 21.3899 8.77295 21.9699 8.9L28.8985 10.4178C30.3708 10.7403 30.9708 12.5136 29.9969 13.6639L25.0405 19.5174C24.6873 19.9345 24.5202 20.478 24.5781 21.0215L25.4004 28.7463C25.5675 30.3161 23.9353 31.4516 22.5216 30.7491L16.39 27.7022C15.8294 27.4237 15.1706 27.4237 14.61 27.7022L8.47839 30.7491C7.06469 31.4516 5.43254 30.3161 5.59963 28.7463L6.42193 21.0215C6.47978 20.478 6.31269 19.9345 5.9595 19.5174L1.00315 13.6639C0.0292094 12.5136 0.629237 10.7403 2.10151 10.4178L9.0301 8.9C9.61007 8.77295 10.1036 8.39479 10.3772 7.86784L13.7249 1.4192Z"
-                  fill="#FFC700" />
+        <div class="restaurant-stats-mobile-pop-up animated fadeIn d-none">
+          <div class="restaurant-stats-mobile-pop-up-header">
+            <p class="update-date">Update date: 00.99.99.</p>
+            <button type="button" class="close-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.76284 7.74805L15.7454 1.95364C15.91 1.79414 16.0008 1.58133 16.001 1.35442C16.001 1.12738 15.9102 0.914329 15.7454 0.755074L15.2211 0.24745C15.0563 0.0875649 14.8366 0 14.6021 0C14.3679 0 14.1482 0.0875649 13.9833 0.24745L8.00078 6.04148L2.01795 0.24745C1.85339 0.0875649 1.63354 0 1.39912 0C1.16495 0 0.945102 0.0875649 0.780538 0.24745L0.256017 0.755074C-0.0853389 1.08568 -0.0853389 1.62342 0.256017 1.95364L6.23871 7.74805L0.256017 13.5422C0.091323 13.702 0.000650449 13.9148 0.000650449 14.1417C0.000650449 14.3686 0.091323 14.5814 0.256017 14.741L0.780408 15.2486C0.944972 15.4084 1.16495 15.4961 1.39898 15.4961C1.63341 15.4961 1.85326 15.4084 2.01782 15.2486L8.00065 9.45449L13.9832 15.2486C14.148 15.4084 14.3678 15.4961 14.6019 15.4961H14.6022C14.8365 15.4961 15.0562 15.4084 15.221 15.2486L15.7453 14.741C15.9098 14.5815 16.0006 14.3686 16.0006 14.1417C16.0006 13.9148 15.9098 13.702 15.7453 13.5423L9.76284 7.74805Z" fill="#596079" fill-opacity="0.7"/>
               </svg>
-            </li>
-            <li class="star">
-              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.7249 1.4192C14.4715 -0.0187913 16.5285 -0.0187892 17.2751 1.4192L20.6228 7.86784C20.8964 8.39479 21.3899 8.77295 21.9699 8.9L28.8985 10.4178C30.3708 10.7403 30.9708 12.5136 29.9969 13.6639L25.0405 19.5174C24.6873 19.9345 24.5202 20.478 24.5781 21.0215L25.4004 28.7463C25.5675 30.3161 23.9353 31.4516 22.5216 30.7491L16.39 27.7022C15.8294 27.4237 15.1706 27.4237 14.61 27.7022L8.47839 30.7491C7.06469 31.4516 5.43254 30.3161 5.59963 28.7463L6.42193 21.0215C6.47978 20.478 6.31269 19.9345 5.9595 19.5174L1.00315 13.6639C0.0292094 12.5136 0.629237 10.7403 2.10151 10.4178L9.0301 8.9C9.61007 8.77295 10.1036 8.39479 10.3772 7.86784L13.7249 1.4192Z"
-                  fill="#FFC700" />
+              </button>
+          </div>
+          <div class="restaurant-stats-mobile-pop-up-content">
+            <h3 class="name blue-color"></h3>
+            <div class="content-fields">
+              <p class="field-name">The number of orders</p>
+              <p class="number-of-orders field-data"></p>
+            </div>
+            <div class="content-fields">
+                <p class="field-name">Reviews</p>
+                <p class="reviews field-data"></p>
+            </div>
+            <div class="content-fields">
+                <p class="field-name">Amount</p>
+                <p class="amount field-data"></p>
+            </div>
+          </div>
+        </div>
+        <!-- /.restaurant-stats-mobile-pop-up -->
+
+        <div class="restaurant-info">
+          <div class="restaurant-info__logo">
+            <img src="./images/restore.png" alt="img">
+          </div>
+          <div class="restaurant-info__right">
+            <div class="restaurant-info__name">
+              Name Restaurant
+            </div>
+            <div class="restaurant-info__date">
+              Registration date: 20\03\2020.
+            </div>
+            <div class="restaurant-info__rating">
+              User rating
+              <span>
+                4.0
+              </span>
+              <img src="./images/star-restor.png" alt="img">
+            </div>
+
+            <div class="restaurant-info__type">
+              Restaurant
+            </div>
+
+          </div>
+        </div>
+
+        <div class="restaurant-graphics">
+          <div class="restaurant-graph">
+            <div class="restaurant-graph__title">
+              Average menu view
+            </div>
+            <div class="restaurant-graph__subtitle">
+            <span>
+              Number of views
+            </span>
+              The last 31 days.
+            </div>
+            <div class="restaurant-graph__table">
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Application
+                  </div>
+                    <div class="restaurant-graph__num">
+                        4567
+                    </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    A restaurant
+                  </div>
+                    <div class="restaurant-graph__num">
+                        45
+                    </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 30%;">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="restaurant-graph__bottom">
+              67890
+              <span class="restaurant-graph__down"></span>
+            </div>
+
+          </div>
+
+          <div class="restaurant-graph">
+            <div class="restaurant-graph__title">
+              Number of dishes viewed
+            </div>
+            <div class="restaurant-graph__subtitle">
+              The last 31 days.
+            </div>
+            <div class="restaurant-graph__table">
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Application
+                  </div>
+                  <div class="restaurant-graph__num">
+                      44567 pie
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    A restaurant
+                  </div>
+                  <div class="restaurant-graph__num">
+                    445 pie
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 30%;">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="restaurant-graph__bottom">
+              123
+              <span class="restaurant-graph__up"></span>
+            </div>
+
+          </div>
+
+          <div class="restaurant-graph">
+            <div class="restaurant-graph__title">
+              Most viewed dish categories in AR menu
+            </div>
+            <div class="restaurant-graph__subtitle">
+              The last 31 days.
+            </div>
+            <div class="restaurant-graph__table">
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Soup
+                  </div>
+                  <div class="restaurant-graph__num">
+                    4567
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Salad
+                  </div>
+                  <div class="restaurant-graph__num">
+                    45
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 30%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Appetizer
+                  </div>
+                  <div class="restaurant-graph__num">
+                    4567
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Dessert
+                  </div>
+                  <div class="restaurant-graph__num">
+                    45
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 30%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Beverage
+                  </div>
+                  <div class="restaurant-graph__num">
+                    4567
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Main Dish
+                  </div>
+                  <div class="restaurant-graph__num">
+                    45
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 30%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Sunday
+                  </div>
+                  <div class="restaurant-graph__num">
+                    4567
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Monday
+                  </div>
+                  <div class="restaurant-graph__num">
+                    45
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 30%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Tuesday
+                  </div>
+                  <div class="restaurant-graph__num">
+                    4567
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 30%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Wednesday
+                  </div>
+                  <div class="restaurant-graph__num">
+                    45
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="restaurant-graph__row">
+                <div class="restaurant-graph__left">
+                  <div class="restaurant-graph__name">
+                    Thursday
+                  </div>
+                  <div class="restaurant-graph__num">
+                    4567
+                  </div>
+                </div>
+                <div class="restaurant-graph__right">
+
+                  <div class="restaurant-graph__bg" style="width: 100%;">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="restaurant-graph restaurant-graph--last">
+            <div class="restaurant-graph__inner">
+
+              <div class="restaurant-graph__block">
+                <div class="restaurant-graph__title">
+                  Restaurant average check
+
+                  <span class="restaurant-graph__calendar"> </span>
+                </div>
+
+                <div class="restaurant-graph__table-stat">
+                  <div class="restaurant-graph__table-stat-tr">
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        03/06/2020
+                      </div>
+                      <div class="restaurant-graph__table-stat-count">
+                        Today
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        Guest rating
+                      </div>
+                      <div class="restaurant-graph__table-stat-count">
+                        There is no data
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        Fact
+                      </div>
+                      <div class="restaurant-graph__table-stat-count">
+                        156 $
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        %
+                      </div>
+                      <div class="restaurant-graph__table-stat-count">
+                        15
+                        <span class="restaurant-graph__up">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <a href="#">+</a>
+                    </div>
+                  </div>
+
+
+                  <div class="restaurant-graph__table-stat-tr">
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        01/06/2020
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        Guest rating
+                      </div>
+                      <div class="restaurant-graph__table-stat-count">
+                        There is no data
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        Fact
+                      </div>
+                      <div class="restaurant-graph__table-stat-count">
+                        64 $
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <div class="restaurant-graph__table-stat-name">
+                        %
+                      </div>
+                      <div class="restaurant-graph__table-stat-count">
+                        01
+                        <span class="restaurant-graph__down">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="restaurant-graph__table-stat-td">
+                      <a href="#">+</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="restaurant-graph__block">
+                <div class="restaurant-graph__title">
+                  Restaurant average check
+                </div>
+                <div class="restaurant-graph__subtitle">
+                  <select name="aa" id="" class="graph-select">
+                    <option value="0" selected>Days</option>
+                    <option value="1">Weeks</option>
+                    <option value="2">Years</option>
+                  </select>
+                  The last 31 days.
+                </div>
+
+                <div class="restaurant-graph__charts">
+                  <div class="js-tabs__content restaurant-best-selling-chart-wrapper active">
+                    <canvas class="restaurant-week-best-selling"></canvas>
+                  </div>
+
+                  <div class="js-tabs__content restaurant-best-selling-chart-wrapper">
+                    <canvas class="restaurant-month-best-selling"></canvas>
+                  </div>
+
+                  <div class="js-tabs__content restaurant-best-selling-chart-wrapper">
+                    <canvas class="restaurant-year-best-selling"></canvas>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="menu-sort menu-sort-custom">
+
+
+
+          <div class="select-box sort-select">
+            <div class="select-box__current" tabindex="1">
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1"
+                                                    name="sort" checked="checked" />
+                <p class="select-box__input-text">By date added</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2"
+                                                    name="sort" checked="checked" />
+                <p class="select-box__input-text">Price - Low to high</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="3"
+                                                    name="sort" checked="checked" />
+                <p class="select-box__input-text">Price - High to low</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="4"
+                                                    name="sort" checked="checked" />
+                <p class="select-box__input-text">Inactive first</p>
+              </div>
+              <div class="select-box__value"><input class="select-box__input" type="radio" id="4" value="5"
+                                                    name="sort" checked="checked" />
+                <p class="select-box__input-text">Sort by</p>
+              </div>
+
+
+              <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon" aria-hidden="true" />
+            </div>
+            <ul class="select-box__list">
+              <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">By date added</label></li>
+              <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">Price - Low to high</label></li>
+              <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">Price - Hight to low</label></li>
+              <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">Inactive first</label></li>
+              <li><label class="select-box__option" for="4" aria-hidden="aria-hidden">Sort by</label></li>
+            </ul>
+          </div>
+
+          <!--<div class="base-select">
+            <select>
+            </select>
+          </div>
+          <div class="base-select">
+            <select>
+            </select>
+          </div>-->
+
+          <div class="search-field">
+            <input id="foodSearch" class="search-field-input" type="search" placeholder="Search">
+            <label for="foodSearch" class="search-field-icon">
+
+              <!--<svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle r="7.96262" transform="matrix(-1 0 0 1 8.96267 8.96262)" stroke="#E3B100" stroke-width="2" />
+                <path d="M13.1454 16.7302L18.5229 26.2904" stroke="#E3B100" stroke-width="2" />
+              </svg>-->
+
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.8 0C3.04446 0 0 3.04446 0 6.8C0 10.5555 3.04446 13.6 6.8 13.6C10.5555 13.6 13.6 10.5555 13.6 6.8C13.6 3.04446 10.5555 0 6.8 0ZM2.55 6.8C2.55 4.45279 4.45279 2.55 6.8 2.55C9.14721 2.55 11.05 4.45279 11.05 6.8C11.05 9.14721 9.14721 11.05 6.8 11.05C4.45279 11.05 2.55 9.14721 2.55 6.8Z" fill="#0D0E18"/>
+                <path d="M13.175 11.3719L11.3719 13.175L14.8234 16.6266C15.3214 17.1245 16.1286 17.1245 16.6266 16.6266C17.1245 16.1286 17.1245 15.3214 16.6266 14.8234L13.175 11.3719Z" fill="#0D0E18"/>
               </svg>
-            </li>
-            <li class="star">
-              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.7249 1.4192C14.4715 -0.0187913 16.5285 -0.0187892 17.2751 1.4192L20.6228 7.86784C20.8964 8.39479 21.3899 8.77295 21.9699 8.9L28.8985 10.4178C30.3708 10.7403 30.9708 12.5136 29.9969 13.6639L25.0405 19.5174C24.6873 19.9345 24.5202 20.478 24.5781 21.0215L25.4004 28.7463C25.5675 30.3161 23.9353 31.4516 22.5216 30.7491L16.39 27.7022C15.8294 27.4237 15.1706 27.4237 14.61 27.7022L8.47839 30.7491C7.06469 31.4516 5.43254 30.3161 5.59963 28.7463L6.42193 21.0215C6.47978 20.478 6.31269 19.9345 5.9595 19.5174L1.00315 13.6639C0.0292094 12.5136 0.629237 10.7403 2.10151 10.4178L9.0301 8.9C9.61007 8.77295 10.1036 8.39479 10.3772 7.86784L13.7249 1.4192Z"
-                  fill="#FFC700" />
-              </svg>
-            </li>
-            <li class="star">
-              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.7249 1.4192C14.4715 -0.0187913 16.5285 -0.0187892 17.2751 1.4192L20.6228 7.86784C20.8964 8.39479 21.3899 8.77295 21.9699 8.9L28.8985 10.4178C30.3708 10.7403 30.9708 12.5136 29.9969 13.6639L25.0405 19.5174C24.6873 19.9345 24.5202 20.478 24.5781 21.0215L25.4004 28.7463C25.5675 30.3161 23.9353 31.4516 22.5216 30.7491L16.39 27.7022C15.8294 27.4237 15.1706 27.4237 14.61 27.7022L8.47839 30.7491C7.06469 31.4516 5.43254 30.3161 5.59963 28.7463L6.42193 21.0215C6.47978 20.478 6.31269 19.9345 5.9595 19.5174L1.00315 13.6639C0.0292094 12.5136 0.629237 10.7403 2.10151 10.4178L9.0301 8.9C9.61007 8.77295 10.1036 8.39479 10.3772 7.86784L13.7249 1.4192Z"
-                  fill="#FFC700" />
-              </svg>
-            </li>
-            <li class="star">
-              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14.6125 1.87995C14.9857 1.16096 16.0143 1.16096 16.3875 1.87995L19.7353 8.32859C20.1456 9.11901 20.886 9.68626 21.7559 9.87684L28.6845 11.3946C29.4206 11.5559 29.7207 12.4426 29.2337 13.0177L24.2773 18.8712C23.7475 19.4969 23.4969 20.3121 23.5837 21.1273L24.406 28.8522C24.4895 29.6371 23.6735 30.2048 22.9666 29.8536L16.835 26.8067C15.9941 26.3888 15.006 26.3888 14.165 26.8067L8.0334 29.8536C7.32654 30.2048 6.51047 29.6371 6.59402 28.8522L7.41631 21.1273C7.50309 20.3121 7.25245 19.4969 6.72267 18.8712L1.76632 13.0177C1.27935 12.4426 1.57936 11.5559 2.3155 11.3946L9.24409 9.87684C10.114 9.68626 10.8544 9.11902 11.2647 8.32859L14.6125 1.87995Z"
-                  stroke="#E3B100" stroke-width="2" />
-              </svg>
 
-            </li>
-          </ul>
-          <!-- /.stars-wrapper -->
-          <div class="rating">
-            4.0
+            </label>
           </div>
         </div>
-        <!-- /.restaurant-rating light-card -->
 
-        <div class="new-restaurants-number light-card">
-          <h5 class="restaurant-stats-h5">Number of visits</h5>
-
-          <div class="js-tabs">
-
-            <ul class="js-tabs__header">
-              <li><a href="#" class="js-tabs__title">week</a></li>
-              <li><a href="#" class="js-tabs__title">month</a></li>
-              <li><a href="#" class="js-tabs__title">year</a></li>
-            </ul>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number">456</div>
-            </div>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number">1345</div>
-            </div>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number">12446</div>
-            </div>
-
-          </div>
-        </div>
-        <!-- /.new-restaurants-number light-card -->
-        <div class="new-restaurants-number amount-of-earings light-card">
-          <h5 class="restaurant-stats-h5">Amount of earings, AED</h5>
-
-          <div class="js-tabs">
-
-            <ul class="js-tabs__header">
-              <li><a href="#" class="js-tabs__title">week</a></li>
-              <li><a href="#" class="js-tabs__title">month</a></li>
-              <li><a href="#" class="js-tabs__title">year</a></li>
-            </ul>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number">456</div>
-            </div>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number">1345</div>
-            </div>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number">12446</div>
-            </div>
-
-          </div>
-        </div>
-        <!-- /.new-restaurants-number light-card -->
-
-        <div class="restaurant-best-selling light-card">
-          <h5 class="restaurant-stats-h5 before-el">Best selling items:</h5>
-          <div class="js-tabs">
-
-            <ul class="js-tabs__header">
-              <li><a href="#" class="js-tabs__title">week</a></li>
-              <li><a href="#" class="js-tabs__title">month</a></li>
-              <li><a href="#" class="js-tabs__title">year</a></li>
-            </ul>
-
-            <div class="js-tabs__content restaurant-best-selling-chart-wrapper">
-              <canvas class="restaurant-week-best-selling"></canvas>
-            </div>
-
-            <div class="js-tabs__content restaurant-best-selling-chart-wrapper">
-              <canvas class="restaurant-month-best-selling"></canvas>
-            </div>
-
-            <div class="js-tabs__content restaurant-best-selling-chart-wrapper">
-              <canvas class="restaurant-year-best-selling"></canvas>
-            </div>
-
-          </div>
-        </div>
-        <!-- /.reataurant-best-selling lighn-card -->
-
-        <div class="new-restaurants-number missed-orders light-card">
-          <h5 class="restaurant-stats-h5 before-el">Looked but didn't place an order.</h5>
-
-          <div class="js-tabs">
-
-            <ul class="js-tabs__header">
-              <li><a href="#" class="js-tabs__title">week</a></li>
-              <li><a href="#" class="js-tabs__title">month</a></li>
-              <li><a href="#" class="js-tabs__title">year</a></li>
-            </ul>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number red-color">109</div>
-            </div>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number red-color">134</div>
-            </div>
-
-            <div class="js-tabs__content">
-              <div class="restaurants-number red-color">1245</div>
-            </div>
-
-          </div>
-        </div>
-        <!-- /.missed-orders light-card -->
-
-        <div class="new-restaurants-number average-check light-card">
-          <h5 class="restaurant-stats-h5 before-el">Average restaurant check</h5>
-
-          <div class="js-tabs">
-
-            <ul class="js-tabs__header">
-              <li><a href="#" class="js-tabs__title">week</a></li>
-              <li><a href="#" class="js-tabs__title">month</a></li>
-              <li><a href="#" class="js-tabs__title">year</a></li>
-            </ul>
-
-            <div class="js-tabs__content">
-              <div class="average-check-content">
-                <ul class="reset-list-styles average-check-heading">
-                  <li class="number">
-                    №
-                  </li>
-                  <li class="name">Name</li>
-                  <li class="result">Result</li>
-                  <li class="percent">
-                    <span>%</span>
-                    <i>
-                      <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11.978 6.65226C11.9334 6.5588 11.8293 6.49781 11.7137 6.49781H8.57984V0.249924C8.57984 0.11197 8.4517 0 8.29383 0H3.71793C3.56006 0 3.43192 0.11197 3.43192 0.249924V6.49783H0.286C0.170468 6.49783 0.0663569 6.55882 0.0217419 6.65179C-0.0223101 6.74525 0.00171333 6.85272 0.0835165 6.9242L5.78909 11.9265C5.84285 11.9735 5.91551 12 5.99158 12C6.06764 12 6.1403 11.9735 6.19406 11.927L11.9162 6.9247C11.998 6.85319 12.0226 6.74574 11.978 6.65226Z"
-                          fill="#E80100" />
-                        <path
-                          d="M15.022 5.34774C15.0666 5.44121 15.1707 5.50219 15.2863 5.50219L18.4202 5.50219L18.4202 11.7501C18.4202 11.888 18.5483 12 18.7062 12L23.2821 12C23.4399 12 23.5681 11.888 23.5681 11.7501L23.5681 5.50217L26.714 5.50217C26.8295 5.50217 26.9336 5.44118 26.9783 5.34821C27.0223 5.25475 26.9983 5.14728 26.9165 5.0758L21.2109 0.0734775C21.1571 0.0265004 21.0845 1.66404e-06 21.0084 1.67317e-06C20.9324 1.6823e-06 20.8597 0.0265005 20.8059 0.0729854L15.0838 5.0753C15.002 5.14681 14.9774 5.25426 15.022 5.34774Z"
-                          fill="#2DA82D" />
-                      </svg>
-
-                    </i>
-                  </li>
-                </ul>
-                <ul class="reset-list-styles average-check-item">
-                  <li class="number">
-                    1
-                  </li>
-                  <li class="name">
-                    -
-                  </li>
-                  <li class="result">
-                    455
-                  </li>
-                  <li class="percent">
-                    <span>13 %</span>
-                    <i>
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M0.0219931 5.34774C0.0666079 5.44121 0.170718 5.50219 0.286251 5.50219L3.42016 5.50219L3.42016 11.7501C3.42016 11.888 3.5483 12 3.70617 12L8.28207 12C8.43994 12 8.56808 11.888 8.56808 11.7501L8.56808 5.50217L11.714 5.50217C11.8295 5.50217 11.9336 5.44118 11.9783 5.34821C12.0223 5.25475 11.9983 5.14728 11.9165 5.0758L6.21091 0.0734774C6.15715 0.0265003 6.08449 1.56153e-06 6.00842 1.56935e-06C5.93236 1.57716e-06 5.8597 0.0265004 5.80594 0.0729853L0.0837674 5.0753C0.00196406 5.14681 -0.0226226 5.25426 0.0219931 5.34774Z"
-                          fill="#2DA82D" />
-                      </svg>
-
-                    </i>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="js-tabs__content">
-              <div class="average-check-content">
-                <ul class="reset-list-styles average-check-heading">
-                  <li class="number">
-                    №
-                  </li>
-                  <li class="name">Name</li>
-                  <li class="result">Result</li>
-                  <li class="percent">
-                    <span>%</span>
-                    <i>
-                      <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11.978 6.65226C11.9334 6.5588 11.8293 6.49781 11.7137 6.49781H8.57984V0.249924C8.57984 0.11197 8.4517 0 8.29383 0H3.71793C3.56006 0 3.43192 0.11197 3.43192 0.249924V6.49783H0.286C0.170468 6.49783 0.0663569 6.55882 0.0217419 6.65179C-0.0223101 6.74525 0.00171333 6.85272 0.0835165 6.9242L5.78909 11.9265C5.84285 11.9735 5.91551 12 5.99158 12C6.06764 12 6.1403 11.9735 6.19406 11.927L11.9162 6.9247C11.998 6.85319 12.0226 6.74574 11.978 6.65226Z"
-                          fill="#E80100" />
-                        <path
-                          d="M15.022 5.34774C15.0666 5.44121 15.1707 5.50219 15.2863 5.50219L18.4202 5.50219L18.4202 11.7501C18.4202 11.888 18.5483 12 18.7062 12L23.2821 12C23.4399 12 23.5681 11.888 23.5681 11.7501L23.5681 5.50217L26.714 5.50217C26.8295 5.50217 26.9336 5.44118 26.9783 5.34821C27.0223 5.25475 26.9983 5.14728 26.9165 5.0758L21.2109 0.0734775C21.1571 0.0265004 21.0845 1.66404e-06 21.0084 1.67317e-06C20.9324 1.6823e-06 20.8597 0.0265005 20.8059 0.0729854L15.0838 5.0753C15.002 5.14681 14.9774 5.25426 15.022 5.34774Z"
-                          fill="#2DA82D" />
-                      </svg>
-
-                    </i>
-                  </li>
-                </ul>
-                <ul class="reset-list-styles average-check-item">
-                  <li class="number">
-                    1
-                  </li>
-                  <li class="name">
-                    -
-                  </li>
-                  <li class="result">
-                    755
-                  </li>
-                  <li class="percent">
-                    <span>13 %</span>
-                    <i>
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M0.0219931 5.34774C0.0666079 5.44121 0.170718 5.50219 0.286251 5.50219L3.42016 5.50219L3.42016 11.7501C3.42016 11.888 3.5483 12 3.70617 12L8.28207 12C8.43994 12 8.56808 11.888 8.56808 11.7501L8.56808 5.50217L11.714 5.50217C11.8295 5.50217 11.9336 5.44118 11.9783 5.34821C12.0223 5.25475 11.9983 5.14728 11.9165 5.0758L6.21091 0.0734774C6.15715 0.0265003 6.08449 1.56153e-06 6.00842 1.56935e-06C5.93236 1.57716e-06 5.8597 0.0265004 5.80594 0.0729853L0.0837674 5.0753C0.00196406 5.14681 -0.0226226 5.25426 0.0219931 5.34774Z"
-                          fill="#2DA82D" />
-                      </svg>
-
-                    </i>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="js-tabs__content">
-              <div class="average-check-content">
-                <ul class="reset-list-styles average-check-heading">
-                  <li class="number">
-                    №
-                  </li>
-                  <li class="name">Name</li>
-                  <li class="result">Result</li>
-                  <li class="percent">
-                    <span>%</span>
-                    <i>
-                      <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11.978 6.65226C11.9334 6.5588 11.8293 6.49781 11.7137 6.49781H8.57984V0.249924C8.57984 0.11197 8.4517 0 8.29383 0H3.71793C3.56006 0 3.43192 0.11197 3.43192 0.249924V6.49783H0.286C0.170468 6.49783 0.0663569 6.55882 0.0217419 6.65179C-0.0223101 6.74525 0.00171333 6.85272 0.0835165 6.9242L5.78909 11.9265C5.84285 11.9735 5.91551 12 5.99158 12C6.06764 12 6.1403 11.9735 6.19406 11.927L11.9162 6.9247C11.998 6.85319 12.0226 6.74574 11.978 6.65226Z"
-                          fill="#E80100" />
-                        <path
-                          d="M15.022 5.34774C15.0666 5.44121 15.1707 5.50219 15.2863 5.50219L18.4202 5.50219L18.4202 11.7501C18.4202 11.888 18.5483 12 18.7062 12L23.2821 12C23.4399 12 23.5681 11.888 23.5681 11.7501L23.5681 5.50217L26.714 5.50217C26.8295 5.50217 26.9336 5.44118 26.9783 5.34821C27.0223 5.25475 26.9983 5.14728 26.9165 5.0758L21.2109 0.0734775C21.1571 0.0265004 21.0845 1.66404e-06 21.0084 1.67317e-06C20.9324 1.6823e-06 20.8597 0.0265005 20.8059 0.0729854L15.0838 5.0753C15.002 5.14681 14.9774 5.25426 15.022 5.34774Z"
-                          fill="#2DA82D" />
-                      </svg>
-
-                    </i>
-                  </li>
-                </ul>
-                <ul class="reset-list-styles average-check-item">
-                  <li class="number">
-                    1
-                  </li>
-                  <li class="name">
-                    -
-                  </li>
-                  <li class="result">
-                    4155
-                  </li>
-                  <li class="percent">
-                    <span>13 %</span>
-                    <i>
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M0.0219931 5.34774C0.0666079 5.44121 0.170718 5.50219 0.286251 5.50219L3.42016 5.50219L3.42016 11.7501C3.42016 11.888 3.5483 12 3.70617 12L8.28207 12C8.43994 12 8.56808 11.888 8.56808 11.7501L8.56808 5.50217L11.714 5.50217C11.8295 5.50217 11.9336 5.44118 11.9783 5.34821C12.0223 5.25475 11.9983 5.14728 11.9165 5.0758L6.21091 0.0734774C6.15715 0.0265003 6.08449 1.56153e-06 6.00842 1.56935e-06C5.93236 1.57716e-06 5.8597 0.0265004 5.80594 0.0729853L0.0837674 5.0753C0.00196406 5.14681 -0.0226226 5.25426 0.0219931 5.34774Z"
-                          fill="#2DA82D" />
-                      </svg>
-
-                    </i>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-        <!-- /.average-check light-card -->
-
-
-
-        <div class="restaurant-activity light-card">
-
-          <h5 class="restaurant-stats-h5 before-el">Order Statistics</h5>
-          <form class="restaurant-activity-sort">
-
-            <div class="js-tabs restaurant-activity-tabs">
-
-              <ul class="js-tabs__header">
-                <li><a href="#" class="js-tabs__title">1w</a></li>
-                <li><a href="#" class="js-tabs__title">1m</a></li>
-                <li><a href="#" class="js-tabs__title">1y</a></li>
-                <li><a href="#" class="js-tabs__title restaurant-data-input">
-                    <label class="restaurant-activity-data">
-                      <input type="text" placeholder="mm/dd/yyyy - mm/dd/yyyy" name="restaurantActivityData">
-                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11.5909 0C12.0177 0 12.3636 0.345962 12.3636 0.772727V2.31818H10.8182V0.772727C10.8182 0.345962 11.1641 0 11.5909 0Z"
-                          fill="#596079" fill-opacity="0.8" />
-                        <path
-                          d="M6.18182 2.31818V0.772727C6.18182 0.345962 5.83586 0 5.40909 0C4.98233 0 4.63636 0.345962 4.63636 0.772727V2.31818H6.18182Z"
-                          fill="#596079" fill-opacity="0.8" />
-                        <path
-                          d="M6.18182 2.31818V3.86364C6.18182 4.2904 5.83586 4.63636 5.40909 4.63636C4.98233 4.63636 4.63636 4.2904 4.63636 3.86364V2.31818C3.10891 2.31937 2.30827 2.33886 1.68767 2.65507C1.10607 2.95141 0.633225 3.42426 0.336889 4.00585C0 4.66703 0 5.53256 0 7.26364V12.0545C0 13.7856 0 14.6512 0.336889 15.3123C0.633225 15.8939 1.10607 16.3668 1.68767 16.6631C2.34885 17 3.21438 17 4.94545 17H12.0545C13.7856 17 14.6512 17 15.3123 16.6631C15.8939 16.3668 16.3668 15.8939 16.6631 15.3123C17 14.6512 17 13.7856 17 12.0545V7.26364C17 5.53256 17 4.66703 16.6631 4.00585C16.3668 3.42426 15.8939 2.95141 15.3123 2.65507C14.6917 2.33886 13.8911 2.31937 12.3636 2.31818V3.86364C12.3636 4.2904 12.0177 4.63636 11.5909 4.63636C11.1641 4.63636 10.8182 4.2904 10.8182 3.86364V2.31818H6.18182Z"
-                          fill="#596079" fill-opacity="0.8" />
-                        <rect x="1.41602" y="5.66699" width="5.66667" height="5.66667" rx="1" fill="#E4E5EB"
-                          fill-opacity="0.21" />
-                      </svg>
-                    </label>
-                  </a></li>
-              </ul>
-
-              <div class="js-tabs__content">
-                <canvas class="restaurants-number restaurant-order-stats-week-chart"></canvas>
-              </div>
-
-              <div class="js-tabs__content">
-                <canvas class="restaurants-number restaurant-order-stats-month-chart"></canvas>
-              </div>
-
-              <div class="js-tabs__content">
-                <canvas class="restaurants-number restaurant-order-stats-year-chart"></canvas>
-              </div>
-
-              <div class="js-tabs__content">
-                <div class="restaurants-number"></div>
-              </div>
-
-            </div>
-          </form>
-        </div>
-        <!-- /.restaurant-activity light-card -->
-        <h5 class="restaurant-stats-h5 mobile-only before-el">List of restaurants</h5>
         <div class="restaurant-orders light-card">
 
-          <form class="restaurant-orders-sort">
-            <div class="search-field">
-              <label for="orderSearch" class="search-field-icon"><svg width="20" height="27" viewBox="0 0 20 27"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle r="7.96262" transform="matrix(-1 0 0 1 8.96267 8.96262)" stroke="#E3B100" stroke-width="2" />
-                  <path d="M13.1454 16.7302L18.5229 26.2904" stroke="#E3B100" stroke-width="2" />
-                </svg>
-              </label>
-              <input id="orderSearch" class="search-field-input" type="search" placeholder="Search">
-            </div>
 
-            <button type="button" class="btn-base">
-              <span class="btn-base-text">Search</span>
-            </button>
-
-          </form>
 
           <!-- /.restaurant-orders-sort -->
           <ul class="restaurant-stats-table-heading reset-list-styles">
@@ -576,7 +719,7 @@
             <li class="restaurant-reviews">Reviews</li>
             <li class="restaurant-amount">Amount</li>
           </ul>
-          
+
 
             <ul class="reset-list-styles restaurant-stats-table-item">
               <li class="restaurant-number">1
@@ -588,8 +731,8 @@
               <li class="restaurant-amount">220</li>
               <li class=""></li>
             </ul>
-          
-         
+
+
             <ul class="reset-list-styles restaurant-stats-table-item">
               <li class="restaurant-number">2
               </li>
@@ -600,9 +743,9 @@
               <li class="restaurant-amount">220</li>
               <li class=""></li>
             </ul>
-          
 
-          
+
+
             <ul class="reset-list-styles restaurant-stats-table-item">
               <li class="restaurant-number">3
               </li>
@@ -613,9 +756,9 @@
               <li class="restaurant-amount">220</li>
               <li class=""></li>
             </ul>
-        
 
-        
+
+
             <ul class="reset-list-styles restaurant-stats-table-item">
               <li class="restaurant-number">4
               </li>
@@ -626,9 +769,9 @@
               <li class="restaurant-amount">220</li>
               <li class=""></li>
             </ul>
-     
 
-       
+
+
             <ul class="reset-list-styles restaurant-stats-table-item">
               <li class="restaurant-number">5
               </li>
@@ -639,9 +782,9 @@
               <li class="restaurant-amount">220</li>
               <li class=""></li>
             </ul>
-   
 
-          
+
+
             <ul class="reset-list-styles restaurant-stats-table-item">
               <li class="restaurant-number">6
               </li>
@@ -652,7 +795,7 @@
               <li class="restaurant-amount">220</li>
               <li class=""></li>
             </ul>
-   
+
 
           <!-- /.reset-list-styles restaurant-stats-table-item -->
           <!-- /.restaurant-orders-table-title -->

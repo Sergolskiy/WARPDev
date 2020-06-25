@@ -97,4 +97,36 @@ $('.restaurant-management .restaurant-tables .visible-icon').click(function () {
   $(this).toggleClass('active');
 });
 
+$('.graph-select').change(function () {
+  $('.restaurant-best-selling-chart-wrapper').removeClass('active');
+  $('.restaurant-best-selling-chart-wrapper').eq($(this).val()).addClass('active');
 
+});
+
+$('.order-right__minus').click(function (e) {
+  e.preventDefault();
+  if($(this).closest('.order-right__counter').find('.order-right__count').val() > 0 ){
+    $(this).closest('.order-right__counter').find('.order-right__count').val(parseInt($(this).closest('.order-right__counter').find('.order-right__count').val()) - 1);
+  }
+
+});
+
+$('.order-right__plus').click(function (e) {
+  e.preventDefault();
+  $(this).closest('.order-right__counter').find('.order-right__count').val(parseInt($(this).closest('.order-right__counter').find('.order-right__count').val()) + 1);
+});
+
+$('.order-right__close').click(function (e) {
+  e.preventDefault();
+  $(this).closest('.order-right__item').slideUp();
+});
+
+$('.custom-select-js .dropdown-menu-item').click(function () {
+
+  $(this).closest('.dropdown-menu-wrapper').prev().html($(this).html());
+});
+
+$('.undelay-orders-field').click(function () {
+  $(this).closest('.delay-orders-field').removeClass('delay-orders-field');
+  $(this).addClass('disable-delay');
+});

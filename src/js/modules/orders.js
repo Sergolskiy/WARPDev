@@ -67,194 +67,194 @@ export default class Orders {
   }
 
   openPopUp() {
-    if (this.orders) {
-      this.orders.forEach((order) => {
-        order.addEventListener('click', (e) => {
-          const deliveryPopUpClickPrevLater = this.deliveryPopUp.querySelector('.click-prevent-layer');
-          const restaurantPopUpClickPrevLater = this.restaurantPopUp.querySelector('.click-prevent-layer');
-          const takeAwayPopUpClickPrevLater = this.takeAwayPopUp.querySelector('.click-prevent-layer');
-          const addIngredientBtnDelivery = this.deliveryPopUp.querySelector('.pop-up-add-ingredient-btn-wrapper');
-          const addIngredientBtnRestaurant = this.restaurantPopUp.querySelector('.pop-up-add-ingredient-btn-wrapper');
-          const addIngredientBtnTakeAway = this.takeAwayPopUp.querySelector('.pop-up-add-ingredient-btn-wrapper');
-
-          if (this.ordersInteraction) {
-            const delayBtn = this.ordersInteraction.querySelector('.delay-orders-btn button');
-            const submenu = this.ordersInteraction.querySelector('.delay-submenu');
-            submenu.classList.remove('opened');
-            delayBtn.parentNode.classList.remove('activated');
-          }
-
-          if (this.isOnCompletedTab) {
-            restaurantPopUpClickPrevLater.classList.add('active');
-            deliveryPopUpClickPrevLater.classList.add('active');
-            takeAwayPopUpClickPrevLater.classList.add('active');
-            addIngredientBtnDelivery.style.display = 'none';
-            addIngredientBtnRestaurant.style.display = 'none';
-            addIngredientBtnTakeAway.style.display = 'none';
-            this.deliveryPopUp.classList.add('completed-pop-up');
-            this.restaurantPopUp.classList.add('completed-pop-up');
-            this.takeAwayPopUp.classList.add('completed-pop-up');
-          } else {
-            restaurantPopUpClickPrevLater.classList.remove('active');
-            deliveryPopUpClickPrevLater.classList.remove('active');
-            takeAwayPopUpClickPrevLater.classList.remove('active');
-            addIngredientBtnDelivery.style.display = 'block';
-            addIngredientBtnRestaurant.style.display = 'block';
-            addIngredientBtnTakeAway.style.display = 'block';
-            this.deliveryPopUp.classList.remove('completed-pop-up');
-            this.restaurantPopUp.classList.remove('completed-pop-up');
-            this.takeAwayPopUp.classList.remove('completed-pop-up');
-          }
-          this.orderType = order.querySelector('.order-type').innerText;
-          const checkbox = [order.querySelector('.styled-checkbox'), order.querySelector('.custom-checkbox-wrapper'), order.querySelector('.custom-checkbox-wrapper label'),
-            order.querySelector('.order-expand-btn'),
-            order.querySelector('.order-expand-btn button'),
-            order.querySelector('.order-expand-btn button svg'),
-            order.querySelector('.order-expand-btn button svg path')];
-
-          if (!checkbox.includes(e.target)) {
-            if (this.orderType === 'Delivery') {
-              document.removeEventListener('click', this.restaurantOutsideClick);
-              document.removeEventListener('click', this.takeAwayOutsideClick);
-              this.deliveryPopUp.classList.remove('d-none');
-              this.darkerWrapper.classList.add('show');
-              this.setHeight(this.darkerWrapper);
-              const closeBtn = this.deliveryPopUp.querySelector('.pop-up-close-btn');
-              this.switchPayment(this.deliveryPopUp);
-
-              this.deliveryOutsideClick = (event) => {
-                let isClickInside = false;
-                if (this.deliveryPopUp.contains(event.target) || event.target.classList.contains('select-ingredient-list-item') || event.target.classList.contains('click-prevent-layer')) {
-                  isClickInside = true;
-                }
-
-                this.orders.forEach((orderC) => {
-                  if (orderC.contains(event.target)) {
-                    isClickInside = true;
-                  }
-                });
-
-                if (!isClickInside) {
-                  this.deliveryPopUp.classList.add('d-none');
-                  this.darkerWrapper.classList.remove('show');
-                  this.darkerWrapper.style.height = '0';
-                  const addedItems = Array.from(this.deliveryPopUp.querySelectorAll('.pop-up-added-order-item'));
-                  if (addedItems.length > 0) {
-                    addedItems.forEach((addedItem) => {
-                      addedItem.remove();
-                    });
-                  }
-                }
-              };
-
-              document.addEventListener('click', this.deliveryOutsideClick);
-              closeBtn.addEventListener('click', () => {
-                this.deliveryPopUp.classList.add('d-none');
-                this.darkerWrapper.classList.remove('show');
-                this.darkerWrapper.style.height = '0';
-                const addedItems = Array.from(this.deliveryPopUp.querySelectorAll('.pop-up-added-order-item'));
-                if (addedItems.length > 0) {
-                  addedItems.forEach((addedItem) => {
-                    addedItem.remove();
-                  });
-                }
-              });
-            } else if (this.orderType === 'Restaurant') {
-              document.removeEventListener('click', this.deliveryOutsideClick);
-              document.removeEventListener('click', this.takeAwayOutsideClick);
-              this.restaurantPopUp.classList.remove('d-none');
-              this.darkerWrapper.classList.add('show');
-              this.setHeight(this.darkerWrapper);
-              const closeBtn = this.restaurantPopUp.querySelector('.pop-up-close-btn');
-              this.switchPayment(this.restaurantPopUp);
-
-              this.restaurantOutsideClick = (event) => {
-                let isClickInside = false;
-                if (this.restaurantPopUp.contains(event.target) || event.target.classList.contains('select-ingredient-list-item') || event.target.classList.contains('click-prevent-layer')) {
-                  isClickInside = true;
-                }
-
-                this.orders.forEach((orderC) => {
-                  if (orderC.contains(event.target)) {
-                    isClickInside = true;
-                  }
-                });
-
-                if (!isClickInside) {
-                  this.restaurantPopUp.classList.add('d-none');
-                  this.darkerWrapper.classList.remove('show');
-                  this.darkerWrapper.style.height = '0';
-                  const addedItems = Array.from(this.restaurantPopUp.querySelectorAll('.pop-up-added-order-item'));
-                  if (addedItems.length > 0) {
-                    addedItems.forEach((addedItem) => {
-                      addedItem.remove();
-                    });
-                  }
-                }
-              };
-              document.addEventListener('click', this.restaurantOutsideClick);
-              closeBtn.addEventListener('click', () => {
-                this.restaurantPopUp.classList.add('d-none');
-                this.darkerWrapper.classList.remove('show');
-                this.darkerWrapper.style.height = '0';
-                const addedItems = Array.from(this.restaurantPopUp.querySelectorAll('.pop-up-added-order-item'));
-                if (addedItems.length > 0) {
-                  addedItems.forEach((addedItem) => {
-                    addedItem.remove();
-                  });
-                }
-              });
-            } else if (this.orderType === 'Take away') {
-              document.removeEventListener('click', this.deliveryOutsideClick);
-              document.removeEventListener('click', this.restaurantOutsideClick);
-              this.takeAwayPopUp.classList.remove('d-none');
-              this.darkerWrapper.classList.add('show');
-              this.setHeight(this.darkerWrapper);
-              const closeBtn = this.takeAwayPopUp.querySelector('.pop-up-close-btn');
-              this.switchPayment(this.takeAwayPopUp);
-
-              this.takeAwayOutsideClick = (event) => {
-                let isClickInside = false;
-
-                if (this.takeAwayPopUp.contains(event.target) || event.target.classList.contains('select-ingredient-list-item') || event.target.classList.contains('click-prevent-layer')) {
-                  isClickInside = true;
-                }
-
-                this.orders.forEach((orderC) => {
-                  if (orderC.contains(event.target)) {
-                    isClickInside = true;
-                  }
-                });
-
-                if (!isClickInside) {
-                  this.takeAwayPopUp.classList.add('d-none');
-                  this.darkerWrapper.classList.remove('show');
-                  this.darkerWrapper.style.height = '0';
-                  const addedItems = Array.from(this.takeAwayPopUp.querySelectorAll('.pop-up-added-order-item'));
-                  if (addedItems.length > 0) {
-                    addedItems.forEach((addedItem) => {
-                      addedItem.remove();
-                    });
-                  }
-                }
-              };
-              document.addEventListener('click', this.takeAwayOutsideClick);
-              closeBtn.addEventListener('click', () => {
-                this.takeAwayPopUp.classList.add('d-none');
-                this.darkerWrapper.classList.remove('show');
-                this.darkerWrapper.style.height = '0';
-                const addedItems = Array.from(this.takeAwayPopUp.querySelectorAll('.pop-up-added-order-item'));
-                if (addedItems.length > 0) {
-                  addedItems.forEach((addedItem) => {
-                    addedItem.remove();
-                  });
-                }
-              });
-            }
-          }
-        });
-      });
-    }
+    // if (this.orders) {
+    //   this.orders.forEach((order) => {
+    //     order.addEventListener('click', (e) => {
+    //       const deliveryPopUpClickPrevLater = this.deliveryPopUp.querySelector('.click-prevent-layer');
+    //       const restaurantPopUpClickPrevLater = this.restaurantPopUp.querySelector('.click-prevent-layer');
+    //       const takeAwayPopUpClickPrevLater = this.takeAwayPopUp.querySelector('.click-prevent-layer');
+    //       const addIngredientBtnDelivery = this.deliveryPopUp.querySelector('.pop-up-add-ingredient-btn-wrapper');
+    //       const addIngredientBtnRestaurant = this.restaurantPopUp.querySelector('.pop-up-add-ingredient-btn-wrapper');
+    //       const addIngredientBtnTakeAway = this.takeAwayPopUp.querySelector('.pop-up-add-ingredient-btn-wrapper');
+    //
+    //       if (this.ordersInteraction) {
+    //         const delayBtn = this.ordersInteraction.querySelector('.delay-orders-btn button');
+    //         const submenu = this.ordersInteraction.querySelector('.delay-submenu');
+    //         submenu.classList.remove('opened');
+    //         delayBtn.parentNode.classList.remove('activated');
+    //       }
+    //
+    //       if (this.isOnCompletedTab) {
+    //         restaurantPopUpClickPrevLater.classList.add('active');
+    //         deliveryPopUpClickPrevLater.classList.add('active');
+    //         takeAwayPopUpClickPrevLater.classList.add('active');
+    //         addIngredientBtnDelivery.style.display = 'none';
+    //         addIngredientBtnRestaurant.style.display = 'none';
+    //         addIngredientBtnTakeAway.style.display = 'none';
+    //         this.deliveryPopUp.classList.add('completed-pop-up');
+    //         this.restaurantPopUp.classList.add('completed-pop-up');
+    //         this.takeAwayPopUp.classList.add('completed-pop-up');
+    //       } else {
+    //         restaurantPopUpClickPrevLater.classList.remove('active');
+    //         deliveryPopUpClickPrevLater.classList.remove('active');
+    //         takeAwayPopUpClickPrevLater.classList.remove('active');
+    //         addIngredientBtnDelivery.style.display = 'block';
+    //         addIngredientBtnRestaurant.style.display = 'block';
+    //         addIngredientBtnTakeAway.style.display = 'block';
+    //         this.deliveryPopUp.classList.remove('completed-pop-up');
+    //         this.restaurantPopUp.classList.remove('completed-pop-up');
+    //         this.takeAwayPopUp.classList.remove('completed-pop-up');
+    //       }
+    //       this.orderType = order.querySelector('.order-type').innerText;
+    //       const checkbox = [order.querySelector('.styled-checkbox'), order.querySelector('.custom-checkbox-wrapper'), order.querySelector('.custom-checkbox-wrapper label'),
+    //         order.querySelector('.order-expand-btn'),
+    //         order.querySelector('.order-expand-btn button'),
+    //         order.querySelector('.order-expand-btn button svg'),
+    //         order.querySelector('.order-expand-btn button svg path')];
+    //
+    //       if (!checkbox.includes(e.target)) {
+    //         if (this.orderType === 'Delivery') {
+    //           document.removeEventListener('click', this.restaurantOutsideClick);
+    //           document.removeEventListener('click', this.takeAwayOutsideClick);
+    //           this.deliveryPopUp.classList.remove('d-none');
+    //           this.darkerWrapper.classList.add('show');
+    //           this.setHeight(this.darkerWrapper);
+    //           const closeBtn = this.deliveryPopUp.querySelector('.pop-up-close-btn');
+    //           this.switchPayment(this.deliveryPopUp);
+    //
+    //           this.deliveryOutsideClick = (event) => {
+    //             let isClickInside = false;
+    //             if (this.deliveryPopUp.contains(event.target) || event.target.classList.contains('select-ingredient-list-item') || event.target.classList.contains('click-prevent-layer')) {
+    //               isClickInside = true;
+    //             }
+    //
+    //             this.orders.forEach((orderC) => {
+    //               if (orderC.contains(event.target)) {
+    //                 isClickInside = true;
+    //               }
+    //             });
+    //
+    //             if (!isClickInside) {
+    //               this.deliveryPopUp.classList.add('d-none');
+    //               this.darkerWrapper.classList.remove('show');
+    //               this.darkerWrapper.style.height = '0';
+    //               const addedItems = Array.from(this.deliveryPopUp.querySelectorAll('.pop-up-added-order-item'));
+    //               if (addedItems.length > 0) {
+    //                 addedItems.forEach((addedItem) => {
+    //                   addedItem.remove();
+    //                 });
+    //               }
+    //             }
+    //           };
+    //
+    //           document.addEventListener('click', this.deliveryOutsideClick);
+    //           closeBtn.addEventListener('click', () => {
+    //             this.deliveryPopUp.classList.add('d-none');
+    //             this.darkerWrapper.classList.remove('show');
+    //             this.darkerWrapper.style.height = '0';
+    //             const addedItems = Array.from(this.deliveryPopUp.querySelectorAll('.pop-up-added-order-item'));
+    //             if (addedItems.length > 0) {
+    //               addedItems.forEach((addedItem) => {
+    //                 addedItem.remove();
+    //               });
+    //             }
+    //           });
+    //         } else if (this.orderType === 'Restaurant') {
+    //           document.removeEventListener('click', this.deliveryOutsideClick);
+    //           document.removeEventListener('click', this.takeAwayOutsideClick);
+    //           this.restaurantPopUp.classList.remove('d-none');
+    //           this.darkerWrapper.classList.add('show');
+    //           this.setHeight(this.darkerWrapper);
+    //           const closeBtn = this.restaurantPopUp.querySelector('.pop-up-close-btn');
+    //           this.switchPayment(this.restaurantPopUp);
+    //
+    //           this.restaurantOutsideClick = (event) => {
+    //             let isClickInside = false;
+    //             if (this.restaurantPopUp.contains(event.target) || event.target.classList.contains('select-ingredient-list-item') || event.target.classList.contains('click-prevent-layer')) {
+    //               isClickInside = true;
+    //             }
+    //
+    //             this.orders.forEach((orderC) => {
+    //               if (orderC.contains(event.target)) {
+    //                 isClickInside = true;
+    //               }
+    //             });
+    //
+    //             if (!isClickInside) {
+    //               this.restaurantPopUp.classList.add('d-none');
+    //               this.darkerWrapper.classList.remove('show');
+    //               this.darkerWrapper.style.height = '0';
+    //               const addedItems = Array.from(this.restaurantPopUp.querySelectorAll('.pop-up-added-order-item'));
+    //               if (addedItems.length > 0) {
+    //                 addedItems.forEach((addedItem) => {
+    //                   addedItem.remove();
+    //                 });
+    //               }
+    //             }
+    //           };
+    //           document.addEventListener('click', this.restaurantOutsideClick);
+    //           closeBtn.addEventListener('click', () => {
+    //             this.restaurantPopUp.classList.add('d-none');
+    //             this.darkerWrapper.classList.remove('show');
+    //             this.darkerWrapper.style.height = '0';
+    //             const addedItems = Array.from(this.restaurantPopUp.querySelectorAll('.pop-up-added-order-item'));
+    //             if (addedItems.length > 0) {
+    //               addedItems.forEach((addedItem) => {
+    //                 addedItem.remove();
+    //               });
+    //             }
+    //           });
+    //         } else if (this.orderType === 'Take away') {
+    //           document.removeEventListener('click', this.deliveryOutsideClick);
+    //           document.removeEventListener('click', this.restaurantOutsideClick);
+    //           this.takeAwayPopUp.classList.remove('d-none');
+    //           this.darkerWrapper.classList.add('show');
+    //           this.setHeight(this.darkerWrapper);
+    //           const closeBtn = this.takeAwayPopUp.querySelector('.pop-up-close-btn');
+    //           this.switchPayment(this.takeAwayPopUp);
+    //
+    //           this.takeAwayOutsideClick = (event) => {
+    //             let isClickInside = false;
+    //
+    //             if (this.takeAwayPopUp.contains(event.target) || event.target.classList.contains('select-ingredient-list-item') || event.target.classList.contains('click-prevent-layer')) {
+    //               isClickInside = true;
+    //             }
+    //
+    //             this.orders.forEach((orderC) => {
+    //               if (orderC.contains(event.target)) {
+    //                 isClickInside = true;
+    //               }
+    //             });
+    //
+    //             if (!isClickInside) {
+    //               this.takeAwayPopUp.classList.add('d-none');
+    //               this.darkerWrapper.classList.remove('show');
+    //               this.darkerWrapper.style.height = '0';
+    //               const addedItems = Array.from(this.takeAwayPopUp.querySelectorAll('.pop-up-added-order-item'));
+    //               if (addedItems.length > 0) {
+    //                 addedItems.forEach((addedItem) => {
+    //                   addedItem.remove();
+    //                 });
+    //               }
+    //             }
+    //           };
+    //           document.addEventListener('click', this.takeAwayOutsideClick);
+    //           closeBtn.addEventListener('click', () => {
+    //             this.takeAwayPopUp.classList.add('d-none');
+    //             this.darkerWrapper.classList.remove('show');
+    //             this.darkerWrapper.style.height = '0';
+    //             const addedItems = Array.from(this.takeAwayPopUp.querySelectorAll('.pop-up-added-order-item'));
+    //             if (addedItems.length > 0) {
+    //               addedItems.forEach((addedItem) => {
+    //                 addedItem.remove();
+    //               });
+    //             }
+    //           });
+    //         }
+    //       }
+    //     });
+    //   });
+    // }
   }
 
   ordersDelay() {
