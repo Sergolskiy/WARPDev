@@ -42,7 +42,8 @@ export default class MenuManagement {
     if (this.addIngredientBtn) {
       this.addIngredientBtn.addEventListener('click', () => {
         const ingredient = document.createElement('li');
-        const value = document.querySelector('input[name="ingredient"]:checked').value;
+        const value = document.querySelector('.ingredient-input-i').value;
+        if(value.length === 0) return;
         ingredient.classList = 'dish-ingredients-item';
         ingredient.innerHTML = `<span>${value}</span>
         <button type="button" class="delete-icon">

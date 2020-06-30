@@ -204,6 +204,7 @@
                     </div>
 
 
+
                     <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon" aria-hidden="true" />
                   </div>
                   <ul class="select-box__list">
@@ -213,16 +214,12 @@
                     <li><label class="select-box__option" for="dish3" aria-hidden="aria-hidden">Dessert</label></li>
                     <li><label class="select-box__option" for="dish4" aria-hidden="aria-hidden">Beverage</label></li>
                     <li><label class="select-box__option" for="dish5" aria-hidden="aria-hidden">Main Dish</label></li>
+                    <li><label class="select-box__option select-box__option-add" >Add category <span>+</span> </label></li>
                   </ul>
                 </div>
               </li>
               <li class="description submenu-item">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
-                    fill="#7C7E92" />
-                </svg>
+
                 <input type="text" value="At vero eos et accusamus et iusto odiвввввв..." name="dish-description">
 
               </li>
@@ -357,16 +354,12 @@
                     <li><label class="select-box__option" for="dish31" aria-hidden="aria-hidden">Dessert</label></li>
                     <li><label class="select-box__option" for="dish41" aria-hidden="aria-hidden">Beverage</label></li>
                     <li><label class="select-box__option" for="dish51" aria-hidden="aria-hidden">Main Dish</label></li>
+                    <li><label class="select-box__option select-box__option-add" >Add category <span>+</span> </label></li>
                   </ul>
                 </div>
               </li>
               <li class="description submenu-item">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
-                    fill="#7C7E92" />
-                </svg>
+
                 <input type="text" value="Многие думают, что Lorem..." name="dish-description">
 
               </li>
@@ -500,16 +493,12 @@
                     <li><label class="select-box__option" for="dish32" aria-hidden="aria-hidden">Dessert</label></li>
                     <li><label class="select-box__option" for="dish42" aria-hidden="aria-hidden">Beverage</label></li>
                     <li><label class="select-box__option" for="dish52" aria-hidden="aria-hidden">Main Dish</label></li>
+                    <li><label class="select-box__option select-box__option-add" >Add category <span>+</span> </label></li>
                   </ul>
                 </div>
               </li>
               <li class="description submenu-item">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.2961 13.1238L1.89384 9.72151L10.1228 1.49255L13.5251 4.89481L5.2961 13.1238ZM1.57582 10.3208L4.69679 13.4418L0.0175781 15L1.57582 10.3208ZM14.5715 3.85287L13.9814 4.44299L10.5746 1.03623L11.1647 0.446105C11.7592 -0.148702 12.7232 -0.148702 13.3176 0.446105L14.5715 1.70001C15.1616 2.29643 15.1616 3.25662 14.5715 3.85287Z"
-                    fill="#7C7E92" />
-                </svg>
+
                 <input type="text" value="Многие думают, что Lorem..." name="dish-description">
 
               </li>
@@ -604,6 +593,24 @@
         <span class="btn-base-text">New</span>
       </a>
     </div>
+
+  <div class="popup-add-category">
+    <div class="popup-add-category__inner">
+      <a href="#" class="popup-add-category__close">+</a>
+      <div class="popup-add-category__title">
+        Enter the category you want to add
+      </div>
+      <div class="popup-add-category__input">
+        <input type="text">
+      </div>
+      <div class="popup-add-category__btn">
+        <a href="javascript:void(0)" class="btn btn-base">
+          <span class="btn-base-text">Add</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
   @@include('../partials/scripts/common.html')
 </body>
 

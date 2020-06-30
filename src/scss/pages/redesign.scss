@@ -862,6 +862,15 @@
 
 .order-content .pop-up-content-item-right {
   width: 70%;
+  padding-bottom: 0;
+}
+
+.order-content .pop-up-order-item {
+  pointer-events: none;
+}
+
+.pop-up-payment-status button{
+  cursor: pointer;
 }
 
 .order-right__items{
@@ -1057,6 +1066,8 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  display: block;
+  margin-right: 30px;
 }
 
 /* Hide default HTML checkbox */
@@ -1197,6 +1208,247 @@ input:checked + .slider:before {
   right: 55px;
 }
 
+.input-count-wrap{
+  position: relative;
+}
+
+.input-count{
+  font-size: 12px;
+  line-height: 14px;
+  color: #001AFF;
+  position: absolute;
+  right: 19px;
+  bottom: -23px;
+}
+
+.restaurant-description-text .base-textarea-wrapper .symbols{
+  bottom: -3px;
+}
+
+.restaurant-description-text .base-textarea-wrapper {
+  padding-bottom: 20px;
+}
+
+.restaurant-card-form .md-radio label:before{
+  width: 32px;
+  height: 32px;
+}
+.restaurant-card-form .md-radio label:after{
+  width: 22px;
+  height: 22px;
+}
+.restaurant-card-form .md-radio label{
+  min-height: 30px;
+  font-size: 14px;
+}
+
+.restaurant-delivery .include-cost-content input, .restaurant-delivery .min-order-amount-content input, .restaurant-delivery .free-shipping-content input{
+  padding: 12px 5px;
+}
+.restaurant-delivery .type-of-payment-btn{
+  padding: 11px 5px;
+}
+
+.restaurant-delivery-form-field{
+  display: flex;
+}
+
+.restaurant-delivery .type-of-payment-btn{
+  width: 27%;
+
+  &:last-child{
+    margin-left: 55px;
+  }
+}
+
+.form-group input{
+  padding-left: 20px;
+}
+
+.restaurant-card-first .restaurant-card-first-details .form-group label {
+  left: 18px;
+}
+
+.dish-card-content .dish-card-first .dish-details .light-card-h3{
+  font-weight: bold;
+}
+
+.dish-card-content .dish-card-first .dish-ingredients .light-card-h3{
+  font-weight: bold;
+}
+
+.dish-card-content .dish-card-second .js-tabs__content.dish-card-second-description-content input{
+  width: 97%;
+
+  & + .error-icon{
+    margin-left: -30px;
+  }
+}
+
+.dish-card-second .input-count{
+  right: 0;
+  bottom: -1px;
+}
+
+.dish-card-content .dish-card-second .base-textarea-wrapper textarea{
+  margin-bottom: 20px;
+}
+
+.dish-card-content .dish-card-second .base-textarea-wrapper .symbols{
+  bottom: -21px;
+}
+
+.pop-up-content-item.inactive-item{
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.popup-add-category{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 200px;
+  background: #E4E5EB;
+  box-shadow: 0px 5px 10px rgba(111, 113, 121, 0.31);
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: none;
+  z-index: 100;
+
+  &.open{
+    display: block;
+  }
+}
+
+.popup-add-category__title{
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+}
+
+.popup-add-category__input input{
+  border: 1px solid rgba(89, 96, 121, 0.6);
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.popup-add-category__btn a{
+  display: block;
+  margin: 0 auto;
+  width: 105px;
+}
+
+.popup-add-category__close{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  transform: rotate(45deg);
+  display: block;
+  font-size: 25px;
+  font-weight: 100;
+  color: #7E818D;
+}
+
+.menu-management-content .menu-list-wrapper .menu-list-item .category .select-box__list, .menu-management-content .menu-list-wrapper .menu-list-item .category .select-box__list li label{
+  background: #E4E5EB;
+}
+
+.select-box__option-add{
+  margin-top: 10px;
+  position: relative;
+
+  &:after{
+    content: "";
+    display: block;
+    top: -6px;
+    left: -9px;
+    width: calc(100% + 20px);
+    height: 1px;
+    background: #d6d7e0;
+    position: absolute;
+  }
+
+  span{
+    color: #7E818D;
+  }
+}
+
+.dish-ingredients-item:hover{
+  border: 2px solid #181D30 !important;
+}
+
+.ingredient-input-i{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  background: #EDEEF3;
+  border: 1px solid #7E8296;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.ingredient-input-i-wrap{
+  position: relative;
+}
+
+.ingredient-input-i_capt{
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  box-shadow: 0px 5px 10px rgba(111, 113, 121, 0.31);
+  background-color: #E4E5EB;
+  border-radius: 10px;
+  padding: 10px;
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+  top: 100%;
+  margin-top: -13px;
+
+  &.open{
+    visibility: visible;
+    z-index: 100;
+    opacity: 1;
+  }
+}
+
+.ingredient-input-i_capt-i{
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  transition: 0.3s;
+  border-radius: 10px;
+
+  &:hover{
+    background-color: #D6D7DF;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: 1720px) {
+  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover {
+    right: -20px;
+  }
+
+}
+@media (max-width: 1440px) {
+  .restaurant-btn-field {
+    padding: 2px 0px;
+  }
+}
 @media (max-width: 992px) {
   .order-content__inner{
     padding: 30px 30px 100px;

@@ -141,7 +141,7 @@ fieldset {
     display: none;
     width: 100%;
     margin: 0;
-    padding: 11px 8px;
+    padding: 11px 20px;
     background-color: #E4E5EB;
   }
 
@@ -238,7 +238,7 @@ fieldset {
   &:focus {
     outline: none;
   }
-  
+
 
   @include respond-to(desktop) {
     padding: 5px;
@@ -262,7 +262,7 @@ fieldset {
       font-size: 12px;
       line-height: 14px;
       color: map-get($colors, 'blue-color');
-      
+
       @include respond-to(desktop) {
         right: 22px;
         color: rgba(0, 9, 218, 0.2);;
@@ -425,7 +425,7 @@ input::-webkit-calendar-picker-indicator {
     border: none !important;
     color: rgba(24, 29, 48, 0.29);
   }
-  
+
   .select-ingredient-list {
     position: absolute;
     width: 195px;
