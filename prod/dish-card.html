@@ -410,52 +410,60 @@
               <div class="dish-ingredients accordion">
                 <a class=" before-el light-card-h3 accordion-btn">Ingredients</a>
                 <div class="accordion-content">
-                  <div class="select-box">
-                    <div class="select-box__current" tabindex="1">
-                      <div class="select-box__value"><input required class="select-box__input" type="radio"
-                          id="ingredient0" value="Potato" name="ingredient" checked="checked" />
-                        <p class="select-box__input-text">Potato</p>
-                      </div>
-                      <div class="select-box__value"><input required class="select-box__input" type="radio"
-                          id="ingredient1" value="Salad" name="ingredient" checked="checked" />
-                        <p class="select-box__input-text">Salad</p>
-                      </div>
-                      <div class="select-box__value"><input required class="select-box__input" type="radio"
-                          id="ingredient2" value="Cheese" name="ingredient" checked="checked" />
-                        <p class="select-box__input-text">Cheese</p>
-                      </div>
-                      <div class="select-box__value"><input required class="select-box__input" type="radio"
-                          id="ingredient3" value="Cucumber" name="ingredient" checked="checked" />
-                        <p class="select-box__input-text">Cucumber</p>
-                      </div>
-                      <div class="select-box__value"><input required class="select-box__input" type="radio"
-                          id="ingredient4" value="Onion" name="ingredient" checked="checked" />
-                        <p class="select-box__input-text">Onion</p>
-                      </div>
-                      <div class="select-box__value"><input required class="select-box__input" type="radio"
-                          id="ingredient5" value="Fish" name="ingredient" checked="checked" />
-                        <p class="select-box__input-text">Fish</p>
-                      </div>
+                  <!--<div class="select-box">-->
+                    <!--<div class="select-box__current" tabindex="1">-->
+                      <!--<div class="select-box__value"><input required class="select-box__input" type="radio"-->
+                          <!--id="ingredient0" value="Potato" name="ingredient" checked="checked" />-->
+                        <!--<p class="select-box__input-text">Potato</p>-->
+                      <!--</div>-->
+                      <!--<div class="select-box__value"><input required class="select-box__input" type="radio"-->
+                          <!--id="ingredient1" value="Salad" name="ingredient" checked="checked" />-->
+                        <!--<p class="select-box__input-text">Salad</p>-->
+                      <!--</div>-->
+                      <!--<div class="select-box__value"><input required class="select-box__input" type="radio"-->
+                          <!--id="ingredient2" value="Cheese" name="ingredient" checked="checked" />-->
+                        <!--<p class="select-box__input-text">Cheese</p>-->
+                      <!--</div>-->
+                      <!--<div class="select-box__value"><input required class="select-box__input" type="radio"-->
+                          <!--id="ingredient3" value="Cucumber" name="ingredient" checked="checked" />-->
+                        <!--<p class="select-box__input-text">Cucumber</p>-->
+                      <!--</div>-->
+                      <!--<div class="select-box__value"><input required class="select-box__input" type="radio"-->
+                          <!--id="ingredient4" value="Onion" name="ingredient" checked="checked" />-->
+                        <!--<p class="select-box__input-text">Onion</p>-->
+                      <!--</div>-->
+                      <!--<div class="select-box__value"><input required class="select-box__input" type="radio"-->
+                          <!--id="ingredient5" value="Fish" name="ingredient" checked="checked" />-->
+                        <!--<p class="select-box__input-text">Fish</p>-->
+                      <!--</div>-->
 
 
-                      <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
-                        aria-hidden="true" />
+                      <!--<img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"-->
+                        <!--aria-hidden="true" />-->
+                    <!--</div>-->
+                    <!--<ul class="select-box__list">-->
+                      <!--<li><label class="select-box__option" for="ingredient0" aria-hidden="aria-hidden">Potato</label>-->
+                      <!--</li>-->
+                      <!--<li><label class="select-box__option" for="ingredient1" aria-hidden="aria-hidden">Salad</label>-->
+                      <!--</li>-->
+                      <!--<li><label class="select-box__option" for="ingredient2" aria-hidden="aria-hidden">Cheese</label>-->
+                      <!--</li>-->
+                      <!--<li><label class="select-box__option" for="ingredient3" aria-hidden="aria-hidden">Cucumber</label>-->
+                      <!--</li>-->
+                      <!--<li><label class="select-box__option" for="ingredient4" aria-hidden="aria-hidden">Onion</label>-->
+                      <!--</li>-->
+                      <!--<li><label class="select-box__option" for="ingredient5" aria-hidden="aria-hidden">Fish</label>-->
+                      <!--</li>-->
+                    <!--</ul>-->
+                  <!--</div>-->
+                  <div class="ingredient-input-i-wrap">
+                    <input type="text" class="ingredient-input-i">
+                    <div class="ingredient-input-i_capt">
+                      <div class="ingredient-input-i_capt-i">sad</div>
+                      <div class="ingredient-input-i_capt-i">23423</div>
                     </div>
-                    <ul class="select-box__list">
-                      <li><label class="select-box__option" for="ingredient0" aria-hidden="aria-hidden">Potato</label>
-                      </li>
-                      <li><label class="select-box__option" for="ingredient1" aria-hidden="aria-hidden">Salad</label>
-                      </li>
-                      <li><label class="select-box__option" for="ingredient2" aria-hidden="aria-hidden">Cheese</label>
-                      </li>
-                      <li><label class="select-box__option" for="ingredient3" aria-hidden="aria-hidden">Cucumber</label>
-                      </li>
-                      <li><label class="select-box__option" for="ingredient4" aria-hidden="aria-hidden">Onion</label>
-                      </li>
-                      <li><label class="select-box__option" for="ingredient5" aria-hidden="aria-hidden">Fish</label>
-                      </li>
-                    </ul>
                   </div>
+
 
                   <div class="center">
                     <button type="button" class="add-btn add-ingredient-btn">
@@ -519,14 +527,22 @@
 
                 <div class="js-tabs__content dish-card-second-description-content">
                   <h3 class="light-card-h3">Dish name</h3>
-                  <input required type="text" name="dishName">
-                  <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
-                        fill="#FF0000" stroke="#FF0000" />
-                    </svg>
-                  </i>
+                  <div class="input-count-wrap">
+                    <input required type="text" name="dishName">
+                    <i class="error-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.9318 7.49958L13.7923 2.63885C13.926 2.50504 13.9998 2.32653 14 2.13618C14 1.94572 13.9262 1.767 13.7923 1.63341L13.3664 1.20758C13.2325 1.07346 13.054 1 12.8634 1C12.6732 1 12.4946 1.07346 12.3607 1.20758L7.50021 6.06799L2.63948 1.20758C2.50578 1.07346 2.32716 1 2.13671 1C1.94646 1 1.76785 1.07346 1.63415 1.20758L1.208 1.63341C0.930667 1.91074 0.930667 2.36183 1.208 2.63885L6.06863 7.49958L1.208 12.3601C1.0742 12.4941 1.00053 12.6726 1.00053 12.863C1.00053 13.0533 1.0742 13.2318 1.208 13.3657L1.63404 13.7916C1.76774 13.9256 1.94646 13.9992 2.1366 13.9992C2.32706 13.9992 2.50567 13.9256 2.63937 13.7916L7.50011 8.93106L12.3606 13.7916C12.4945 13.9256 12.673 13.9992 12.8633 13.9992H12.8635C13.0539 13.9992 13.2324 13.9256 13.3663 13.7916L13.7922 13.3657C13.9259 13.2319 13.9997 13.0533 13.9997 12.863C13.9997 12.6726 13.9259 12.4941 13.7922 12.3602L8.9318 7.49958Z"
+                          fill="#FF0000" stroke="#FF0000" />
+                      </svg>
+                    </i>
+
+                    <div class="input-count">
+                      <span class="count-min">4</span>
+                      <span>/</span>
+                      <span class="count-max">25</span>
+                    </div>
+                  </div>
                   <h3 class="light-card-h3">Description</h3>
                   <div class="base-textarea-wrapper">
                     <i class="error-icon-textarea"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"

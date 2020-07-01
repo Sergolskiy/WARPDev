@@ -1219,10 +1219,12 @@ input:checked + .slider:before {
   position: absolute;
   right: 19px;
   bottom: -23px;
+  opacity: 0.6;
 }
 
 .restaurant-description-text .base-textarea-wrapper .symbols{
   bottom: -3px;
+  opacity: 0.6;
 }
 
 .restaurant-description-text .base-textarea-wrapper {
@@ -1278,7 +1280,7 @@ input:checked + .slider:before {
 }
 
 .dish-card-content .dish-card-second .js-tabs__content.dish-card-second-description-content input{
-  width: 97%;
+  width: 98%;
 
   & + .error-icon{
     margin-left: -30px;
@@ -1296,6 +1298,22 @@ input:checked + .slider:before {
 
 .dish-card-content .dish-card-second .base-textarea-wrapper .symbols{
   bottom: -21px;
+}
+
+//.dish-card-content .dish-card-second{
+//  padding: 24px 40px 24px 40px;
+//}
+
+//.dish-card-content .dish-card-second .base-textarea-wrapper {
+//  padding-left: 0;
+//}
+
+//.dish-card-content .dish-card-second .js-tabs__content.dish-card-second-description-content input{
+//  margin-left: 0;
+//}
+
+.js-tabs .js-tabs__title-active{
+  font-weight: bold;
 }
 
 .pop-up-content-item.inactive-item{
@@ -1437,6 +1455,76 @@ input:checked + .slider:before {
   }
 }
 
+.dish-card-content .dish-card-third .border-bt-light{
+  border-bottom: 0;
+  font-weight: bold;
+}
+
+.dish-card-title-section .light-card-h3{
+  font-weight: bold;
+}
+
+.menu-management-content .menu-list-wrapper .menu-list-item .category .select-box__list li:hover label{
+  background: #D6D7DF;
+  border-radius: 8px;
+  color: #0009DA;
+}
+
+.select-box__list li{
+  position: relative;
+}
+
+.rem-i{
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  margin-top: -12px;
+  transform: rotate(45deg);
+  font-size: 20px;
+  font-weight: 100;
+  color: #7E818D;
+}
+
+.restaurant-delivery-form-field.areas-select{
+  flex-direction: column;
+}
+
+.restaurant-delivery .type-of-payment-btn {
+  width: 20%;
+}
+
+.restaurant-card-form-wrapper .restaurant-card-first .js-tabs__header{
+  margin: 0 -54px 0 -40px;
+}
+
+.restaurant-card-form-wrapper .restaurant-card-second .js-tabs__header{
+  margin: 0 -39px 0 -25px;
+}
+
+.restaurant-gallery .light-card-h3{
+  margin: 0 -39px 0 -25px;
+  padding-left: 25px;
+}
+
+.restaurant-delivery-form-field.areas-select .ingredient-input-i{
+  margin-top: 0;
+}
+
+.complete-order{
+  pointer-events: none;
+}
+
+.orders .mobile-footer-btn .restaurant-submit-btn{
+  width: 90px;
+  position: relative;
+  top: -7px;
+  cursor: pointer;
+}
+
+.menu-management-content .menu-sort .sort-select,
+.restaurant-management .menu-sort .sort-select{
+  width: 17%;
+}
 
 @media (max-width: 1720px) {
   .restaurant-tables .restaurant-tables-item .qr-code .qr-hover {
@@ -1472,7 +1560,15 @@ input:checked + .slider:before {
   }
 
 }
+@media (max-width: 600px){
+  .js-tabs .js-tabs__header {
+    margin: 0 -14px 0 -15px;
+  }
+
+}
+
 @media (max-width: 580px) {
+
 
   .user-stats-content .menu-sort.menu-sort-custom .sort-select,
   .user-stats-content .menu-sort.menu-sort-custom .btn-field,

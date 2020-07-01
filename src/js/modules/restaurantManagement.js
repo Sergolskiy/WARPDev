@@ -110,7 +110,7 @@ export default class RestaurantManagement {
       this.addAreaBtns.forEach((addBtn) => {
         addBtn.addEventListener('click', () => {
           const area = document.createElement('li');
-          const { value } = document.querySelector('input[name="area"]:checked');
+          const { value } = document.querySelector('.ingredient-input-i');
           area.classList = 'delivery-areas-item';
           area.innerHTML = `<span class="delivery-areas-item-text">${value}</span>
           <i class="delivery-areas-item-del">

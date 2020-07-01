@@ -375,36 +375,55 @@
                           </div>
                         </div>
 
-                        <div class="select-box">
-                          <p class="select-box-label gray-color">Type of Restaurant</p>
-                          <div class="select-box__current" tabindex="1">
-                            <div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen0"
-                                value="1" name="kitchen" checked="checked" />
-                              <p class="select-box__input-text">Home</p>
-                            </div>
-                            <div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen1"
-                                value="2" name="kitchen" checked="checked" />
-                              <p class="select-box__input-text">Ukrainian</p>
-                            </div>
-                            <div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen2"
-                                value="3" name="kitchen" checked="checked" />
-                              <p class="select-box__input-text">European</p>
-                            </div>
 
+                        <div class="select-box-2">
+                          <div id="example2" class="multiselect-wrap">
+                            <select id="multiselect2"  class="form-control multiselect" name="languages[]" multiple="multiple">
+                              <option value="1" selected>Home</option>
+                              <option value="2">Ukrainian</option>
+                              <option value="3" selected>American cuisine</option>
+                              <option value="4">European</option>
+                              <option value="5">Author's cuisine</option>
+                              <option value="6">American cuisine</option>
+                              <option value="7">Arabian cuisine</option>
+                              <option value="8">Author's cuisine</option>
+                            </select>
+                            <p class="select-box-label gray-color">Type of Restaurant</p>
                             <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"
-                              aria-hidden="true" />
+                                 aria-hidden="true" />
                           </div>
-                          <ul class="select-box__list">
-                            <li><label class="select-box__option" for="kitchen0" aria-hidden="aria-hidden">Home</label>
-                            </li>
-                            <li><label class="select-box__option" for="kitchen1" aria-hidden="aria-hidden">Ukrainian
-                              </label>
-                            </li>
-                            <li><label class="select-box__option" for="kitchen2"
-                                aria-hidden="aria-hidden">European</label>
-                            </li>
-                          </ul>
                         </div>
+
+                        <!--<div class="select-box">-->
+                          <!--<p class="select-box-label gray-color">Type of Restaurant</p>-->
+                          <!--<div class="select-box__current" tabindex="1">-->
+                            <!--<div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen0"-->
+                                <!--value="1" name="kitchen" checked="checked" />-->
+                              <!--<p class="select-box__input-text">Home</p>-->
+                            <!--</div>-->
+                            <!--<div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen1"-->
+                                <!--value="2" name="kitchen" checked="checked" />-->
+                              <!--<p class="select-box__input-text">Ukrainian</p>-->
+                            <!--</div>-->
+                            <!--<div class="select-box__value"><input class="select-box__input" type="radio" id="kitchen2"-->
+                                <!--value="3" name="kitchen" checked="checked" />-->
+                              <!--<p class="select-box__input-text">European</p>-->
+                            <!--</div>-->
+
+                            <!--<img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon"-->
+                              <!--aria-hidden="true" />-->
+                          <!--</div>-->
+                          <!--<ul class="select-box__list">-->
+                            <!--<li><label class="select-box__option" for="kitchen0" aria-hidden="aria-hidden">Home</label>-->
+                            <!--</li>-->
+                            <!--<li><label class="select-box__option" for="kitchen1" aria-hidden="aria-hidden">Ukrainian-->
+                              <!--</label>-->
+                            <!--</li>-->
+                            <!--<li><label class="select-box__option" for="kitchen2"-->
+                                <!--aria-hidden="aria-hidden">European</label>-->
+                            <!--</li>-->
+                          <!--</ul>-->
+                        <!--</div>-->
 
                         <div class="select-box currency-box">
                           <p class="select-box-label gray-color">Currency</p>
@@ -965,9 +984,18 @@
                         </ul>
                         <div class="js-tabs__content">
                           <div class="restaurant-description-name">
-                            <label for="restaurant-name" class="light-card-h3">Dish Name</label>
-                            <input type="text" class="restaurant-description-name-input" id="restaurant-name"
-                              value="Name" name="restaurant-name">
+                            <label for="restaurant-name" class="light-card-h3">Restaurant name</label>
+                            <div class="input-count-wrap">
+                              <input type="text" class="restaurant-description-name-input" id="restaurant-name"
+                                     value="Name" name="restaurant-name">
+                              <div class="input-count">
+                                <span class="count-min">4</span>
+                                <span>/</span>
+                                <span class="count-max">25</span>
+                              </div>
+
+                            </div>
+
                           </div>
                           <div class="restaurant-description-text">
                             <label class="light-card-h3" for="restaurant-description">Description</label>

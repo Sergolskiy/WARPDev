@@ -175,7 +175,7 @@ $('.popup-add-category__btn a').click(function () {
     var txt = $('.popup-add-category__input input').val();
     var name = $('.select-box.sort-select.active .select-box__value').last().find('input').attr('name');
 
-    $('<li><label class=\"select-box__option\" for=\"dish' + num + '\" aria-hidden=\"aria-hidden\">'+txt+'</label></li>')
+    $('<li><label class=\"select-box__option\" for=\"dish' + num + '\" aria-hidden=\"aria-hidden\">'+txt+'</label><a href="#" class="rem-i">+</a></li>')
       .insertBefore($('.select-box.sort-select.active .select-box__option-add').parent());
 
     $(`<div class="select-box__value"><input class="select-box__input" type="radio" id="dish${num}" value="${num}"
@@ -209,4 +209,15 @@ $('.ingredient-input-i_capt-i').click(function () {
 $('.pop-up-payment-status button').click(function () {
   $('.pop-up-payment-status button').removeClass('selected');
   $(this).addClass('selected')
+});
+
+$(document).on('click', '.rem-i',function () {
+  $('input[id="'+$(this).prev().attr('for')+'"]').parent().remove();
+  $(this).parent().remove();
+});
+
+$('.orders-table-list').click(function (e) {
+  if($(e.target).closest('.order-expand-btn').length > 0){
+    e.preventDefault();
+  }
 });
