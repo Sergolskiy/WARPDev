@@ -227,7 +227,7 @@
   }
 
   .restaurant-card-form-wrapper .restaurant-card-first{
-    padding-left: 17px;
+    padding-left: 16px;
   }
   .restaurant-card-first .restaurant-card-first-details .form-group.extra-icon svg {
     position: absolute;
@@ -307,15 +307,29 @@
     margin-top: 18px;
   }
 
-  .restaurant-management .accordion-tablet-content .center{
+  .restaurant-management .accordion-tablet-content .restaurant-tables-heading + .center{
     position: absolute;
     right: 8px;
     top: 46px;
   }
 
+  .restaurant-management .menu-sort .search-field-input{
+    width: 100%;
+  }
+
+  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover {
+    display: block;
+    top: 2px;
+  }
+  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover .restaurant-btn-field{
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 600px){
+
+
 
   .restaurant-management .accordion-tablet-content .center{
     position: static;
@@ -344,9 +358,7 @@
   }
 
 
-  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover .restaurant-btn-field{
-    flex-direction: column;
-  }
+
 }
 
 
@@ -928,13 +940,13 @@
 }
 
 .order-right__minus{
-  height: 100%;
   display: flex;
   font-size: 20px;
   color: white;
   padding: 4px 6px 4px 8px;
   background: #0d0e18;
   border-right: 1px solid rgba(77, 77, 92, 0.33);
+  height: 31px;
 }
 
 .order-right__count{
@@ -947,10 +959,10 @@
   width: 40px;
   text-align: center;
   border: 0;
+  height: 31px;
 }
 
 .order-right__plus{
-  height: 100%;
   display: flex;
   font-size: 22px;
   color: white;
@@ -958,6 +970,7 @@
   background: #0d0e18;
   border-left: 1px solid rgba(77, 77, 92, 0.33);
   font-weight: 100;
+  height: 31px;
 }
 
 .order-right__search{
@@ -1333,6 +1346,7 @@ input:checked + .slider:before {
   padding: 20px 10px;
   display: none;
   z-index: 100;
+  transform: translate(-50%, -50%);
 
   &.open{
     display: block;
@@ -1508,6 +1522,7 @@ input:checked + .slider:before {
 
 .restaurant-delivery-form-field.areas-select .ingredient-input-i{
   margin-top: 0;
+  background: #f5f6fa;
 }
 
 .complete-order{
@@ -1526,6 +1541,26 @@ input:checked + .slider:before {
   width: 17%;
 }
 
+.orders-sort .sort-select{
+  .select-box__input-text {
+    padding: 6px 20px;
+  }
+}
+
+.restaurant-delivery-form-field .input-wrapper span:first-child{
+  position: relative;
+  left: -6px;
+}
+
+.orders .title-section{
+  padding: 19px 23px 24px 30px;
+}
+
+.mobile-select-menu-title,
+.mobile-select-menu{
+  display: none;
+}
+
 @media (max-width: 1720px) {
   .restaurant-tables .restaurant-tables-item .qr-code .qr-hover {
     right: -20px;
@@ -1542,10 +1577,46 @@ input:checked + .slider:before {
     padding: 30px 30px 100px;
   }
 
+
+
   .order-content .pop-up-title{
     margin-left: 0;
   }
 
+
+  .base-textarea-wrapper .symbols{
+    color: #001AFF;
+    opacity: 0.6;
+  }
+
+  .dish-card .light-card-h3 {
+    font-weight: 600;
+  }
+
+  .restaurant-card-form-wrapper .restaurant-card-first {
+    padding-bottom: 7px;
+  }
+
+  .restaurant-tables .restaurant-tables-heading{
+    padding-top: 17px;
+    padding-bottom: 13px !important;
+  }
+
+  .restaurant-delivery-form-field.areas-select{
+    position: relative;
+  }
+
+  .restaurant-delivery .delivery-time-input {
+    margin-right: 63px;
+  }
+
+  .restaurant-delivery .type-of-payment-btn {
+    width: 95px;
+  }
+
+  .menu-management-content .menu-sort .search-field{
+    justify-content: flex-end;
+  }
 
 }
 
@@ -1553,6 +1624,21 @@ input:checked + .slider:before {
   .restaurant-graph {
     width: 100%;
     float: none;
+  }
+
+  .orders .title-section .pages-h1{
+    padding: 0;
+    margin: 0 auto !important;
+    transform: translateX(25px);
+  }
+
+  .orders .title-section .mobile-only{
+    display: block !important;
+    margin-left: auto;
+  }
+
+  .orders .mobile-fixed-header.opened-mobile-menu .mobile-only {
+    display: none !important;
   }
 
   .menu-sort.menu-sort-custom .search-field{
@@ -1563,6 +1649,24 @@ input:checked + .slider:before {
 @media (max-width: 600px){
   .js-tabs .js-tabs__header {
     margin: 0 -14px 0 -15px;
+  }
+
+  .restaurant-delivery-form-field .input-wrapper span:first-child {
+    position: relative;
+    left: 3px;
+  }
+
+  .mobile-select-menu-title{
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .mobile-select-menu{
+    display: block;
+
+    .select-box__input-text{
+      background-color: #f5f6fa;
+    }
   }
 
 }
@@ -1602,7 +1706,7 @@ input:checked + .slider:before {
     background: #D6D7E0;
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
-    margin-bottom: -45px;
+    margin-bottom: -17px;
   }
 
   .user-stats-content .menu-sort.menu-sort-custom .search-field label,
@@ -1658,6 +1762,183 @@ input:checked + .slider:before {
   .order-content .pop-up-order-status-btns{
     padding-right: 0;
   }
+
+  .menu-sort .sort-select{
+    display: none;
+  }
+
+  .menu-management-content .menu-sort .search-field label,
+  .restaurant-management .menu-sort .search-field label {
+    padding: 7px 15px;
+  }
+
+  .menu-management .menu-sort .search-field-input,
+  .restaurant-management .menu-sort .search-field-input {
+    top: 0px;
+    width: 150px;
+    right: 0%;
+    margin-right: 52px;
+  }
+
+  .restaurant-list-heading {
+    justify-content: space-between;
+    padding: 25px 15px 15px 15px;
+    border-bottom: 1px solid rgba(24, 29, 48, 0.16);
+  }
+
+  .restaurant-list-item{
+    border-bottom: 1px solid rgba(24, 29, 48, 0.16);
+    padding: 5px 15px;
+  }
+
+  .restaurant-list-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .orders .mobile-footer-btn{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(13, 14, 24, 0.34);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    height: 65px;
+    align-items: center
+  }
+
+  .orders .mobile-footer-btn .restaurant-submit-btn{
+    background: #596079;
+    border-radius: 8px;
+    height: 37px;
+    top: 0;
+  }
+
+  .order-content .pop-up-close-btn {
+    top: 4px;
+  }
+
+  .restaurant-graph__left {
+    width: 55%;
+  }
+  .restaurant-graph__right {
+    width: 45%;
+  }
+
+  .user-map-data .user-map-details-item-right {
+    overflow: hidden;
+  }
+
+  .restaurant-info__date {
+    font-size: 14px;
+  }
+
+  .restaurant-info__right {
+    margin-left: 10px;
+  }
+
+  .js-tabs .js-tabs__header {
+    margin: 0;
+  }
+
+  .restaurant-management .title-section {
+    padding-right: 15px;
+  }
+
+  .restaurant-management-content .restauraunt-gallery.before-el:before {
+    display: none;
+  }
+
+  .restaurant-gallery .light-card-h3 {
+    margin: 0 -13px 0 0px;
+    padding-left: 17px;
+  }
+
+  .restaurant-card-first .restaurant-card-first-details {
+    margin-top: 19px;
+  }
+
+  .restaurant-management-content .before-el.mobile-padding {
+    margin-top: 0px;
+  }
+
 }
 
 
+@media (max-width: 450px) {
+  .restaurant-card-form .md-radio label:before {
+    width: 24px;
+    height: 24px;
+  }
+  .restaurant-card-form .md-radio label:after {
+    width: 16px;
+    height: 16px;
+  }
+  .md-radio label:after {
+    top: 4px;
+    left: 4px;
+  }
+
+  .restaurant-delivery .delivery-time-input {
+    margin-right: 23px;
+  }
+
+  .restaurant-delivery.accordion-tablet-content{
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .restaurant-delivery-block.align-top{
+    order: 20;
+  }
+
+  .restaurant-delivery-block.type-of-payment{
+    display: flex !important;
+
+    .restaurant-delivery-text{
+      width: 30%;
+    }
+
+    .restaurant-delivery-form-field{
+      width: 65%;
+      max-width: 195px;
+    }
+
+    .type-of-payment-btn:last-child {
+      margin-left: 15px;
+    }
+  }
+
+  .restaurant-management-content .restaurant-card-third-mobile .restaurant-delivery-block:nth-child(1) .restaurant-delivery-form-field,
+  .restaurant-management-content .restaurant-card-third-mobile .restaurant-delivery-block:nth-child(2) .restaurant-delivery-form-field,
+  .restaurant-management-content .restaurant-card-third-mobile .restaurant-delivery-form-field.delivery-time{
+    max-width: 195px;
+  }
+
+  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover {
+    right: -14px !important;
+  }
+
+  .restaurant-tables-items-wrapper {
+    margin: 0 -15px;
+  }
+
+  .orders-sort {
+    padding: 0 10px;
+  }
+
+
+}
+
+@media (max-width: 350px) {
+  .restaurant-tables .restaurant-tables-item .qr-code .qr-hover {
+    right: -20px !important;
+  }
+
+  .restaurant-delivery-form-field .input-wrapper span:first-child {
+    left: 0;
+  }
+}

@@ -211,7 +211,8 @@ $('.pop-up-payment-status button').click(function () {
   $(this).addClass('selected')
 });
 
-$(document).on('click', '.rem-i',function () {
+$(document).on('click', '.rem-i',function (e) {
+  e.preventDefault();
   $('input[id="'+$(this).prev().attr('for')+'"]').parent().remove();
   $(this).parent().remove();
 });

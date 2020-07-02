@@ -126,6 +126,8 @@
                   </div>
 
 
+
+
                   <div class="form-group small-width input-animation">
                     <input type="text" name="price" class="gray-color" id="price" required>
                     <span>AED</span>
@@ -308,6 +310,65 @@
                     </div>
                   </div>
 
+                  <h3 class="light-card-h3 mobile-select-menu-title">Category</h3>
+                  <!--<div class="select-box mobile-select-menu">-->
+                    <!--<div class="select-box__current" tabindex="1">-->
+                      <!--<div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1" name="country" checked="checked">-->
+                        <!--<p class="select-box__input-text">Ukraine</p>-->
+                      <!--</div>-->
+                      <!--<div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2" name="country" checked="checked">-->
+                        <!--<p class="select-box__input-text">Italy</p>-->
+                      <!--</div>-->
+                      <!--<div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="3" name="country" checked="checked">-->
+                        <!--<p class="select-box__input-text">China</p>-->
+                      <!--</div>-->
+
+                      <!--<img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon" aria-hidden="true">-->
+                    <!--</div>-->
+                    <!--<ul class="select-box__list">-->
+                      <!--<li><label class="select-box__option" for="0" aria-hidden="aria-hidden">Ukraine</label></li>-->
+                      <!--<li><label class="select-box__option" for="1" aria-hidden="aria-hidden">Italy</label></li>-->
+                      <!--<li><label class="select-box__option" for="2" aria-hidden="aria-hidden">China</label></li>-->
+                    <!--</ul>-->
+                  <!--</div>-->
+
+                  <div class="select-box sort-select mobile-select-menu">
+                    <div class="select-box__current" tabindex="1">
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="dish0" value="1" name="dish" checked="checked">
+                        <p class="select-box__input-text">Soup</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="dish1" value="2" name="dish" checked="checked">
+                        <p class="select-box__input-text">Salad</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="dish2" value="3" name="dish" checked="checked">
+                        <p class="select-box__input-text">Appetizer</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="dish3" value="4" name="dish" checked="checked">
+                        <p class="select-box__input-text">Dessert</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="dish4" value="5" name="dish" checked="checked">
+                        <p class="select-box__input-text">Beverage</p>
+                      </div>
+                      <div class="select-box__value"><input class="select-box__input" type="radio" id="dish5" value="6" name="dish" checked="checked">
+                        <p class="select-box__input-text">Main Dish</p>
+                      </div>
+
+
+
+                      <img class="select-box__icon" src="./images/selectArrow.svg" alt="Arrow Icon" aria-hidden="true">
+                    </div>
+                    <ul class="select-box__list">
+                      <li><label class="select-box__option" for="dish0" aria-hidden="aria-hidden">Soup</label><a href="#" class="rem-i">+</a></li>
+                      <li><label class="select-box__option" for="dish1" aria-hidden="aria-hidden">Salad</label><a href="#" class="rem-i">+</a></li>
+                      <li><label class="select-box__option" for="dish2" aria-hidden="aria-hidden">Appetizer</label><a href="#" class="rem-i">+</a></li>
+                      <li><label class="select-box__option" for="dish3" aria-hidden="aria-hidden">Dessert</label><a href="#" class="rem-i">+</a></li>
+                      <li><label class="select-box__option" for="dish4" aria-hidden="aria-hidden">Beverage</label><a href="#" class="rem-i">+</a></li>
+                      <li><label class="select-box__option" for="dish5" aria-hidden="aria-hidden">Main Dish</label><a href="#" class="rem-i">+</a></li>
+                      <li><label class="select-box__option select-box__option-add">Add category <span>+</span> </label></li>
+                    </ul>
+                  </div>
+
+
                 </div>
 
                 <div class="js-tabs__content dish-card-second-description-content">
@@ -444,6 +505,23 @@
 
   </div>
   <!-- /.container -->
+
+  <div class="popup-add-category">
+    <div class="popup-add-category__inner">
+      <a href="#" class="popup-add-category__close">+</a>
+      <div class="popup-add-category__title">
+        Enter the category you want to add
+      </div>
+      <div class="popup-add-category__input">
+        <input type="text">
+      </div>
+      <div class="popup-add-category__btn">
+        <a href="javascript:void(0)" class="btn btn-base">
+          <span class="btn-base-text">Add</span>
+        </a>
+      </div>
+    </div>
+  </div>
 
   @@include('../partials/scripts/common.html')
 </body>
